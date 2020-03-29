@@ -89,7 +89,7 @@
         </div>
 
         <!-- Блок контактов пользователя -->
-        <div class="form__user-contacts-container" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form__user-contacts-container">
           <label for="phone">Номер телефона</label>
           <input id="phone" type="text" name="phone" value="Номер, пожалуйста">
           <label for="email">Адрес почты</label>
@@ -121,8 +121,15 @@
         </div>
 
         <!-- Блок описания эмоций -->
-
+        <div class="form__emotions-container">
+          <legend class="form__title">
+            Опишите свои эмоции
+          </legend>
+          <textarea name="emotions-text" id="emotions-text" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
       </form>
+
+      <button class="form__btn" type="submit">Отправить</button>
     </main>
 
     <!-- Блок футера -->
