@@ -40,49 +40,60 @@
         </p>
       </div>
 
-      <!-- Форма с данными пользователя -->
-      <form class="user-form-container" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="last-name">Фамилия</label>
-        <input id="last-name" type="text" name="last-name" value="Укажите фамилию *">
-        <label for="first-name">Имя</label>
-        <input id="first-name" type="text" name="first-name" value="Укажите имя *">
-        <label for="middle-name">Отчество</label>
-        <input id="middle-name" type="text" name="middle-name" value="Ну и отчество тоже">
-      </form>
+      <!-- Форма -->
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
 
-      <!-- Блок чекбоксов -->
-      <form class="progress-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="progress-form__container">
-          <legend class="progress-form__title">
-            Ваши безбашенные
-            достижения в путешествии
-          </legend>
-          <ul class="progress-form__checkbox-items">
-            <li class="progress-form__checkbox-item">
-              <input id="shark" type="checkbox" name="shark" checked>
-              <label for="shark">Сделал селфи с акулой</label>
-            </li>
-            <li class="progress-form__checkbox-item">
-              <input id="beach" type="checkbox" name="beach" checked>
-              <label for="beach">Обгорел на пляже</label>
-            </li>
-            <li class="progress-form__checkbox-item">
-              <input id="noris" type="checkbox" name="noris">
-              <label for="noris">Видел Чака Норриса</label>
-            </li>
-            <li class="progress-form__checkbox-item">
-              <input id="souvenirs" type="checkbox" name="souvenirs">
-              <label for="souvenirs">Накупил сувениров</label>
-            </li>
-            <li class="progress-form__checkbox-item">
-              <input id="tower" type="checkbox" name="tower" checked>
-              <label for="tower">Удержал башню</label>
-            </li>
-            <li class="progress-form__checkbox-item">
-              <input id="hotel" type="checkbox" name="hotel">
-              <label for="hotel">Разгромил отель</label>
-            </li>
-          </ul>
+        <!-- Блок с данными пользователя -->
+        <div class="form__user-name-container">
+          <label for="last-name">Фамилия</label>
+          <input id="last-name" type="text" name="last-name" value="Укажите фамилию *">
+          <label for="first-name">Имя</label>
+          <input id="first-name" type="text" name="first-name" value="Укажите имя *">
+          <label for="middle-name">Отчество</label>
+          <input id="middle-name" type="text" name="middle-name" value="Ну и отчество тоже">
+        </div>
+
+        <!-- Блок чекбоксов -->
+        <div class="progress-form">
+          <div class="progress-form__container">
+            <legend class="progress-form__title">
+              Ваши безбашенные
+              достижения в путешествии
+            </legend>
+            <ul class="progress-form__checkbox-items">
+              <li class="progress-form__checkbox-item">
+                <input id="shark" type="checkbox" name="shark" checked>
+                <label for="shark">Сделал селфи с акулой</label>
+              </li>
+              <li class="progress-form__checkbox-item">
+                <input id="beach" type="checkbox" name="beach" checked>
+                <label for="beach">Обгорел на пляже</label>
+              </li>
+              <li class="progress-form__checkbox-item">
+                <input id="noris" type="checkbox" name="noris">
+                <label for="noris">Видел Чака Норриса</label>
+              </li>
+              <li class="progress-form__checkbox-item">
+                <input id="souvenirs" type="checkbox" name="souvenirs">
+                <label for="souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="progress-form__checkbox-item">
+                <input id="tower" type="checkbox" name="tower" checked>
+                <label for="tower">Удержал башню</label>
+              </li>
+              <li class="progress-form__checkbox-item">
+                <input id="hotel" type="checkbox" name="hotel">
+                <label for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+        </div>
+
+        <!-- Блок контактов пользователя -->
+        <div class="user-contacts-container" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="phone">Номер телефона</label>
+          <input id="phone" type="text" name="phone" value="Номер, пожалуйста">
+          <label for="email">Адрес почты</label>
+          <input id="email" type="text" name="email" value="Введите почту *">
         </div>
       </form>
     </main>
