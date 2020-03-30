@@ -6,7 +6,190 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <!-- Блок шапки -->
+    <header class="page-header">
+      <div class="page-header__container">
+        <h1 class="visibillity-hidden">Pink - мобильное приложение для раскрашивания серых будней</h1>
 
+        <div class="page-header__navigation">
+          <!-- Логотип сайта -->
+          <a href="index.html" class="page-header__logo-link">
+            <img class="page-header__logo-img" src="https://via.placeholder.com/76x69" alt="Логотип сайта" width="76" height="69">
+          </a>
+
+          <!-- Блок навигации -->
+          <nav class="page-header__menu menu">
+            <button class="menu__toggle" type="button">Открыть меню</button>
+            <a href="#" class="menu__menu-link  menu__menu-item--active">Главная</a>
+            <a href="photo.html" class="menu__menu-link">Фотографии</a>
+            <a href="form.html" class="menu__menu-link">Конкурс</a>
+            <a href="#" class="menu__menu-link">HTML Academy</a>
+          </nav>
+        </div>
+
+        <!-- Блок слогана программы -->
+        <p class="page-header__slogan-text">
+          Взгляните на жизнь иначе!
+        </p>
+      </div>
+    </header>
+
+    <!-- Блок основного содержимого сайта -->
+    <main class="main-content">
+
+      <!-- Блок описания программы -->
+      <section class="about-app">
+        <h2 class="visibilitty-hidden">О программе</h2>
+        <div class="about-app__container">
+          <a href="https://apps.apple.com/ru/genre/ios/id36" class="about-app__download-link btn">Скачать приложение</a>
+
+          <!-- Блок версий программы -->
+          <ul class="about-app__app-list">
+            <li class="about-app__app-item">
+              <a href="https://apps.apple.com/ru/genre/ios/id36" class="about-app__app-link">
+                <img class="about-app__version-img about-app__version-img--ios" src="https://via.placeholder.com/50x50" alt="Иконка маркета Apple" width="50" height="50">
+              </a>
+            </li>
+            <li class="about-app__app-item">
+              <a href="https://play.google.com/store?hl=ru" class="about-app__app-link">
+                <img class="about-app__version-img about-app__version-img--android" src="https://via.placeholder.com/50x50" alt="Иконка маркета Android" width="50" height="50">
+              </a>
+            </li>
+            <li class="about-app__app-item">
+              <a href="https://www.microsoft.com/ru-ru/store/top-free/apps/pc" class="about-app__app-link">
+                <img class="about-app__version-img about-app__version-img--windows" src="https://via.placeholder.com/50x50" alt="Иконка маркета Windows" width="50" height="50">
+              </a>
+            </li>
+          </ul>
+          <p class="about-app__version-info">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
+
+      <!-- Блок слогана главной страницы -->
+      <div class="index-slogan">
+        <div class="index-slogan__container">
+          <p class="index-slogan__slogan-text">Устали от серости мегаполиса?</p>
+          <p class="index-slogan__slogan-text">Нам есть, что вам предложить!</p>
+        </div>
+      </div>
+
+      <!-- Блок преимуществ программы -->
+      <section class="features-app">
+        <h2 class="visibillity-hidden">Преимущества программы</h2>
+        <div class="features-app__container">
+
+          <ul class="features-app__list">
+            <li class="features-app__list">
+              <h3 class="features-app__title h3">Поднимает настроение</h3>
+              <p class="features-app__list-text">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="features-app__list">
+              <h3 class="features-app__title h3">Меняет мир вокруг</h3>
+              <p class="features-app__list-text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="features-app__list">
+              <h3 class="features-app__title h3">Заводит новых друзей</h3>
+              <p class="features-app__list-text">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+
+          <img src="https://via.placeholder.com/157x277" class="features-app__preview-app" alt="Первью программы" width="157" height="277">
+        </div>
+      </section>
+
+      <!-- Блок слайдера отзывов -->
+      <section class="slider-review">
+        <h2 class="visibility-hidden">Отзывы</h2>
+        <div class="slider-review__container">
+          <ul class="slider-review__list">
+            <li class="slider-review__item">
+              <h3 class="slider-review__user-name">Николай Петров</h3>
+              <p class="slider-review__feedback-text">
+                «Это приложение перевернуло мой мир
+                и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я
+                познакомился со своей будущей женой
+                в комментариях к выложенной фотографии!»
+              </p>
+            </li>
+            <li class="slider-review__item">
+              <h3 class="slider-review__user-name">Николай Петров</h3>
+              <p class="slider-review__feedback-text">
+                «Это приложение перевернуло мой мир
+                и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я
+                познакомился со своей будущей женой
+                в комментариях к выложенной фотографии!»
+              </p>
+            </li>
+            <li class="slider-review__item">
+              <h3 class="slider-review__user-name">Николай Петров</h3>
+              <p class="slider-review__feedback-text">
+                «Это приложение перевернуло мой мир
+                и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я
+                познакомился со своей будущей женой
+                в комментариях к выложенной фотографии!»
+              </p>
+            </li>
+          </ul>
+          <p class="slider-review__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--active" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <!-- Блок слайдера тарифов -->
+      <section class="slider-tariffs">
+        <div class="slider-tariffs__container">
+          <h2 class="visibillity-hidden">Тарифы</h2>
+          <!-- Здесь будет код слайдера -->
+        </div>
+      </section>
+
+      <!-- Блок контактов -->
+      <section class="contacts">
+        <h2 class="visibillity-hidden">Контакты</h2>
+        <div class="contacts__container">
+          <p class="contacts__header">
+            Остались вопросы?
+            Свяжитесь с нами!
+          </p>
+          <ul class="contacts__contacts-list">
+            <li class="contacts_contacts-list-item">
+              <p class="contacts__item-header">Звоните:</p>
+              <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts_contacts-list-item">
+              <p class="contacts__item-header">Пишите:</p>
+              <p class="contacts__email">mail@htmlacademy.ru</p>
+            </li>
+            <li class="contacts_contacts-list-item">
+              <p class="contacts__item-header">Приезжайте в гости</p>
+              <p class="contacts__adress">
+                ул. Большая
+                Конюшенная, 19/8
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Блок карты -->
+      <section class="map">
+        <h2 class="visibillity-hidden">Карта</h2>
+        <!-- Здесь будет код карты -->
+      </section>
+    </main>
   </body>
 </html>
