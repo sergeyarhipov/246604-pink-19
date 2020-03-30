@@ -9,19 +9,24 @@
     <!-- Блок шапки -->
     <header class="page-header">
       <div class="page-header__container">
-        <a href="index.html" class="page-header__logo-link">
-          <img src="https://via.placeholder.com/76x69" alt="Логотип сайта" class="page-header__logo-img" width="76" height="69">
-        </a>
 
-        <nav class="menu-items">
-          <button class="menu-items__toggle" type="button">Открыть меню</button>
-          <a href="index.html" class="menu-items__menu-item">Главная</a>
-          <a href="photo.html" class="menu-items__menu-item">Фотографии</a>
-          <a href="#" class="menu-items__menu-item">Конкурс</a>
-          <a href="#" class="menu-items__menu-item">HTML Academy</a>
-        </nav>
+        <div class="page-header__navigation">
+          <!-- Логотип сайта -->
+          <a href="index.html" class="page-header__logo-link">
+            <img class="page-header__logo-img" src="https://via.placeholder.com/76x69" alt="Логотип сайта" width="76" height="69">
+          </a>
 
-        <h1 class="page-header__page-title">
+          <!-- Блок навигации -->
+          <nav class="page-header__menu menu">
+            <button class="menu__toggle" type="button">Открыть меню</button>
+            <a href="#" class="menu__menu-link  menu__menu-item--active">Главная</a>
+            <a href="photo.html" class="menu__menu-link">Фотографии</a>
+            <a href="form.html" class="menu__menu-link">Конкурс</a>
+            <a href="#" class="menu__menu-link">HTML Academy</a>
+          </nav>
+        </div>
+
+        <h1 class="page-header__page-title h1">
           Конкурс на самое
           безбашенное путешествие
           с Пинк
@@ -29,7 +34,7 @@
       </div>
     </header>
 
-    <main class="main-header">
+    <main class="main-content">
 
       <!-- Блок слогана формы -->
       <div class="slogan-container">
@@ -56,11 +61,11 @@
         <!-- Блок чекбоксов -->
         <div class="form__progress-form">
           <div class="form__progress-form-container">
-            <p class="form__title">
+            <h3 class="form__title h3">
               Ваши безбашенные
               достижения в путешествии
-            </p>
-            <ul class="form__checkbox-items">
+            </h3>
+            <ul class="form__checkbox-list">
               <li class="form__checkbox-item">
                 <input id="shark" type="checkbox" name="shark" checked>
                 <label for="shark">Сделал селфи с акулой</label>
@@ -98,23 +103,23 @@
         </div>
 
         <!-- Блок радио-кнопок -->
-        <div class="form__program-form">
-          <div class="form__program-form-container">
+        <div class="form__app-form">
+          <div class="form__app-form-container">
             <p class="form__title">
               С каким приложением
               путешествовали?
             </p>
-            <ul class="form__program-items">
+            <ul class="form__app-items">
               <li class="form__radio-item">
-                <input id="pink-ios" type="radio" name="program-radio" value="Pink-IOS">
+                <input id="pink-ios" type="radio" name="app-radio" value="Pink-IOS">
                 <label for="pink-ios">Pink для IOS</label>
               </li>
               <li class="form__radio-item">
-                <input id="pink-android" type="radio" name="program-radio" value="Pink-Android">
+                <input id="pink-android" type="radio" name="app-radio" value="Pink-Android">
                 <label for="pink-android">Pink для Android</label>
               </li>
               <li class="form__radio-item">
-                <input id="windows" type="radio" name="program-radio" value="Windows-phone">
+                <input id="windows" type="radio" name="app-radio" value="Windows-phone">
                 <label for="windows">Windows Phone</label>
               </li>
             </ul>

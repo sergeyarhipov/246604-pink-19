@@ -9,21 +9,26 @@
     <!-- Блок шапки -->
     <header class="page-header">
       <div class="page-header__container">
-        <a href="index.html" class="page-header__logo-link">
-          <img src="https://via.placeholder.com/76x69" alt="Логотип сайта" class="page-header__logo-img" width="76" height="69">
-        </a>
 
-        <nav class="menu-items">
-          <button class="menu-items__toggle" type="button">Открыть меню</button>
-          <a href="index.html" class="menu-items__menu-item">Главная</a>
-          <a href="#" class="menu-items__menu-item menu-items__menu-item--active">Фотографии</a>
-          <a href="form.html" class="menu-items__menu-item">Конкурс</a>
-          <a href="#" class="menu-items__menu-item">HTML Academy</a>
-        </nav>
+        <div class="page-header__navigation">
+          <!-- Логотип сайта -->
+          <a href="index.html" class="page-header__logo-link">
+            <img class="page-header__logo-img" src="https://via.placeholder.com/76x69" alt="Логотип сайта" width="76" height="69">
+          </a>
 
-      <h1 class="page-header__page-title">
-        Фотографии пользователей
-      </h1>
+          <!-- Блок навигации -->
+          <nav class="page-header__menu menu">
+            <button class="menu__toggle" type="button">Открыть меню</button>
+            <a href="#" class="menu__menu-link  menu__menu-item--active">Главная</a>
+            <a href="photo.html" class="menu__menu-link">Фотографии</a>
+            <a href="form.html" class="menu__menu-link">Конкурс</a>
+            <a href="#" class="menu__menu-link">HTML Academy</a>
+          </nav>
+        </div>
+
+        <h1 class="page-header__page-title">
+          Фотографии пользователей
+        </h1>
       </div>
     </header>
 
@@ -66,72 +71,70 @@
       <!-- Блок фотогралереи -->
       <section class="photogallery">
         <h2 class="visibillity-hidden">Фотогалерея</h2>
-        <div class="photogallery__container">
-          <ul class="photogallery__list">
-            <li class="photogallery__item photo-comment">
-              <a href="#" class="photo-comment__photo-link">
-                <img class="photo-comment__photo-preview" src="https://via.placeholder.com/280x180" alt="Фото пользователя" width="280" height="180">
-              </a>
-              <p class="photo-comment__user-name">Левон <span class="photo-comment__time">(5 часов назад)</span></p>
-              <p class="photo-comment__text">
-                Вчера он на луну летал, сегодня в руки
-                к нам попал.
-              </p>
-              <p class="photo-comment__likes">Нравится: 356</p>
-            </li>
-            <li class="photogallery__item photo-comment">
-              <a href="#" class="photo-comment__photo-link">
-                <img class="photo-comment__photo-preview" src="https://via.placeholder.com/280x180" alt="Фото пользователя" width="280" height="180">
-              </a>
-              <p class="photo-comment__user-name">Антон <span class="photo-comment__time">(12 часов назад)</span></p>
-              <p class="photo-comment__text">
-                Соседи будут рады!
-              </p>
-              <p class="photo-comment__likes">Нравится: 666</p>
-            </li>
-            <li class="photogallery__item photo-comment">
-              <a href="#" class="photo-comment__photo-link">
-                <img class="photo-comment__photo-preview" src="https://via.placeholder.com/280x180" alt="Фото пользователя" width="280" height="180">
-              </a>
-              <p class="photo-comment__user-name">Борис <span class="photo-comment__time">(20 часов назад)</span></p>
-              <p class="photo-comment__text">
-                Здесь могла быть ваша цитата
-                о высоком и вечном.
-              </p>
-              <p class="photo-comment__likes">Нравится: 219</p>
-            </li>
-            <li class="photogallery__item photo-comment">
-              <a href="#" class="photo-comment__photo-link">
-                <img class="photo-comment__photo-preview" src="https://via.placeholder.com/280x180" alt="Фото пользователя" width="280" height="180">
-              </a>
-              <p class="photo-comment__user-name">Сергей <span class="photo-comment__time">(25 часов назад)</span></p>
-              <p class="photo-comment__text">
-                Самая кубанская в мире!
-              </p>
-              <p class="photo-comment__likes">Нравится: 4</p>
-            </li>
-            <li class="photogallery__item photo-comment">
-              <a href="#" class="photo-comment__photo-link">
-                <img class="photo-comment__photo-preview" src="https://via.placeholder.com/280x180" alt="Фото пользователя" width="280" height="180">
-              </a>
-              <p class="photo-comment__user-name">Максим <span class="photo-comment__time">(40 часов назад)</span></p>
-              <p class="photo-comment__text">
-                Где снег-то?
-              </p>
-              <p class="photo-comment__likes">Нравится: 150</p>
-            </li>
-            <li class="photogallery__itemphoto-commen">
-              <a href="#" class="photo-comment__photo-link">
-                <img class="photo-comment__photo-preview" src="https://via.placeholder.com/280x180" alt="Фото пользователя" width="280" height="180">
-              </a>
-              <p class="photo-comment__user-name">Надежда <span class="photo-comment__time">(45 часов назад)</span></p>
-              <p class="photo-comment__text">
-                Всем GM и взаимные лайки!
-              </p>
-              <p class="photo-comment__likes">Нравится: 2560</p>
-            </li>
-          </ul>
-        </div>
+        <ul class="photogallery__list">
+          <li class="photogallery__item photo-comment">
+            <a href="#" class="photo-comment__photo-link">
+              <img class="photo-comment__photo-preview" src="https://via.placeholder.com/280x180" alt="Фото пользователя" width="280" height="180">
+            </a>
+            <p class="photo-comment__user-name">Левон <span class="photo-comment__time">(5 часов назад)</span></p>
+            <p class="photo-comment__text">
+              Вчера он на луну летал, сегодня в руки
+              к нам попал.
+            </p>
+            <p class="photo-comment__likes">Нравится: 356</p>
+          </li>
+          <li class="photogallery__item photo-comment">
+            <a href="#" class="photo-comment__photo-link">
+              <img class="photo-comment__photo-preview" src="https://via.placeholder.com/280x180" alt="Фото пользователя" width="280" height="180">
+            </a>
+            <p class="photo-comment__user-name">Антон <span class="photo-comment__time">(12 часов назад)</span></p>
+            <p class="photo-comment__text">
+              Соседи будут рады!
+            </p>
+            <p class="photo-comment__likes">Нравится: 666</p>
+          </li>
+          <li class="photogallery__item photo-comment">
+            <a href="#" class="photo-comment__photo-link">
+              <img class="photo-comment__photo-preview" src="https://via.placeholder.com/280x180" alt="Фото пользователя" width="280" height="180">
+            </a>
+            <p class="photo-comment__user-name">Борис <span class="photo-comment__time">(20 часов назад)</span></p>
+            <p class="photo-comment__text">
+              Здесь могла быть ваша цитата
+              о высоком и вечном.
+            </p>
+            <p class="photo-comment__likes">Нравится: 219</p>
+          </li>
+          <li class="photogallery__item photo-comment">
+            <a href="#" class="photo-comment__photo-link">
+              <img class="photo-comment__photo-preview" src="https://via.placeholder.com/280x180" alt="Фото пользователя" width="280" height="180">
+            </a>
+            <p class="photo-comment__user-name">Сергей <span class="photo-comment__time">(25 часов назад)</span></p>
+            <p class="photo-comment__text">
+              Самая кубанская в мире!
+            </p>
+            <p class="photo-comment__likes">Нравится: 4</p>
+          </li>
+          <li class="photogallery__item photo-comment">
+            <a href="#" class="photo-comment__photo-link">
+              <img class="photo-comment__photo-preview" src="https://via.placeholder.com/280x180" alt="Фото пользователя" width="280" height="180">
+            </a>
+            <p class="photo-comment__user-name">Максим <span class="photo-comment__time">(40 часов назад)</span></p>
+            <p class="photo-comment__text">
+              Где снег-то?
+            </p>
+            <p class="photo-comment__likes">Нравится: 150</p>
+          </li>
+          <li class="photogallery__itemphoto-commen">
+            <a href="#" class="photo-comment__photo-link">
+              <img class="photo-comment__photo-preview" src="https://via.placeholder.com/280x180" alt="Фото пользователя" width="280" height="180">
+            </a>
+            <p class="photo-comment__user-name">Надежда <span class="photo-comment__time">(45 часов назад)</span></p>
+            <p class="photo-comment__text">
+              Всем GM и взаимные лайки!
+            </p>
+            <p class="photo-comment__likes">Нравится: 2560</p>
+          </li>
+        </ul>
       </section>
 
       <!-- Блок слогана фотогалереи -->
