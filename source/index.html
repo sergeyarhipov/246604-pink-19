@@ -8,8 +8,6 @@
 
     <!-- Блок шапки -->
     <header class="page-header">
-      <div class="page-header__container">
-        <h1 class="visibillity-hidden">Pink - мобильное приложение для раскрашивания серых будней</h1>
 
         <div class="page-header__navigation">
           <!-- Логотип сайта -->
@@ -28,10 +26,9 @@
         </div>
 
         <!-- Блок слогана программы -->
-        <p class="page-header__slogan-text">
+        <h1 class="page-header__slogan-text">
           Взгляните на жизнь иначе!
-        </p>
-      </div>
+        </h1>
     </header>
 
     <!-- Блок основного содержимого сайта -->
@@ -149,11 +146,36 @@
         </div>
       </section>
 
-      <!-- Блок слайдера тарифов -->
-      <section class="slider-tariffs">
-        <div class="slider-tariffs__container">
+      <!-- Блок описания тарифов -->
+      <section class="tariffs">
+        <div class="tariffs__container">
           <h2 class="visibillity-hidden">Тарифы</h2>
-          <!-- Здесь будет код слайдера -->
+          <table class="tariffs__table">
+            <tr class="tariffs__tarifs-name-line">
+              <td class="tariffs__cell-title--empty"></td>
+              <td class="tariffs__cell-title">База<span class="tarriffs__tariff-sale">1,99 USD</span></td>
+              <td class="tariffs__cell-title">Стандарт<span class="tarriffs__tariff-sale">3,99 USD</span></td>
+              <td class="tariffs__cell-title">Анлим<span class="tarriffs__tariff-sale">9,99 USD</span></td>
+            </tr>
+            <tr class="tarifs__tarifs-name-line">
+              <td>Розовый фильтр</td>
+              <td class="tariff__option tariff__option--on"></td>
+              <td class="tariff__option tariff__option--on"></td>
+              <td class="tariff__option tariff__option--on"></td>
+            </tr>
+            <tr class="tarifs__tarifs-name-line">
+              <td>Смайлики</td>
+              <td class="tariff__option tariff__option--off"></td>
+              <td class="tariff__option tariff__option--on"></td>
+              <td class="tariff__option tariff__option--on"></td>
+            </tr>
+            <tr class="tarifs__tarifs-name-line">
+              <td>Комментарии</td>
+              <td class="tariff__option tariff__option--off"></td>
+              <td class="tariff__option tariff__option--off"></td>
+              <td class="tariff__option tariff__option--on"></td>
+            </tr>
+          </table>
         </div>
       </section>
 
@@ -188,7 +210,7 @@
       <!-- Блок карты -->
       <section class="map">
         <h2 class="visibillity-hidden">Карта</h2>
-        <!-- Здесь будет код карты -->
+        <img src="https://via.placeholder.com/320x200" alt="Карта" class="map-img" width="320" height="200">
       </section>
     </main>
   </body>
