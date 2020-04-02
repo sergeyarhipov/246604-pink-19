@@ -5,7 +5,7 @@
   width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 43px 20px 35px 20px;
+  padding: 43px 20px 43px 20px;
 }
 
 .contacts__header {
@@ -24,6 +24,7 @@
 .contacts__phone, .contacts__email,
 .contacts__adress {
   .null-indent;
+  font-weight: lighter;
 }
 
 .contacts__contacts-list {
@@ -33,6 +34,9 @@
 
 .contacts_contacts-list-item {
   margin-bottom: 25px;
+    &:last-child {
+      margin: 0;
+    }
 }
 
 .contacts__item-header {
@@ -49,7 +53,7 @@
 .contacts__phone, .contacts__email,
 .contacts__adress {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 28px;
   font-weight: lighter;
   color: #d22856;
 }
