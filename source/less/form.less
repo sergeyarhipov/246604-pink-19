@@ -2,12 +2,13 @@
   width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 20px 43px 20px;
+
 }
 
 .form__user-name-container {
   display: flex;
   flex-direction: column;
+  padding: 0 20px 41px 20px;
 }
 
 .form__name-field {
@@ -22,4 +23,52 @@
   padding: 23px 21px;
   font-size: 18px;
   color: @bg-info-content;
+}
+
+.form__user-name-container input:last-child {
+  margin-bottom: 0;
+}
+
+.form__progress-form {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 41px 20px;
+  background-color: @bg-content;
+}
+
+.form__title {
+  .null-indent;
+  width: 230px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.form__checkbox-list {
+  .list-style;
+}
+
+.form__checkbox-list label {
+  display: inline-block;
+  height: 39px;
+  line-height: 18px;
+  padding-left: 70px;
+  margin-bottom: 42px;
+  color: @bg-info-content;
+  cursor: pointer;
+}
+
+.form__checkbox-item--last label {
+  margin-bottom: 0;
+}
+
+.form__checkbox-item input[type="checkbox"] {
+  opacity: 0;
+  cursor: pointer;
 }
