@@ -12,6 +12,7 @@
 }
 
 .form__name-field {
+  padding-left: 24px;
   line-height: 38px;
   text-transform: uppercase;
   color: #d22856;
@@ -23,6 +24,7 @@
   padding: 23px 21px;
   font-size: 18px;
   color: @bg-info-content;
+  border: 2px solid #e5e5e5;
 }
 
 .form__user-name-container input:last-child {
@@ -39,9 +41,7 @@
 
 .form__title {
   .null-indent;
-  width: 230px;
   margin: 0 auto;
-  margin-bottom: 50px;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -50,11 +50,18 @@
   color: #d22856;
 }
 
-.form__checkbox-list {
+.form__title--progress {
+  width: 230px;
+  margin-bottom: 50px;
+}
+
+.form__checkbox-list,
+.form__radio-item {
   .list-style;
 }
 
-.form__checkbox-list label {
+.form__checkbox-list label,
+.form__radio-item label {
   display: inline-block;
   height: 39px;
   line-height: 18px;
@@ -64,11 +71,65 @@
   cursor: pointer;
 }
 
-.form__checkbox-item--last label {
+.form__checkbox-item--last label,
+.form__radio-item--last label {
   margin-bottom: 0;
 }
 
-.form__checkbox-item input[type="checkbox"] {
+.form__checkbox-item input[type="checkbox"],
+.form__radio-item input[type="radio"] {
   opacity: 0;
   cursor: pointer;
+}
+
+.form__user-contacts-container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 41px 20px;
+}
+
+.form__user-contacts-container input {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 23px 21px;
+  font-size: 18px;
+  color: @bg-info-content;
+  border: 2px solid #e5e5e5;
+}
+
+.form__user-contacts-container input:last-child {
+  margin-bottom: 0;
+}
+
+.form__app-form {
+  padding: 0 20px 43px 20px;
+  background-color: @bg-content;
+}
+
+.form__title--app {
+  margin-bottom: 36px;
+}
+
+.form__app-items {
+  .null-indent;
+}
+
+.form-title--emotions {
+  margin-bottom: 10px;
+}
+
+.form__emotions-container {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0 20px 48px 20px;
+}
+
+.form__emotions-container textarea {
+  width: 280px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 2px solid #e5e5e5;
 }

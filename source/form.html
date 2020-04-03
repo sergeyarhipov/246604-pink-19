@@ -62,7 +62,7 @@
         <!-- Блок чекбоксов -->
         <div class="form__progress-form">
           <div class="form__progress-form-container">
-            <h3 class="form__title h3">
+            <h3 class="form__title form__title--progress h3">
               Ваши безбашенные
               достижения в путешествии
             </h3>
@@ -97,16 +97,16 @@
 
         <!-- Блок контактов пользователя -->
         <div class="form__user-contacts-container">
-          <label for="phone">Номер телефона</label>
+          <label class="form__name-field" for="phone">Номер телефона</label>
           <input id="phone" type="text" name="phone" value="Номер, пожалуйста">
-          <label for="email">Адрес почты</label>
+          <label class="form__name-field" for="email">Адрес почты</label>
           <input id="email" type="text" name="email" value="Введите почту *">
         </div>
 
         <!-- Блок радио-кнопок -->
         <div class="form__app-form">
           <div class="form__app-form-container">
-            <p class="form__title">
+            <p class="form__title form__title--app">
               С каким приложением
               путешествовали?
             </p>
@@ -119,7 +119,7 @@
                 <input id="pink-android" type="radio" name="app-radio" value="Pink-Android">
                 <label for="pink-android">Pink для Android</label>
               </li>
-              <li class="form__radio-item">
+              <li class="form__radio-item form__radio-item--last">
                 <input id="windows" type="radio" name="app-radio" value="Windows-phone">
                 <label for="windows">Windows Phone</label>
               </li>
@@ -129,7 +129,7 @@
 
         <!-- Блок описания эмоций -->
         <div class="form__emotions-container">
-          <p class="form__title">
+          <p class="form__title form-title--emotions">
             Опишите свои эмоции
           </p>
           <textarea name="emotions-text" id="emotions-text" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
