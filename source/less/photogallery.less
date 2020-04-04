@@ -1,16 +1,110 @@
-.photogallery__list {
-  .null-indent;
-  .list-style;
+.photogallery__item--panorama {
+  position: relative;
+  max-width: 320px;
+  max-height: 137px;
+  margin: 0 auto;
 }
 
 .photogallery__item {
   margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+}
+
+.photogallery__photo-block--small {
+  min-height: 180px;
+}
+
+.photogallery__photo-link {
+  display: block;
+}
+
+.photogallery__photo-preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.photogallery__panorama-title {
+  position: absolute;
+  .null-indent;
+  right: 0;
+  padding: 6px 20px 6px 20px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #d22856;
+}
+
+.photogallery__list {
+  .null-indent;
+  .list-style;
+  .container;
+  padding: 0;
+}
+
+.photogallery__item-container {
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .photo-comment--gallery {
   padding: 0 20px
 }
 
-.photogallery__item:last-child {
-  margin: 0;
+.photogallery__photo-comment {
+  .container;
+}
+
+.photogallery__photo-comment {
+  width: 280px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 24px;
+  background-color: #f2f2f2;
+}
+
+.photogallery__user-name{
+  .null-indent;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  color: @bg-info-content;
+}
+
+.photogallery__comment-time{
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.photogallery__comment-text{
+  .null-indent;
+  margin-bottom: 10px;
+  color: @bg-info-content;
+}
+
+.photogallery__comment-likes {
+  .null-indent;
+  padding-left: 33px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #d22856;
+  background: url("../img/icon-heart.svg") no-repeat;
+  background-position: 0 6px;
+}
+
+.photogallery__slogan {
+  width: 280px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 47px 10px 45px 10px;
+}
+
+.photogallery__slogan-text {
+  .null-indent;
+  line-height: 30px;
+  text-align: center;
 }
