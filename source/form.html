@@ -3,30 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <!-- Блок шапки -->
-    <header class="page-header">
-      <div class="page-header__container">
+    <header>
 
-        <div class="page-header__navigation">
+      <div class="bn3r">
+        <div class="navigation">
           <!-- Логотип сайта -->
-          <a href="index.html" class="page-header__logo-link">
-            <img class="page-header__logo-img" src="https://via.placeholder.com/76x69" alt="Логотип сайта" width="76" height="69">
+          <a href="index.html" class="navigation__logo-link">
+            <img class="navigation__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
           </a>
 
           <!-- Блок навигации -->
-          <nav class="page-header__menu menu">
-            <button class="menu__toggle" type="button">Открыть меню</button>
-            <a href="#" class="menu__menu-link  menu__menu-item--active">Главная</a>
-            <a href="photo.html" class="menu__menu-link">Фотографии</a>
-            <a href="form.html" class="menu__menu-link">Конкурс</a>
-            <a href="#" class="menu__menu-link">HTML Academy</a>
+          <nav class="navigation__menu">
+            <button class="navigation__toggle" type="button">Открыть меню</button>
+            <a href="index.html" class="navigation__menu-link navigation__menu-link--active">Главная</a>
+            <a href="#" class="navigation__menu-link">Фотографии</a>
+            <a href="form.html" class="navigation__menu-link">Конкурс</a>
+            <a href="#" class="navigation__menu-link">HTML Academy</a>
           </nav>
         </div>
 
-        <h1 class="page-header__page-title h1">
+        <h1 class="bn3r__slogan bn3r__slogan--form h1">
           Конкурс на самое
           безбашенное путешествие
           с Пинк
@@ -37,11 +38,11 @@
     <main class="main-content">
 
       <!-- Блок слогана формы -->
-      <div class="slogan-container">
-        <p class="slogan-container__slogan-text">
+      <div class="slogan">
+        <p class="slogan__text">
           Поделитесь своей историей и получите шанс
           выиграть ценный приз — 1000 миль на вашу
-          бонусную карту! Пожалуйста, заполните
+          бонусную карту!
         </p>
       </div>
 
@@ -50,18 +51,18 @@
 
         <!-- Блок с данными пользователя -->
         <div class="form__user-name-container">
-          <label for="last-name">Фамилия</label>
+          <label class="form__name-field" for="last-name">Фамилия:</label>
           <input id="last-name" type="text" name="last-name" value="Укажите фамилию *">
-          <label for="first-name">Имя</label>
+          <label class="form__name-field" for="first-name">Имя:</label>
           <input id="first-name" type="text" name="first-name" value="Укажите имя *">
-          <label for="middle-name">Отчество</label>
+          <label class="form__name-field" for="middle-name">Отчество:</label>
           <input id="middle-name" type="text" name="middle-name" value="Ну и отчество тоже">
         </div>
 
         <!-- Блок чекбоксов -->
         <div class="form__progress-form">
           <div class="form__progress-form-container">
-            <h3 class="form__title h3">
+            <h3 class="form__title form__title--progress h3">
               Ваши безбашенные
               достижения в путешествии
             </h3>
@@ -86,7 +87,7 @@
                 <input id="tower" type="checkbox" name="tower" checked>
                 <label for="tower">Удержал башню</label>
               </li>
-              <li class="form__checkbox-item">
+              <li class="form__checkbox-item form__checkbox-item--last">
                 <input id="hotel" type="checkbox" name="hotel">
                 <label for="hotel">Разгромил отель</label>
               </li>
@@ -96,16 +97,16 @@
 
         <!-- Блок контактов пользователя -->
         <div class="form__user-contacts-container">
-          <label for="phone">Номер телефона</label>
+          <label class="form__name-field" for="phone">Номер телефона</label>
           <input id="phone" type="text" name="phone" value="Номер, пожалуйста">
-          <label for="email">Адрес почты</label>
+          <label class="form__name-field" for="email">Адрес почты</label>
           <input id="email" type="text" name="email" value="Введите почту *">
         </div>
 
         <!-- Блок радио-кнопок -->
         <div class="form__app-form">
           <div class="form__app-form-container">
-            <p class="form__title">
+            <p class="form__title form__title--app">
               С каким приложением
               путешествовали?
             </p>
@@ -118,7 +119,7 @@
                 <input id="pink-android" type="radio" name="app-radio" value="Pink-Android">
                 <label for="pink-android">Pink для Android</label>
               </li>
-              <li class="form__radio-item">
+              <li class="form__radio-item form__radio-item--last">
                 <input id="windows" type="radio" name="app-radio" value="Windows-phone">
                 <label for="windows">Windows Phone</label>
               </li>
@@ -128,14 +129,16 @@
 
         <!-- Блок описания эмоций -->
         <div class="form__emotions-container">
-          <p class="form__title">
+          <p class="form__title form-title--emotions">
             Опишите свои эмоции
           </p>
           <textarea name="emotions-text" id="emotions-text" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
 
-        <button class="form__btn btn" type="submit">Отправить форму</button>
-        <p class="form__label">* — обязательные поля</p>
+        <div class="form__btn-container">
+          <button class="form__btn btn" type="submit">Отправить форму</button>
+          <p class="form__label">* — обязательные поля</p>
+        </div>
       </form>
     </main>
 
@@ -143,23 +146,17 @@
     <footer class="footer">
       <div class="footer__container">
         <a href="index.html" class="footer__index-link">
-          <img src="https://via.placeholder.com/280x375" alt="Логотип сайта" class="footer__footer-logo" width="145" height="55">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта" class="footer__footer-logo" width="150" height="55">
         </a>
         <ul class="footer__social-btns">
           <li class="footer__social-btn">
-            <a href="#" class="footer__social-link">
-              <img src="https://via.placeholder.com/53x53" alt="Твитер" class="footer__social-img" width="53" height="53">
-            </a>
+            <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Фейсбук"></a>
           </li>
           <li class="footer__social-btn">
-            <a href="#" class="footer__social-link">
-              <img src="https://via.placeholder.com/53x53" alt="Фейсбук" class="footer__social-img" width="53" height="53">
-            </a>
+            <a href="#" class="footer__social-link footer__social-link--twit" aria-label="Твиттер"></a>
           </li>
           <li class="footer__social-btn">
-            <a href="#" class="footer__social-link">
-              <img src="https://via.placeholder.com/53x53" alt="Youtube" class="footer__social-img" width="53" height="53">
-            </a>
+            <a href="#" class="footer__social-link footer__social-link--youtube" aria-label="Ютуб"></a>
           </li>
         </ul>
 

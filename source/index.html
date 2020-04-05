@@ -3,32 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <!-- Блок шапки -->
-    <header class="page-header">
+    <header>
 
-        <div class="page-header__navigation">
+      <div class="bn3r">
+        <div class="navigation">
           <!-- Логотип сайта -->
-          <a href="index.html" class="page-header__logo-link">
-            <img class="page-header__logo-img" src="https://via.placeholder.com/76x69" alt="Логотип сайта" width="76" height="69">
+          <a href="index.html" class="navigation__logo-link">
+            <img class="navigation__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
           </a>
 
           <!-- Блок навигации -->
-          <nav class="page-header__menu menu">
-            <button class="menu__toggle" type="button">Открыть меню</button>
-            <a href="#" class="menu__menu-link  menu__menu-item--active">Главная</a>
-            <a href="photo.html" class="menu__menu-link">Фотографии</a>
-            <a href="form.html" class="menu__menu-link">Конкурс</a>
-            <a href="#" class="menu__menu-link">HTML Academy</a>
+          <nav class="navigation__menu">
+            <button class="navigation__toggle" type="button">Открыть меню</button>
+            <a href="#" class="navigation__menu-link navigation__menu-link--active">Главная</a>
+            <a href="photo.html" class="navigation__menu-link">Фотографии</a>
+            <a href="form.html" class="navigation__menu-link">Конкурс</a>
+            <a href="#" class="navigation__menu-link">HTML Academy</a>
           </nav>
         </div>
 
         <!-- Блок слогана программы -->
-        <h1 class="page-header__slogan-text">
+        <h1 class="bn3r__slogan bn3r__slogan--index h1">
           Взгляните на жизнь иначе!
         </h1>
+        <img class="bn3r__slogan-img" src="img/iphone-hand-mobile@1x.png" alt="Логотип слогана" width="258" height="286">
+      </div>
     </header>
 
     <!-- Блок основного содержимого сайта -->
@@ -36,7 +40,7 @@
 
       <!-- Блок описания программы -->
       <section class="about-app">
-        <h2 class="visibilitty-hidden">О программе</h2>
+        <h2 class="visually-hidden">О программе</h2>
         <div class="about-app__container">
           <a href="https://apps.apple.com/ru/genre/ios/id36" class="about-app__download-link btn">Скачать приложение</a>
 
@@ -44,17 +48,17 @@
           <ul class="about-app__app-list">
             <li class="about-app__app-item">
               <a href="https://apps.apple.com/ru/genre/ios/id36" class="about-app__app-link">
-                <img class="about-app__version-img about-app__version-img--ios" src="https://via.placeholder.com/50x50" alt="Иконка маркета Apple" width="50" height="50">
+                <img class="about-app__version-img about-app__version-img--ios" src="img/logo-apple.svg" alt="Иконка маркета Apple" width="50" height="50">
               </a>
             </li>
             <li class="about-app__app-item">
               <a href="https://play.google.com/store?hl=ru" class="about-app__app-link">
-                <img class="about-app__version-img about-app__version-img--android" src="https://via.placeholder.com/50x50" alt="Иконка маркета Android" width="50" height="50">
+                <img class="about-app__version-img about-app__version-img--android" src="img/logo-android.svg" alt="Иконка маркета Android" width="50" height="50">
               </a>
             </li>
             <li class="about-app__app-item">
               <a href="https://www.microsoft.com/ru-ru/store/top-free/apps/pc" class="about-app__app-link">
-                <img class="about-app__version-img about-app__version-img--windows" src="https://via.placeholder.com/50x50" alt="Иконка маркета Windows" width="50" height="50">
+                <img class="about-app__version-img about-app__version-img--windows" src="img/logo-microsoft.svg" alt="Иконка маркета Windows" width="50" height="50">
               </a>
             </li>
           </ul>
@@ -65,32 +69,30 @@
       </section>
 
       <!-- Блок слогана главной страницы -->
-      <div class="index-slogan">
-        <div class="index-slogan__container">
-          <p class="index-slogan__slogan-text">Устали от серости мегаполиса?</p>
-          <p class="index-slogan__slogan-text">Нам есть, что вам предложить!</p>
-        </div>
+      <div class="slogan slogan--index">
+          <p class="slogan__text slogan__text--index">Устали от серости мегаполиса?</p>
+          <p class="slogan__text slogan__text--index slogan__text--last">Нам есть, что вам предложить!</p>
       </div>
 
       <!-- Блок преимуществ программы -->
       <section class="features-app">
-        <h2 class="visibillity-hidden">Преимущества программы</h2>
+        <h2 class="visually-hidden">Преимущества программы</h2>
         <div class="features-app__container">
 
           <ul class="features-app__list">
-            <li class="features-app__list">
+            <li class="features-app__item">
               <h3 class="features-app__title h3">Поднимает настроение</h3>
               <p class="features-app__list-text">
                 Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
             </li>
-            <li class="features-app__list">
+            <li class="features-app__item">
               <h3 class="features-app__title h3">Меняет мир вокруг</h3>
               <p class="features-app__list-text">
                 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
               </p>
             </li>
-            <li class="features-app__list">
+            <li class="features-app__item">
               <h3 class="features-app__title h3">Заводит новых друзей</h3>
               <p class="features-app__list-text">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
@@ -98,18 +100,18 @@
             </li>
           </ul>
 
-          <img src="https://via.placeholder.com/157x277" class="features-app__preview-app" alt="Первью программы" width="157" height="277">
+          <img class="features-app__preview-app" src="img/iphone-screen-mobile@1x.png" alt="Превью программы" width="157" height="320">
         </div>
       </section>
 
       <!-- Блок слайдера отзывов -->
-      <section class="slider-review">
-        <h2 class="visibility-hidden">Отзывы</h2>
-        <div class="slider-review__container">
-          <ul class="slider-review__list">
-            <li class="slider-review__item">
-              <h3 class="slider-review__user-name">Николай Петров</h3>
-              <p class="slider-review__feedback-text">
+      <section class="slider-reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="slider-reviews__container">
+          <ul class="slider-reviews__list">
+            <li class="slider-reviews__item">
+              <h3 class="slider-reviews__user-name h3">Николай Петров</h3>
+              <p class="slider-reviews__feedback-text">
                 «Это приложение перевернуло мой мир
                 и позволило по-новому взглянуть на
                 привычные серые вещи! А еще я
@@ -117,9 +119,9 @@
                 в комментариях к выложенной фотографии!»
               </p>
             </li>
-            <li class="slider-review__item">
-              <h3 class="slider-review__user-name">Николай Петров</h3>
-              <p class="slider-review__feedback-text">
+            <li class="slider-reviews__item">
+              <h3 class="slider-reviews__user-name h3">Николай Петров</h3>
+              <p class="slider-reviews__feedback-text">
                 «Это приложение перевернуло мой мир
                 и позволило по-новому взглянуть на
                 привычные серые вещи! А еще я
@@ -127,9 +129,9 @@
                 в комментариях к выложенной фотографии!»
               </p>
             </li>
-            <li class="slider-review__item">
-              <h3 class="slider-review__user-name">Николай Петров</h3>
-              <p class="slider-review__feedback-text">
+            <li class="slider-reviews__item">
+              <h3 class="slider-reviews__user-name h3">Николай Петров</h3>
+              <p class="slider-reviews__feedback-text">
                 «Это приложение перевернуло мой мир
                 и позволило по-новому взглянуть на
                 привычные серые вещи! А еще я
@@ -138,52 +140,56 @@
               </p>
             </li>
           </ul>
-          <p class="slider-review__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--active" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+          <p class="slider-reviews__toggles slider-toggles">
+            <button class="slider-toggles__toggle slider-toggles__toggle--active" type="button">1</button>
+            <button class="slider-toggles__toggle" type="button">2</button>
+            <button class="slider-toggles__toggle" type="button">3</button>
           </p>
         </div>
       </section>
 
       <!-- Блок описания тарифов -->
       <section class="tariffs">
-        <div class="tariffs__container">
-          <h2 class="visibillity-hidden">Тарифы</h2>
-          <table class="tariffs__table">
-            <tr class="tariffs__tarifs-name-line">
-              <td class="tariffs__cell-title--empty"></td>
-              <td class="tariffs__cell-title">База<span class="tarriffs__tariff-sale">1,99 USD</span></td>
-              <td class="tariffs__cell-title">Стандарт<span class="tarriffs__tariff-sale">3,99 USD</span></td>
-              <td class="tariffs__cell-title">Анлим<span class="tarriffs__tariff-sale">9,99 USD</span></td>
-            </tr>
-            <tr class="tarifs__tarifs-name-line">
-              <td>Розовый фильтр</td>
-              <td class="tariff__option tariff__option--on"></td>
-              <td class="tariff__option tariff__option--on"></td>
-              <td class="tariff__option tariff__option--on"></td>
-            </tr>
-            <tr class="tarifs__tarifs-name-line">
-              <td>Смайлики</td>
-              <td class="tariff__option tariff__option--off"></td>
-              <td class="tariff__option tariff__option--on"></td>
-              <td class="tariff__option tariff__option--on"></td>
-            </tr>
-            <tr class="tarifs__tarifs-name-line">
-              <td>Комментарии</td>
-              <td class="tariff__option tariff__option--off"></td>
-              <td class="tariff__option tariff__option--off"></td>
-              <td class="tariff__option tariff__option--on"></td>
-            </tr>
-          </table>
-        </div>
+        <h2 class="visually-hidden">Тарифы</h2>
+        <table class="tariffs__table" cellspacing="0" cellpadding="0">
+          <tr class="tariffs__tarifs-name-line">
+            <td class="tariffs__cell-title tariffs__cell-title--empty"></td>
+            <td class="tariffs__cell-title">База<br><span class="tarriffs__tariff-sale">1,99 USD</span></td>
+            <td class="tariffs__cell-title">Стандарт<br><span class="tarriffs__tariff-sale">3,99 USD</span></td>
+            <td class="tariffs__cell-title">Анлим<br><span class="tarriffs__tariff-sale">9,99 USD</span></td>
+          </tr>
+          <tr class="tarifs__tariffs-info-line">
+            <td class="tariff__option">Розовый фильтр</td>
+            <td class="tariff__option tariff__option--on"></td>
+            <td class="tariff__option tariff__option--on"></td>
+            <td class="tariff__option tariff__option--on"></td>
+          </tr>
+          <tr class="tariffs__tariffs-info-line">
+            <td class="tariff__option">Смайлики</td>
+            <td class="tariff__option tariff__option--off"></td>
+            <td class="tariff__option tariff__option--on"></td>
+            <td class="tariff__option tariff__option--on"></td>
+          </tr>
+          <tr class="tariffs__tariffs-info-line">
+            <td class="tariff__option">Комментарии</td>
+            <td class="tariff__option tariff__option--off"></td>
+            <td class="tariff__option tariff__option--off"></td>
+            <td class="tariff__option tariff__option--on"></td>
+          </tr>
+        </table>
+
+        <p class="tariffs__toggles slider-toggles">
+          <button class="slider-toggles__toggle" type="button">1</button>
+          <button class="slider-toggles__toggle slider-toggles__toggle--active" type="button">2</button>
+          <button class="slider-toggles__toggle" type="button">3</button>
+        </p>
       </section>
 
       <!-- Блок контактов -->
       <section class="contacts">
-        <h2 class="visibillity-hidden">Контакты</h2>
-        <div class="contacts__container">
-          <p class="contacts__header">
+        <div class="contacts-container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__title">
             Остались вопросы?
             Свяжитесь с нами!
           </p>
@@ -197,7 +203,7 @@
               <p class="contacts__email">mail@htmlacademy.ru</p>
             </li>
             <li class="contacts_contacts-list-item">
-              <p class="contacts__item-header">Приезжайте в гости</p>
+              <p class="contacts__item-header">Приезжайте в гости:</p>
               <p class="contacts__adress">
                 ул. Большая
                 Конюшенная, 19/8
@@ -205,13 +211,14 @@
             </li>
           </ul>
         </div>
+
+        <!-- Блок карты -->
+        <section class="contacts-map">
+          <h2 class="visually-hidden">Карта</h2>
+          <img class="contacts-map__img" src="img/bg-map-mobile@1x.png" alt="Карта" class="map-img" width="320" height="645">
+        </section>
       </section>
 
-      <!-- Блок карты -->
-      <section class="map">
-        <h2 class="visibillity-hidden">Карта</h2>
-        <img src="https://via.placeholder.com/320x200" alt="Карта" class="map-img" width="320" height="200">
-      </section>
     </main>
   </body>
 </html>
