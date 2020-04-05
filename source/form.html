@@ -8,26 +8,26 @@
   <body>
 
     <!-- Блок шапки -->
-    <header class="page-header">
-      <div class="page-header__container">
+    <header>
 
-        <div class="page-header__navigation">
+      <div class="bn3r">
+        <div class="navigation">
           <!-- Логотип сайта -->
-          <a href="index.html" class="page-header__logo-link">
-            <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="76" height="69">
+          <a href="index.html" class="navigation__logo-link">
+            <img class="navigation__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
           </a>
 
           <!-- Блок навигации -->
-          <nav class="page-header__menu menu">
-            <button class="menu__toggle" type="button">Открыть меню</button>
-            <a href="index.html" class="menu__menu-link  menu__menu-item--active">Главная</a>
-            <a href="photo.html" class="menu__menu-link">Фотографии</a>
-            <a href="#" class="menu__menu-link">Конкурс</a>
-            <a href="#" class="menu__menu-link">HTML Academy</a>
+          <nav class="navigation__menu">
+            <button class="navigation__toggle" type="button">Открыть меню</button>
+            <a href="index.html" class="navigation__menu-link navigation__menu-link--active">Главная</a>
+            <a href="#" class="navigation__menu-link">Фотографии</a>
+            <a href="form.html" class="navigation__menu-link">Конкурс</a>
+            <a href="#" class="navigation__menu-link">HTML Academy</a>
           </nav>
         </div>
 
-        <h1 class="page-header__page-title page-header__page-title--form h1">
+        <h1 class="bn3r__slogan bn3r__slogan--form h1">
           Конкурс на самое
           безбашенное путешествие
           с Пинк
@@ -38,8 +38,8 @@
     <main class="main-content">
 
       <!-- Блок слогана формы -->
-      <div class="slogan-container">
-        <p class="slogan-container__slogan-text">
+      <div class="slogan">
+        <p class="slogan__text">
           Поделитесь своей историей и получите шанс
           выиграть ценный приз — 1000 миль на вашу
           бонусную карту!
@@ -135,8 +135,10 @@
           <textarea name="emotions-text" id="emotions-text" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
 
-        <button class="form__btn btn" type="submit">Отправить форму</button>
-        <p class="form__label">* — обязательные поля</p>
+        <div class="form__btn-container">
+          <button class="form__btn btn" type="submit">Отправить форму</button>
+          <p class="form__label">* — обязательные поля</p>
+        </div>
       </form>
     </main>
 
@@ -148,13 +150,13 @@
         </a>
         <ul class="footer__social-btns">
           <li class="footer__social-btn">
-            <a href="#" class="footer__social-link" aria-label="Фейсбук"></a>
+            <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Фейсбук"></a>
           </li>
           <li class="footer__social-btn">
-            <a href="#" class="footer__social-link" aria-label="Твиттер"></a>
+            <a href="#" class="footer__social-link footer__social-link--twit" aria-label="Твиттер"></a>
           </li>
           <li class="footer__social-btn">
-            <a href="#" class="footer__social-link" aria-label="Ютуб"></a>
+            <a href="#" class="footer__social-link footer__social-link--youtube" aria-label="Ютуб"></a>
           </li>
         </ul>
 
