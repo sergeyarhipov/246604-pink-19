@@ -8,25 +8,24 @@
   <body>
 
     <!-- Блок шапки -->
-    <header>
+    <header class="page-header">
+      <div class="page-header__navigation navigation">
+        <!-- Логотип сайта -->
+        <a href="index.html" class="navigation__logo-link">
+          <img class="navigation__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
+        </a>
 
-      <div class="bn3r">
-        <div class="navigation">
-          <!-- Логотип сайта -->
-          <a href="index.html" class="navigation__logo-link">
-            <img class="navigation__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
-          </a>
+        <!-- Блок навигации -->
+        <nav class="navigation__menu">
+          <button class="navigation__toggle" type="button">Открыть меню</button>
+          <a href="#" class="navigation__menu-link navigation__menu-link--active">Главная</a>
+          <a href="photo.html" class="navigation__menu-link">Фотографии</a>
+          <a href="form.html" class="navigation__menu-link">Конкурс</a>
+          <a href="#" class="navigation__menu-link">HTML Academy</a>
+        </nav>
+      </div>
 
-          <!-- Блок навигации -->
-          <nav class="navigation__menu">
-            <button class="navigation__toggle" type="button">Открыть меню</button>
-            <a href="#" class="navigation__menu-link navigation__menu-link--active">Главная</a>
-            <a href="photo.html" class="navigation__menu-link">Фотографии</a>
-            <a href="form.html" class="navigation__menu-link">Конкурс</a>
-            <a href="#" class="navigation__menu-link">HTML Academy</a>
-          </nav>
-        </div>
-
+      <div class="page-header__bn3r bn3r">
         <!-- Блок слогана программы -->
         <h1 class="bn3r__slogan bn3r__slogan--index h1">
           Взгляните на жизнь иначе!
