@@ -8,25 +8,24 @@
   <body>
 
     <!-- Блок шапки -->
-    <header>
+    <header class="page-header">
+      <div class="page-header__navigation navigation">
+        <!-- Логотип сайта -->
+        <a href="index.html" class="navigation__logo-link">
+          <img class="navigation__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
+        </a>
 
-      <div class="bn3r">
-        <div class="navigation">
-          <!-- Логотип сайта -->
-          <a href="index.html" class="navigation__logo-link">
-            <img class="navigation__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
-          </a>
+        <!-- Блок навигации -->
+        <nav class="navigation__menu">
+          <button class="navigation__toggle" type="button">Открыть меню</button>
+          <a href="index.html" class="navigation__menu-link navigation__menu-link--active">Главная</a>
+          <a href="#" class="navigation__menu-link">Фотографии</a>
+          <a href="form.html" class="navigation__menu-link">Конкурс</a>
+          <a href="#" class="navigation__menu-link">HTML Academy</a>
+        </nav>
+      </div>
 
-          <!-- Блок навигации -->
-          <nav class="navigation__menu">
-            <button class="navigation__toggle" type="button">Открыть меню</button>
-            <a href="index.html" class="navigation__menu-link navigation__menu-link--active">Главная</a>
-            <a href="#" class="navigation__menu-link">Фотографии</a>
-            <a href="form.html" class="navigation__menu-link">Конкурс</a>
-            <a href="#" class="navigation__menu-link">HTML Academy</a>
-          </nav>
-        </div>
-
+      <div class="page-header__bn3r bn3r">
         <h1 class="bn3r__slogan bn3r__slogan--form h1">
           Конкурс на самое
           безбашенное путешествие
@@ -68,27 +67,27 @@
             </h3>
             <ul class="form__checkbox-list">
               <li class="form__checkbox-item">
-                <input id="shark" type="checkbox" name="shark" checked>
+                <input class="form__checkbox-checked" id="shark" type="checkbox" name="shark" checked>
                 <label for="shark">Сделал селфи с акулой</label>
               </li>
               <li class="form__checkbox-item">
-                <input id="beach" type="checkbox" name="beach" checked>
+                <input class="form__checkbox-checked" id="beach" type="checkbox" name="beach" checked>
                 <label for="beach">Обгорел на пляже</label>
               </li>
               <li class="form__checkbox-item">
-                <input id="noris" type="checkbox" name="noris">
+                <input class="form__checkbox-unchecked" id="noris" type="checkbox" name="noris">
                 <label for="noris">Видел Чака Норриса</label>
               </li>
               <li class="form__checkbox-item">
-                <input id="souvenirs" type="checkbox" name="souvenirs">
+                <input class="form__checkbox-unchecked" id="souvenirs" type="checkbox" name="souvenirs">
                 <label for="souvenirs">Накупил сувениров</label>
               </li>
               <li class="form__checkbox-item">
-                <input id="tower" type="checkbox" name="tower" checked>
+                <input class="form__checkbox-checked" id="tower" type="checkbox" name="tower" checked>
                 <label for="tower">Удержал башню</label>
               </li>
               <li class="form__checkbox-item form__checkbox-item--last">
-                <input id="hotel" type="checkbox" name="hotel">
+                <input class="form__checkbox-unchecked" id="hotel" type="checkbox" name="hotel">
                 <label for="hotel">Разгромил отель</label>
               </li>
             </ul>
@@ -112,15 +111,15 @@
             </p>
             <ul class="form__app-items">
               <li class="form__radio-item">
-                <input id="pink-ios" type="radio" name="app-radio" value="Pink-IOS">
+                <input class="form__radio-checked" id="pink-ios" type="radio" name="app-radio" value="Pink-IOS">
                 <label for="pink-ios">Pink для IOS</label>
               </li>
               <li class="form__radio-item">
-                <input id="pink-android" type="radio" name="app-radio" value="Pink-Android">
+                <input class="form__radio-unchecked" id="pink-android" type="radio" name="app-radio" value="Pink-Android">
                 <label for="pink-android">Pink для Android</label>
               </li>
               <li class="form__radio-item form__radio-item--last">
-                <input id="windows" type="radio" name="app-radio" value="Windows-phone">
+                <input class="form__radio-unchecked" id="windows" type="radio" name="app-radio" value="Windows-phone">
                 <label for="windows">Windows Phone</label>
               </li>
             </ul>
