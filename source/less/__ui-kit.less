@@ -51,5 +51,18 @@
 }
 
 .about-app__download-link {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
   margin-bottom: 32px;
+  padding: 17px 37px;
+  color: #fff;
+  background-color: @bg-info-content;
+}
+
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+  .about-app__download-link {
+    background: none;
+    text-align: center;
+  }
 }
