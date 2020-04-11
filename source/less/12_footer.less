@@ -1,8 +1,12 @@
 .footer {
-  width: 320px;
+  max-width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 40px 20px;
+}
+
+.footer--index {
+  display: none;
 }
 
 .footer__container {
@@ -59,4 +63,29 @@
 .footer__academy-link {
   text-decoration: none;
   color: @bg-info-content
+}
+
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+  .footer {
+    max-width: 660px;
+    margin: 0;
+  }
+
+  .footer--index {
+    display: block;
+  }
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__footer-logo {
+    margin-bottom: 0;
+  }
+
+  .footer__social-btns {
+    margin-bottom: 0;
+  }
 }
