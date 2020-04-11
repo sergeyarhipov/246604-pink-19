@@ -1,5 +1,5 @@
 .slider-reviews {
-  width: 320px;
+  max-width: 320px;
   .container;
   padding: 48px 20px 67px 20px;
 }
@@ -23,6 +23,10 @@
   text-align: center;
 }
 
+.slider-reviews__user-profession {
+  display: none;
+}
+
 .slider-reviews__feedback-text {
   .null-indent;
   margin-bottom: 32px;
@@ -30,9 +34,38 @@
   text-align: center;
 }
 
+.slider-reviews__item:nth-child(2),
+.slider-reviews__item:nth-child(3) {
+  display: none;
+}
+
 
 @media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
   .slider-reviews {
+    max-width: 660px;
     padding-top: 130px;
+  }
+
+  .slider-reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider-reviews__user-name {
+    order: 2;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .slider-reviews__user-profession {
+    order: 3;
+    .null-indent;
+    display: block;
+    text-align: center;
+  }
+
+  .slider-reviews__feedback-text {
+    margin-bottom: 40px;
   }
 }
