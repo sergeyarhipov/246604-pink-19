@@ -241,10 +241,12 @@
         <!-- Блок карты -->
         <section class="contacts-map">
           <h2 class="visually-hidden">Карта</h2>
-          <img class="contacts-map__img" src="img/bg-map-mobile@1x.png" alt="Карта" class="map-img" width="320" height="645">
+          <picture>
+            <source media="(min-width: 661px) and (max-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+            <source srcset="img/bg-map-tablet@1x.jpg" media="(min-width: 331px) and (max-width: 660px)">
+            <img class="contacts-map__img" src="img/bg-map-mobile@1x.png" alt="Карта" class="map-img" width="320" height="645">          </picture>
         </section>
       </section>
-
     </main>
   </body>
 </html>
