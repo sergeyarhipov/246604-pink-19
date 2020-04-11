@@ -25,12 +25,13 @@
   line-height: 30px;
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
   color: #fff;
   border: 1px solid #e5e5e5;
 }
 
 .tariffs__cell-title--empty {
-  background-color: #fff;
+  background-color: @bg-content;
   border: none;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -69,4 +70,55 @@
 
 .tariffs__toggles {
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+  .tariffs {
+    max-width: 660px;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 65px;
+  }
+
+  .tariffs__table {
+    max-width: 620px;
+    margin: 0;
+  }
+
+  .tariffs__cell-title {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .tariff__option {
+    max-width: 155px;
+    box-sizing: border-box;
+    padding: 10px 5px 10px 17px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .tariffs__cell-title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .tarrifs__label-mobile {
+    display: none;
+  }
+
+  .tariff__option--on {
+    background-position: center;
+  }
+
+  .tariff__option--off {
+    background-position: center;
+  }
+
+  .tariffs__toggles {
+    display: none;
+  }
 }
