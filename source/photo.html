@@ -53,7 +53,11 @@
           <div class="photogallery__photo-block">
             <h2 class="photogallery__panorama-title">Панорама дня</h2>
             <a href="#" class="photogallery__photo-link">
+            <picture>
+              <source media="(min-width: 661px) and (max-width: 1200px)" srcset="img/panorama-desktop@1x.png">
+              <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 331px) and (max-width: 660px)">
               <img class="photogallery__photo-preview photogallery__photo-preview--big" src="img/panorama-mobile@1x.jpg" alt="Фото панорамы дня" width="320" height="137">
+            </picture>
             </a>
           </div>
 
@@ -70,7 +74,7 @@
         </section>
 
         <!-- Блок фотогалереи -->
-        </section>
+        <section>
           <h2 class="visually-hidden">Фотогалерея</h2>
           <ul class="photogallery__list">
             <li class="photogallery__item">
