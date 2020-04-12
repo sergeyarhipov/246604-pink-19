@@ -20,10 +20,19 @@
   display: block;
 }
 
-.photogallery__photo-preview {
+.photogallery__photo-block--small .photogallery__photo-preview {
   display: block;
-  width: 100%;
-  height: 100%;
+  max-width: 280px;
+  height: auto;
+}
+
+.photogallery__pictures {
+  max-width: 320px;
+}
+
+.photogallery__pictures .photogallery__photo-preview--big {
+  display: block;
+  max-width: 320px;
 }
 
 .photogallery__panorama-title {
@@ -60,6 +69,7 @@
 
 .photogallery__photo-comment {
   max-width: 280px;
+  min-height: 155px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 20px 24px;
@@ -117,11 +127,8 @@
     margin-bottom: 50px;
   }
 
-  .photogallery__item--panorama .photogallery__photo-comment {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 660px;
-    margin: 0 20px;
+  .photogallery__item-container {
+    max-width: 300px;
   }
 
   .photogallery__panorama-title {
@@ -129,7 +136,7 @@
     margin-right: 20px;
   }
 
-  .photogallery__comment-text {
+  .photogallery__item--panorama .photogallery__comment-text {
     order: 3;
   }
 
@@ -141,8 +148,48 @@
     flex-grow: 1;
     padding-left: 0;
     padding-right: 60px;
-    margin-bottom: 10px;
     text-align: right;
     background-position: right 10px top 6px;
+  }
+
+  .photogallery-items {
+    max-width: 660px;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  .photogallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 620px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .photogallery__photo-comment {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photogallery__photo-block--small .photogallery__photo-preview {
+    max-width: 300px;
+  }
+
+  .photogallery__pictures {
+    max-width: 660px;
+  }
+
+  .photogallery__pictures .photogallery__photo-preview--big {
+    max-width: 660px;
+  }
+
+  .photogallery__item--panorama .photogallery__photo-comment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 660px;
+    margin: 0 20px;
   }
 }
