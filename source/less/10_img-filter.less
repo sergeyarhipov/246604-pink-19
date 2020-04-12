@@ -1,5 +1,5 @@
 .img-filter {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   background-color: @bg-content;
 }
@@ -91,6 +91,10 @@
   padding: 15px;
 }
 
+.img-filter__filter-tools .img-filter__filter-toggle {
+  display: none;
+}
+
 .img-filter__btn-item--post {
   margin-bottom: 12px;
   color: #d22856;
@@ -102,4 +106,66 @@
   color: rgba(40, 54, 69, 0.1);
   background-color: @bg-content;
   border: 3px solid #dddfe0;
+}
+
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+  .img-filter {
+    position: relative;
+    max-width: 660px;
+    margin: 0;
+  }
+
+  .img-filter__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 660px;
+    padding: 58px 20px 55px 20px;
+  }
+
+  .img-filter__photo-link {
+    margin: 0;
+  }
+
+  .img-filter__filter-tools {
+    width: 300px;
+    flex-direction: column;
+  }
+
+  .img-filter__filter-tool {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .img-filter .img-filter__filter-toggle {
+    display: none;
+  }
+
+  .img-filter__filter-tool .img-filter__filter-toggle {
+    display: block;
+  }
+
+  .img-filter__crop .img-filter__scale,
+  .img-filter__filling .img-filter__scale,
+  .img-filter__contrast .img-filter__scale {
+    width: 204px;
+  }
+
+  .img-filter__btn {
+    position: absolute;
+    bottom: 50px;
+    right: 34px;
+    width: 260px;
+    .null-indent;
+  }
+
+   .img-filter__btn-item--cancel,
+  .img-filter__btn-item--post {
+    width: 260px;
+  }
 }
