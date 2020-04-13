@@ -1,5 +1,5 @@
 .form {
-  width: 320px;
+  max-width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
 
@@ -31,12 +31,20 @@
   margin-bottom: 0;
 }
 
+.form__user-item {
+  margin-bottom: 10px;
+}
+
 .form__progress-form {
-  width: 320px;
+  max-width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 41px 20px;
   background-color: @bg-content;
+}
+
+.form__progress-form-container {
+  border: none;
 }
 
 .form__title {
@@ -51,7 +59,7 @@
 }
 
 .form__title--progress {
-  width: 230px;
+  max-width: 230px;
   margin-bottom: 50px;
 }
 
@@ -161,3 +169,53 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+  }
+
+  .form__user-name-container {
+    padding: 0 20px 55px 20px;
+  }
+
+  .form__name-field {
+    padding-left: 0;
+    padding-right: 19px;
+  }
+
+  .form__user-name-container input {
+    flex-grow: 1;
+    margin-bottom: 55px;
+  }
+
+  .form__user-item {
+    display: flex;
+    margin-bottom: 55px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+  }
+
+  .form__progress-form {
+    margin: 0;
+    max-width: 660px;
+    padding: 0 20px;
+    background: #fff;
+  }
+
+  .form__progress-form-container {
+    padding: 0;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__title--progress {
+    max-width: 440px;
+    box-sizing: border-box;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
