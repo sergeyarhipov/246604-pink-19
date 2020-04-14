@@ -103,20 +103,27 @@
         </div>
 
         <!-- Блок контактов пользователя -->
-        <div class="form__user-contacts-container">
-          <label class="form__name-field" for="phone">Номер телефона</label>
-          <input id="phone" type="text" name="phone" value="Номер, пожалуйста">
-          <label class="form__name-field" for="email">Адрес почты</label>
-          <input id="email" type="text" name="email" value="Введите почту *">
-        </div>
+        <fieldset class="form__user-contacts-container">
+          <legend class="form__title form__title--contacts h3">
+            Контактная информация
+          </legend>
+          <div class="form__contact-item">
+            <label class="form__name-field" for="phone">Номер телефона</label>
+            <input id="phone" type="text" name="phone" value="Номер, пожалуйста">
+          </div>
+          <div class="form__contact-item">
+            <label class="form__name-field" for="email">Адрес почты</label>
+            <input id="email" type="text" name="email" value="Введите почту *">
+          </div>
+        </fieldset>
 
         <!-- Блок радио-кнопок -->
         <div class="form__app-form">
-          <div class="form__app-form-container">
-            <p class="form__title form__title--app">
+          <fieldset class="form__app-form-container">
+            <legend class="form__title form__title--app">
               С каким приложением
               путешествовали?
-            </p>
+            </legend>
             <ul class="form__app-items">
               <li class="form__radio-item">
                 <input class="form__radio-checked" id="pink-ios" type="radio" name="app-radio" value="Pink-IOS">
@@ -131,16 +138,16 @@
                 <label for="windows">Windows Phone</label>
               </li>
             </ul>
-          </div>
+          </fieldset>
         </div>
 
         <!-- Блок описания эмоций -->
-        <div class="form__emotions-container">
-          <p class="form__title form-title--emotions">
+        <fieldset class="form__emotions-container">
+          <legend class="form__title form-title--emotions">
             Опишите свои эмоции
-          </p>
+          </legend>
           <textarea name="emotions-text" id="emotions-text" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </div>
+        </fieldset>
 
         <div class="form__btn-container">
           <button class="form__btn btn" type="submit">Отправить форму</button>
