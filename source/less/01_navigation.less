@@ -4,7 +4,6 @@
   align-items: center;
   .container;
   position: relative;
-  padding: 0 20px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -60,8 +59,29 @@
   background: @bg-info-content;
 }
 
-@media (min-width: @tablet-min-width) {
+@media (min-width: @desktop-min-with) {
   .navigation {
-    max-width: 100%;
+    padding: 0 130px 0 130px;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__items {
+    display: flex;
+    max-width: 725px;
+  }
+
+  .navigation__menu-link {
+    background-color: transparent;
+    border: none;
+  }
+
+  .navigation__menu-link {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    text-transform: initial;
   }
 }

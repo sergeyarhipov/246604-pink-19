@@ -7,12 +7,18 @@
 }
 
 .bn3r__slogan {
-.null-indent;
+  .null-indent;
   font-size: 24px;
   line-height: 30px;
 }
 
+.bn3r__slogan-img {
+  display: block;
+}
+
 .bn3r__slogan--index {
+  width: 280px;
+  margin: 0 auto;
   padding: 18px 20px 12px 20px;
 }
 
@@ -30,7 +36,7 @@
 
 @media (min-width: @tablet-min-width) {
   .bn3r {
-    max-width: 660px;
+    width: 300px;
     margin: 0;
   }
 
@@ -41,13 +47,17 @@
   }
 
   .bn3r__slogan--index {
+    width: 195px;
     padding-top: 100px;
+    margin: 0 auto;
     font-size: 40px;
     font-weight: normal;
     line-height: 50px;
+    z-index: 2;
   }
 
   .bn3r__slogan--photo {
+    display: block;
     padding: 82px 20px 140px 20px;
     font-size: 50px;
     font-weight: normal;
@@ -62,11 +72,30 @@
   }
 
   .bn3r__slogan-img {
-    display: block;
     position: absolute;
+    right: -25px;
     bottom: 0;
-    left: -25px;
     width: 700px;
     height: 545px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: @desktop-min-with) {
+  .bn3r {
+    padding-top: 100px;
+    padding-left: 180px;
+    overflow: hidden;
+  }
+
+  .bn3r__slogan {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bn3r__slogan-img {
+    width: 1050px;
+    height: 645px;
+    right: 190px;
   }
 }
