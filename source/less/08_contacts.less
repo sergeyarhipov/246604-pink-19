@@ -1,7 +1,7 @@
 .contacts {
-  max-width: 320px;
   .container;
   padding: 0;
+  margin: 0 auto;
 }
 
 .contacts-container {
@@ -36,7 +36,6 @@
 }
 
 .contacts__contacts-list-item {
-  max-width: 280px;
   margin-bottom: 25px;
     &:last-child {
       margin: 0;
@@ -59,6 +58,7 @@
   font-size: 24px;
   line-height: 28px;
   font-weight: lighter;
+  text-align: center;
   color: #d22856;
 }
 
@@ -78,7 +78,6 @@
 @media (min-width: @tablet-min-width) {
   .contacts {
     max-width: 660px;
-    margin: 0;
   }
 
   .contacts-container {
@@ -117,6 +116,14 @@
     width: 700px;
     height: auto;
   }
+}
+
+@media (min-width: @desktop-min-with) {
+  .contacts {
+    width: 960px;
+  }
+
+
 }
 
 
