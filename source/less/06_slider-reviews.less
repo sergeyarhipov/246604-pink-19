@@ -3,6 +3,10 @@
   padding: 48px 20px 67px 20px;
 }
 
+.slider-reviews__bg {
+  display: none;
+}
+
 .slider-reviews__container {
   display: flex;
   flex-direction: column;
@@ -51,6 +55,10 @@
     padding-top: 130px;
   }
 
+  .slider-reviews__bg {
+    display: nones;
+  }
+
   .slider-reviews__item {
     display: flex;
     flex-direction: column;
@@ -77,7 +85,16 @@
 
 @media (min-width: @desktop-min-with) {
   .slider-reviews {
+    position: relative;
     padding: 185px 0 45px 0;
+  }
+
+  .slider-reviews__bg{
+    display: block;
+    position: absolute;
+    top: 73px;
+    left: 47%;
+    fill: #efefef;
   }
 
   .slider-reviews__container {

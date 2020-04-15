@@ -4,6 +4,14 @@
   background-size: 100%;
 }
 
+.page-header__logo-link {
+  display: block;
+}
+
+.page-header__logo {
+  display: block;
+}
+
 @media (min-width: @tablet-min-width) {
   .page-header {
     min-height: 853px;
@@ -25,5 +33,17 @@
     min-height: 853px;
     background: #2b3b4b url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position: -730px;
+  }
+
+  .page-header__logo {
+    width: 150px;
+    height: 43px;
+  }
+}
+
+@media (min-width: @desktop-min-with) {
+  .page-header__logo {
+    width: 150px;
+    height: 41px;
   }
 }
