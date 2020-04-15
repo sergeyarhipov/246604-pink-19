@@ -1,7 +1,5 @@
 .tariffs {
   overflow: hidden;
-  max-width: 320px;
-  margin: 0 auto;
   padding-top: 67px;
   padding-bottom: 44px;
   background-color: @bg-content;
@@ -9,7 +7,7 @@
 
 .tariffs__table {
   width: 1120px;
-  margin-left: -542px;
+  margin-left: -539px;
   margin-bottom: 39px;
   background-color: #fff;
 }
@@ -49,19 +47,27 @@
 
 .tariff__option {
   width: 280px;
+  height: 59px;
   box-sizing: border-box;
   padding: 20px 23px;
   border: 1px solid #e5e5e5;
 }
 
-.tariff__option--on {
-  background: url("../img/icon-yes.svg") no-repeat;
-  background-position: top 20px right 15px;
+.tariff__option {
+  position: relative;
 }
 
-.tariff__option--off {
-  background: url("../img/icon-no.svg") no-repeat;
-  background-position: top 20px right 15px;
+.tariff__option--on svg {
+  position: absolute;
+  right: 17px;
+  fill: #3dc644;
+}
+
+.tariff__option--off svg {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  fill: #f25b26;
 }
 
 .tarrifs__label-mobile {
@@ -74,8 +80,6 @@
 
 @media (min-width: @tablet-min-width) {
   .tariffs {
-    max-width: 660px;
-    box-sizing: border-box;
     margin: 0;
     padding-left: 20px;
     padding-right: 20px;
@@ -84,7 +88,7 @@
 
   .tariffs__table {
     max-width: 620px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .tariffs__cell-title {
@@ -94,11 +98,22 @@
   }
 
   .tariff__option {
-    max-width: 155px;
+    width: 152px;
+    height: 45px;
     box-sizing: border-box;
     padding: 10px 5px 10px 17px;
     font-size: 14px;
     line-height: 30px;
+  }
+
+  .tariff__option--on svg {
+    top: 13px;
+    left: 61px;
+  }
+
+  .tariff__option--off svg {
+    top: 9px;
+    left: 63px;
   }
 
   .tariffs__cell-title {
@@ -110,15 +125,32 @@
     display: none;
   }
 
-  .tariff__option--on {
-    background-position: center;
-  }
-
-  .tariff__option--off {
-    background-position: center;
-  }
-
   .tariffs__toggles {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-min-with) {
+  .tariffs__table {
+    max-width: 940px;
+  }
+
+  .tariffs__cell-title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .tariff__option {
+    height: 59px;
+  }
+
+  .tariff__option--on svg {
+    top: 22px;
+    left: 100px;
+  }
+
+  .tariff__option--off svg {
+    top: 16px;
+    left: 103px;
   }
 }
