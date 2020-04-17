@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
   padding: 20px 20px 40px 20px;
   border-bottom: 1px solid #dddfe0;
 }
@@ -27,6 +26,7 @@
 }
 
 .filter-tool__button {
+  padding: 0;
   font-size: 0;
   border: none;
   background-color: none;
@@ -35,19 +35,20 @@
 .filter-tool__button--crop {
   width: 45px;
   height: 45px;
-  background: url(../img/icon-editor-crop.svg);
 }
 
 .filter-tool__button--filling {
-  width: 50px;
-  height: 45px;
-  background: url(../img/icon-editor-fill.svg);
+  width: 47px;
+  height: 44px;
 }
 
 .filter-tool__button--contrast {
-  width: 32px;
-  height: 32px;
-  background: url(../img/icon-editor-contrast.svg);
+  width: 34px;
+  height: 34px;
+}
+
+.filter-tool__button svg {
+  fill: #d22856;
 }
 
 .img-filter__filter-toggle {
@@ -56,8 +57,8 @@
 }
 
 .img-filter__scale {
- width: 240px;
- border: 1px solid @bg-info-content;
+  width: 240px;
+  border: 1px solid @bg-info-content;
 }
 
 .img-filter__toggle {
@@ -82,7 +83,7 @@
 .img-filter__btn-container {
   display: flex;
   flex-direction: column;
-  max-width: 280px;
+  width: 280px;
   margin: 0 auto;
 }
 
@@ -112,14 +113,14 @@
   .img-filter {
     position: relative;
     max-width: 660px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .img-filter__container {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 660px;
+    max-width: 620px;
     padding: 58px 20px 55px 20px;
   }
 
@@ -128,7 +129,7 @@
   }
 
   .img-filter__filter-tools {
-    width: 300px;
+    width: 273px;
     flex-direction: column;
   }
 
@@ -137,9 +138,24 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 273px;
     height: 70px;
     border-bottom: 1px solid #dddfe0;
+  }
+
+  .filter-tool__button--crop {
+  width: 45px;
+  height: 45px;
+  }
+
+  .filter-tool__button--filling {
+    width: 47px;
+    height: 44px;
+  }
+
+  .filter-tool__button--contrast {
+    width: 34px;
+    height: 34px;
   }
 
   .img-filter .img-filter__filter-toggle {
@@ -164,8 +180,123 @@
     .null-indent;
   }
 
+  .filter-tool__button {
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+
+  .filter-tool__button--crop {
+    width: 24px;
+    height: 24px;
+  }
+
+  .filter-tool__button--filling {
+    width: 24px;
+    height: 24px;
+  }
+
+  .filter-tool__button--contrast {
+    width: 24px;
+    height: 24px;
+  }
+
+  .filter-tool__button--crop svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .filter-tool__button--filling svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .filter-tool__button--contrast svg {
+    width: 16px;
+    height: 16px;
+  }
+
    .img-filter__btn-item--cancel,
-  .img-filter__btn-item--post {
+   .img-filter__btn-item--post {
     width: 260px;
+  }
+}
+
+@media (min-width: @desktop-min-with) {
+  .img-filter {
+    max-width: 940px;
+    padding-right: 60px;
+    margin: 0 auto;
+  }
+
+  .img-filter__container {
+    max-width: 940px;
+  }
+
+  .img-filter__filter-tools {
+    width: 410px;
+  }
+
+  .img-filter__filter-tool {
+    width: 410px;
+  }
+
+  .img-filter__btn {
+    right: 230px;
+    bottom: 63px;
+  }
+
+  .filter-tool__button--crop {
+    width: 45px;
+    height: 45px;
+  }
+
+  .filter-tool__button--filling {
+    width: 47px;
+    height: 44px;
+  }
+
+  .filter-tool__button--contrast {
+    width: 34px;
+    height: 34px;
+  }
+
+  .filter-tool__button--crop svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .filter-tool__button--filling svg {
+    width: 47px;
+    height: 44px;
+  }
+
+  .filter-tool__button--contrast svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .img-filter__crop .img-filter__scale,
+  .img-filter__filling .img-filter__scale,
+  .img-filter__contrast .img-filter__scale {
+    width: 288px;
+  }
+
+  .img-filter__filter-toggle {
+    width: 288px;
+    margin-right: 18px;
+  }
+
+  .img-filter__btn-item--post {
+    margin: 0;
+  }
+
+  .img-filter__btn-container {
+    width: 410px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .img-filter__btn-item--cancel, .img-filter__btn-item--post {
+    width: 185px;
   }
 }
