@@ -39,9 +39,6 @@
 }
 
 .form__progress-form {
-  max-width: 320px;
-  box-sizing: border-box;
-  margin: 0 auto;
   padding: 41px 20px;
   background-color: @bg-content;
 }
@@ -220,7 +217,8 @@
       }
   }
 
-  .form__radio-item label {
+  .form__radio-item label,
+  .form__checkbox-item label {
     font-size: 18px;
     line-height: 30px;
   }
@@ -228,7 +226,7 @@
   .form__progress-form {
     order: 4;
     margin: 0;
-    max-width: 660px;
+    margin-bottom: 60px;
     padding: 0 20px;
     background: #fff;
   }
@@ -236,6 +234,7 @@
   .form__progress-form-container {
     padding: 0;
     border: 2px solid #e5e5e5;
+    padding-bottom: 48px;
   }
 
   .form__title--progress {
@@ -375,5 +374,23 @@
   .form__contact-item:last-child {
     padding-right: 0;
     padding-left: 36px;
+  }
+
+  .form__progress-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .form__progress-form-container {
+    padding-bottom: 58px;
+  }
+
+  .form__checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__checkbox-item {
+    flex-grow: 1;
   }
 }
