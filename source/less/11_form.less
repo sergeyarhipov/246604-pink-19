@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 24px;
+  padding-bottom: 10px;
   line-height: 30px;
   text-transform: uppercase;
   color: #d22856;
@@ -99,7 +100,6 @@
 .form__user-contacts-container {
   display: flex;
   flex-direction: column;
-  max-width: 320px;
   box-sizing: border-box;
   padding: 41px 20px;
   border: none
@@ -247,9 +247,8 @@
 
   .form__user-contacts-container {
     order: 3;
-    max-width: 620px;
-    padding: 45px 60px 30px 60px;
-    margin: 0 20px;
+    padding: 45px 60px 33px 60px;
+    margin: 0 20px 60px 20px;
     border: 2px solid #e5e5e5;
   }
 
@@ -261,18 +260,18 @@
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 
   .form__contact-item .form__name-field {
-    padding-right: 0;
-    padding-left: 20px;
+    padding: 15px 0 0 20px;
   }
 
   .form__app-form {
     order: 2;
     padding: 0 20px;
     background-color: #fff;
+    margin-bottom: 60px;
   }
 
   .form__app-form-container {
@@ -357,5 +356,24 @@
 
   .form__app-items {
     padding-bottom: 77px;
+  }
+
+  .form__user-contacts-container {
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 60px;
+    padding-bottom: 23px;
+  }
+
+  .form__contact-item {
+    flex-grow: 1;
+    padding-right: 36px;
+    margin-bottom: 0;
+  }
+
+  .form__contact-item:last-child {
+    padding-right: 0;
+    padding-left: 36px;
   }
 }
