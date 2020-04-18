@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 24px;
-  line-height: 38px;
+  line-height: 30px;
   text-transform: uppercase;
   color: #d22856;
 }
@@ -220,6 +220,11 @@
       }
   }
 
+  .form__radio-item label {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .form__progress-form {
     order: 4;
     margin: 0;
@@ -330,18 +335,27 @@
 
 @media (min-width: @desktop-min-with) {
   .form {
+    width: 940px;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 130px;
-    padding-right: 130px;
     margin: 0 auto;
   }
 
   .form__user-name-container {
-    width: 50%;
+    max-width: 507px;
     padding: 0;
     padding-right: 70px;
     padding-bottom: 59px;
     margin: 0;
+  }
+
+  .form__app-form {
+    width: 433px;
+    padding: 0;
+    margin-top: -15px;
+  }
+
+  .form__app-items {
+    padding-bottom: 77px;
   }
 }
