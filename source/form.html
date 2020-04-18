@@ -9,24 +9,26 @@
   <body>
 
     <!-- Блок шапки -->
-    <header class="page-header">
+    <header class="page-header page-header--form">
       <div class="page-header__navigation navigation">
         <!-- Логотип сайта -->
         <a href="index.html" class="navigation__logo-link">
-          <img class="navigation__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
+          <picture>
+            <source media="(min-width: 959px)" srcset="img/logo-pink-white-desktop.svg">
+            <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 659px)">
+            <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
+          </picture>
         </a>
 
         <!-- Блок навигации -->
         <nav class="navigation__menu">
           <button class="navigation__toggle" type="button">Открыть меню</button>
-          <!-- Логотип сайта -->
-          <a href="index.html" class="page-header__logo-link">
-            <picture>
-              <source media="(min-width: 959px)" srcset="img/logo-pink-white-desktop.svg">
-              <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 659px)">
-              <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
-            </picture>
-          </a>
+          <div class="navigation__items">
+            <a href="#" class="navigation__menu-link navigation__menu-link--active">Главная</a>
+            <a href="photo.html" class="navigation__menu-link">Фотографии</a>
+            <a href="form.html" class="navigation__menu-link">Конкурс</a>
+            <a href="#" class="navigation__menu-link">HTML Academy</a>
+          </div>
         </nav>
       </div>
 
