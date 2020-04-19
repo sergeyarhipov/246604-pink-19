@@ -31,11 +31,12 @@
   position: absolute;
   top: 66px;
   left: 0;
+  width: 100%;
   border-top: 1px solid #485461;
+  z-index: 3;
 }
 
 .navigation__menu-link {
-  width: 320px;
   box-sizing: border-box;
   padding: 20px;
   font-family: OpenSans, Arial, sans-serif;
@@ -49,6 +50,12 @@
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000;
   background: @bg-info-content;
+}
+
+@media (min-width: @tablet-min-width) {
+  .navigation__items--visible {
+    top: 110px;
+  }
 }
 
 @media (min-width: @desktop-min-with) {
