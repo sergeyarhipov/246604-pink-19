@@ -1,24 +1,27 @@
-.form {
-  width: 320px;
-  box-sizing: border-box;
-  margin: 0 auto;
-
-}
-
 .form__user-name-container {
   display: flex;
   flex-direction: column;
   padding: 0 20px 41px 20px;
+  margin: 0 auto;
 }
 
 .form__name-field {
+  display: flex;
+  flex-direction: column;
   padding-left: 24px;
-  line-height: 38px;
+  padding-bottom: 10px;
+  line-height: 30px;
   text-transform: uppercase;
   color: #d22856;
 }
 
-.form__user-name-container input {
+.form__contact-item {
+  margin-bottom: 10px;
+}
+
+.form__user-item input,
+.form__contact-item input {
+  width: 100%;
   box-sizing: border-box;
   margin-bottom: 20px;
   padding: 23px 21px;
@@ -31,12 +34,17 @@
   margin-bottom: 0;
 }
 
+.form__user-item {
+  margin-bottom: 10px;
+}
+
 .form__progress-form {
-  width: 320px;
-  box-sizing: border-box;
-  margin: 0 auto;
   padding: 41px 20px;
   background-color: @bg-content;
+}
+
+.form__progress-form-container {
+  border: none;
 }
 
 .form__title {
@@ -51,8 +59,12 @@
 }
 
 .form__title--progress {
-  width: 230px;
+  max-width: 230px;
   margin-bottom: 50px;
+}
+
+.form__title--contacts {
+  display: none;
 }
 
 .form__checkbox-list,
@@ -85,9 +97,9 @@
 .form__user-contacts-container {
   display: flex;
   flex-direction: column;
-  width: 320px;
   box-sizing: border-box;
   padding: 41px 20px;
+  border: none
 }
 
 .form__user-contacts-container input {
@@ -104,30 +116,40 @@
 }
 
 .form__app-form {
+  .null-indent;
   padding: 35px 20px 43px 20px;
   background-color: @bg-content;
+  margin-bottom: 40px;
+}
+
+.form__app-form-container {
+  border: none;
 }
 
 .form__title--app {
-  margin-bottom: 36px;
+  max-width: 180px;
 }
 
 .form__app-items {
   .null-indent;
+  padding-top: 70px;
 }
 
-.form-title--emotions {
-  margin-bottom: 10px;
+.form__emotions {
+  padding: 0 20px;
+  margin-bottom: 67px;
 }
 
 .form__emotions-container {
-  width: 320px;
+  .null-indent;
+  position: relative;
   box-sizing: border-box;
-  padding: 43px 20px 48px 20px;
+  padding: 43px 0 48px 0;
+  border: none;
 }
 
 .form__emotions-container textarea {
-  width: 280px;
+  width: 100%;
   height: 200px;
   box-sizing: border-box;
   padding: 20px;
@@ -137,9 +159,11 @@
 }
 
 .form__btn-container {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .container;
-  padding: 0 20px;;
+  padding: 0 20px;
 }
 
 .form__btn {
@@ -155,9 +179,242 @@
 .form__label {
   width: 280px;
   .null-indent;
-  margin: 0 auto;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-min-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__user-name-container {
+    order: 1;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 0 20px 55px 20px;
+  }
+
+  .form__name-field {
+    padding-left: 0;
+    padding-right: 19px;
+  }
+
+  .form__user-name-container input {
+    flex-grow: 1;
+    margin-bottom: 55px;
+  }
+
+  .form__user-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 55px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+  }
+
+  .form__radio-item label,
+  .form__checkbox-item label {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .form__progress-form {
+    order: 4;
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0 20px;
+    background: #fff;
+  }
+
+  .form__progress-form-container {
+    padding: 0;
+    border: 2px solid #e5e5e5;
+    padding-bottom: 48px;
+  }
+
+  .form__title--progress {
+    max-width: 440px;
+    box-sizing: border-box;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .form__user-contacts-container {
+    order: 3;
+    padding: 45px 60px 33px 60px;
+    margin: 0 20px 60px 20px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__title--contacts {
+    display: block;
+  }
+
+  .form__contact-item {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .form__contact-item .form__name-field {
+    padding: 15px 0 39px 20px;
+  }
+
+  .form__contact-item:last-child .form__name-field {
+    padding-bottom: 0;
+  }
+
+  .form__app-form {
+    order: 2;
+    padding: 0 20px;
+    background-color: #fff;
+    margin-bottom: 60px;
+  }
+
+  .form__app-form-container {
+    border: 2px solid #e5e5e5;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .form__title--app {
+    max-width: 400px;
+    padding: 0 20px;
+  }
+
+  .form__app-items {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .form__emotions {
+    order: 5;
+  }
+
+  .form__emotions-container {
+    position: initial;
+    .null-indent;
+    width: 100%;
+    padding-top: 46px;
+    padding-bottom: 50px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__emotions-container textarea {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .form-title--emotions {
+    position: initial;
+  }
+
+  .form__btn-container {
+    order: 6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+  }
+
+  .form__btn {
+    max-width: 300px;
+    margin: 0;
+  }
+
+  .form__label {
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-min-with) {
+  .form {
+    width: 940px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .form__user-name-container {
+    max-width: 507px;
+    padding: 0;
+    padding-right: 70px;
+    padding-bottom: 59px;
+    margin: 0;
+  }
+
+  .form__app-form {
+    width: 433px;
+    padding: 0;
+    margin-top: -15px;
+  }
+
+  .form__app-items {
+    padding-bottom: 77px;
+  }
+
+  .form__user-contacts-container {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 60px;
+    padding-bottom: 23px;
+  }
+
+  .form__contact-item {
+    flex-grow: 1;
+    padding-right: 36px;
+    margin-bottom: 0;
+  }
+
+  .form__contact-item:last-child {
+    padding-right: 0;
+    padding-left: 36px;
+  }
+
+  .form__progress-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .form__progress-form-container {
+    padding-bottom: 58px;
+  }
+
+  .form__checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__checkbox-item {
+    flex-grow: 1;
+  }
+
+  .form__emotions {
+    padding: 0;
+    width: 100%;
+  }
+
+  .form__emotions-container {
+    margin: 0;
+  }
+
+  .form__emotions textarea {
+    max-width: 830px;
+    height: 130px;
+  }
+
+  .form__btn-container {
+    width: 100%;
+    padding: 0;
+  }
 }

@@ -1,5 +1,4 @@
 .about-app {
-  max-width: 320px;
   .container;
   padding: 28px 20px 37px 20px;
   background-color: @bg-info-content;
@@ -11,15 +10,6 @@
   align-items: center;
 }
 
-.about-app__download-link {
-  width: 100%;
-  display: block;
-  box-sizing: border-box;
-  padding: 17px 37px;
-  color: #fff;
-  background-color: @bg-info-content;
-}
-
 .about-app__app-list {
   display: flex;
   justify-content: space-between;
@@ -27,6 +17,10 @@
   .null-indent;
   .list-style;
   margin-bottom: 25px;
+}
+
+.about-app__download-link {
+  width: 280px;
 }
 
 .about-app__version-info {
@@ -37,4 +31,33 @@
   line-height: 24px;
   text-align: center;
   color: #fff;
+}
+
+@media (min-width: @tablet-min-width) {
+  .about-app {
+    max-width: 340px;
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    top: 380px;
+    background: none;
+  }
+
+  .about-app__app-list {
+    max-width: 210px;
+  }
+
+  .about-app__version-info {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: @desktop-min-with) {
+  .about-app {
+    z-index: 3;
+    width: 300px;
+    box-sizing: initial;
+    padding-left: 130px;
+    top: 422px;
+  }
 }

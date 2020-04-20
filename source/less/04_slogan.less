@@ -2,10 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 320px;
-  box-sizing: border-box;
   .container;
-  padding: 50px 20px;
+  padding: 50px 0;
 }
 
 .slogan--index {
@@ -29,34 +27,104 @@
   padding-bottom: 0;
 }
 
-/*.page-header-slogan {
-  width: 228px;
-  margin: 30px auto;
-  font-size: 24px;
-  font-weight: lighter;
-  line-height: 30px;
+.slogan__text--form {
+  max-width: 280px;
+  margin: 0 auto;
 }
 
-
-
-.page-header__page--form {
-  width: 250px;
-  margin-bottom: 50px;
+.slogan__text--not-mobile {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.slogan-container__slogan-text {
-  .null-indent;
-  line-height: 30px;
-  text-align: center;
+@media (min-width: @tablet-min-width) {
+  .slogan {
+    padding: 90px 20px 74px 20px;
+    margin: 0;
+  }
+
+  .slogan--index {
+    padding: 45px 20px 33px 20px;
+  }
+
+  .slogan__text--last {
+    max-width: 350px;
+  }
+
+  .slogan--form {
+    padding-top: 99px;
+    padding-bottom: 77px;
+  }
+
+  .slogan__text {
+    font-size: 18px;
+  }
+
+  .slogan__text--index {
+    padding-bottom: 0;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
+  }
+
+  .slogan__text--photo {
+    max-width: 451px;
+  }
+
+  .slogan__text--form {
+    max-width: 495px;
+  }
+
+  .slogan__text--not-mobile {
+    position: initial;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
 }
 
-.page-header__slogan--photo {
-  margin-bottom: 82px;
+@media (min-width: @desktop-min-with) {
+  .slogan--index {
+    padding: 85px 20px 70px 20px;
+  }
+
+  .slogan--photo {
+    padding: 95px 20px 95px 20px;
+  }
+
+  .slogan__text--index {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+  }
+
+  .slogan__text--photo {
+    max-width: 575px;
+  }
+
+  .slogan__text--form {
+    max-width: 785px;
+  }
+
+  .slogan__text--not-mobile {
+    position: initial;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .slogan__text--last {
+    max-width: 450px;
+  }
 }
-
-.page-header__page--form {
-  width: 250px;
-  margin-bottom: 50px;
-} */
-
 

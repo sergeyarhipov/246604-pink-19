@@ -1,8 +1,10 @@
 .footer {
-  width: 320px;
-  box-sizing: border-box;
   margin: 0 auto;
   padding: 40px 20px;
+}
+
+.footer--index {
+  display: none;
 }
 
 .footer__container {
@@ -32,31 +34,68 @@
   border-radius: 50%;
 }
 
-.footer__social-link--fb {
-  background: url("../img/icon-facebook.svg") no-repeat;
-  background-position: 50% 50%;
+.footer__social-link--fb svg{
+  fill: #d22856;
+  margin: 30% 43%;
 }
 
-.footer__social-link--twit {
-  background: url("../img/icon-twitter.svg") no-repeat;
-  background-position: 50% 50%;
+.footer__social-link--twit svg{
+  fill: #d22856;
+  margin: 37% 35%;
 }
 
-.footer__social-link--youtube {
-  background: url("../img/icon-youtube.svg") no-repeat;
-  background-position: 50% 50%;
+.footer__social-link--youtube svg{
+  fill: #d22856;
+  margin: 37% 39%;
 }
 
 .footer__academy-link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
   height: 35px;
-  padding-right: 43px;
   line-height: 35px;
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
   background-position: 103px;
+}
+
+.footer__academy-link svg {
+  fill: #d22856;
 }
 
 .footer__academy-link {
   text-decoration: none;
   color: @bg-info-content
+}
+
+@media (min-width: @tablet-min-width) {
+  .footer {
+    margin: 0;
+  }
+
+  .footer--index {
+    display: block;
+  }
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 660px;
+    margin: 0 auto;
+  }
+
+  .footer__footer-logo {
+    margin-bottom: 0;
+  }
+
+  .footer__social-btns {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-min-with) {
+  .footer__container {
+    max-width: 940px;
+  }
 }

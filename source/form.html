@@ -2,30 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <!-- Блок шапки -->
-    <header class="page-header">
+    <header class="page-header page-header--form">
       <div class="page-header__navigation navigation">
         <!-- Логотип сайта -->
         <a href="index.html" class="navigation__logo-link">
-          <img class="navigation__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
+          <picture>
+            <source media="(min-width: 959px)" srcset="img/logo-pink-white-desktop.svg">
+            <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 659px)">
+            <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
+          </picture>
         </a>
 
         <!-- Блок навигации -->
         <nav class="navigation__menu">
           <button class="navigation__toggle" type="button">Открыть меню</button>
-          <a href="index.html" class="navigation__menu-link navigation__menu-link--active">Главная</a>
-          <a href="#" class="navigation__menu-link">Фотографии</a>
-          <a href="form.html" class="navigation__menu-link">Конкурс</a>
-          <a href="#" class="navigation__menu-link">HTML Academy</a>
+          <div class="navigation__items">
+            <a href="index.html" class="navigation__menu-link navigation__menu-link--active">Главная</a>
+            <a href="photo.html" class="navigation__menu-link">Фотографии</a>
+            <a href="#" class="navigation__menu-link">Конкурс</a>
+            <a href="#" class="navigation__menu-link">HTML Academy</a>
+          </div>
         </nav>
       </div>
 
-      <div class="page-header__bn3r bn3r">
+      <div class="page-header__bn3r bn3r bn3r--form">
         <h1 class="bn3r__slogan bn3r__slogan--form h1">
           Конкурс на самое
           безбашенное путешествие
@@ -37,11 +44,12 @@
     <main class="main-content">
 
       <!-- Блок слогана формы -->
-      <div class="slogan">
-        <p class="slogan__text">
+      <div class="slogan  slogan--form">
+        <p class="slogan__text slogan__text--form">
           Поделитесь своей историей и получите шанс
           выиграть ценный приз — 1000 миль на вашу
           бонусную карту!
+          <span class="slogan__text--not-mobile">Пожалуйста, заполните форму ниже:</span>
         </p>
       </div>
 
@@ -50,21 +58,27 @@
 
         <!-- Блок с данными пользователя -->
         <div class="form__user-name-container">
-          <label class="form__name-field" for="last-name">Фамилия:</label>
-          <input id="last-name" type="text" name="last-name" value="Укажите фамилию *">
+          <div class="form__user-item">
+            <label class="form__name-field" for="last-name">Фамилия:</label>
+            <input id="last-name" type="text" name="last-name" value="Укажите фамилию *">
+          </div>
+          <div class="form__user-item">
           <label class="form__name-field" for="first-name">Имя:</label>
           <input id="first-name" type="text" name="first-name" value="Укажите имя *">
+          </div>
+          <div class="form__user-item">
           <label class="form__name-field" for="middle-name">Отчество:</label>
           <input id="middle-name" type="text" name="middle-name" value="Ну и отчество тоже">
+          </div>
         </div>
 
         <!-- Блок чекбоксов -->
         <div class="form__progress-form">
-          <div class="form__progress-form-container">
-            <h3 class="form__title form__title--progress h3">
+          <fieldset class="form__progress-form-container">
+            <legend class="form__title form__title--progress h3">
               Ваши безбашенные
               достижения в путешествии
-            </h3>
+            </legend>
             <ul class="form__checkbox-list">
               <li class="form__checkbox-item">
                 <input class="form__checkbox-checked" id="shark" type="checkbox" name="shark" checked>
@@ -91,24 +105,31 @@
                 <label for="hotel">Разгромил отель</label>
               </li>
             </ul>
-          </div>
+          </fieldset>
         </div>
 
         <!-- Блок контактов пользователя -->
-        <div class="form__user-contacts-container">
-          <label class="form__name-field" for="phone">Номер телефона</label>
-          <input id="phone" type="text" name="phone" value="Номер, пожалуйста">
-          <label class="form__name-field" for="email">Адрес почты</label>
-          <input id="email" type="text" name="email" value="Введите почту *">
-        </div>
+        <fieldset class="form__user-contacts-container">
+          <legend class="form__title form__title--contacts h3">
+            Контактная информация
+          </legend>
+          <div class="form__contact-item">
+            <label class="form__name-field" for="phone">Номер телефона</label>
+            <input id="phone" type="text" name="phone" value="Номер, пожалуйста">
+          </div>
+          <div class="form__contact-item">
+            <label class="form__name-field" for="email">Адрес почты</label>
+            <input id="email" type="text" name="email" value="Введите почту *">
+          </div>
+        </fieldset>
 
         <!-- Блок радио-кнопок -->
         <div class="form__app-form">
-          <div class="form__app-form-container">
-            <p class="form__title form__title--app">
+          <fieldset class="form__app-form-container">
+            <legend class="form__title form__title--app">
               С каким приложением
               путешествовали?
-            </p>
+            </legend>
             <ul class="form__app-items">
               <li class="form__radio-item">
                 <input class="form__radio-checked" id="pink-ios" type="radio" name="app-radio" value="Pink-IOS">
@@ -123,15 +144,17 @@
                 <label for="windows">Windows Phone</label>
               </li>
             </ul>
-          </div>
+          </fieldset>
         </div>
 
         <!-- Блок описания эмоций -->
-        <div class="form__emotions-container">
-          <p class="form__title form-title--emotions">
-            Опишите свои эмоции
-          </p>
-          <textarea name="emotions-text" id="emotions-text" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <div class="form__emotions">
+          <fieldset class="form__emotions-container">
+            <legend class="form__title form-title--emotions">
+              Опишите свои эмоции
+            </legend>
+            <textarea name="emotions-text" id="emotions-text" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
         </div>
 
         <div class="form__btn-container">
@@ -142,24 +165,48 @@
     </main>
 
     <!-- Блок футера -->
-    <footer class="footer">
+    <footer class="footer footer--index">
       <div class="footer__container">
         <a href="index.html" class="footer__index-link">
-          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта" class="footer__footer-logo" width="150" height="55">
+          <picture>
+            <source media="(min-width: 661px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source srcset="img/logo-pink-blue-tablet.svg" media="(min-width: 659px)">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта" class="footer__footer-logo" width="150" height="55">
+          </picture>
         </a>
         <ul class="footer__social-btns">
           <li class="footer__social-btn">
-            <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Фейсбук"></a>
+            <a href="#" class="footer__social-link footer__social-link--twit" aria-label="Твиттер">
+              <svg version="1.0" class="twit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                <g>
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                  </g>
+                </g>
+              </svg>
+            </a>
           </li>
           <li class="footer__social-btn">
-            <a href="#" class="footer__social-link footer__social-link--twit" aria-label="Твиттер"></a>
+            <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Фейсбук">
+              <svg version="1.0" class="fb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+              </svg>
+            </a>
           </li>
           <li class="footer__social-btn">
-            <a href="#" class="footer__social-link footer__social-link--youtube" aria-label="Ютуб"></a>
+            <a href="#" class="footer__social-link footer__social-link--youtube" aria-label="Ютуб">
+              <svg version="1.0" class="youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+              </svg>
+            </a>
           </li>
         </ul>
 
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__academy-link">Разработано</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__academy-link">Разработано
+          <svg version="1.0" class="academy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+          </svg>
+        </a>
       </div>
     </footer>
   </body>
