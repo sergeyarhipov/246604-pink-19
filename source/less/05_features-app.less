@@ -57,12 +57,39 @@
     margin: 0;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 130px;
+    background: #fff;
   }
 
   .features-app__container {
     margin: 0 20px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .features-app__logo {
+    position: absolute;
+    left: 40px;
+    top: 115px;
+    .null-indent;
+    width: 202px;
+    height: 202px;
+    box-sizing: border-box;
+    padding-top: 67px;
+    font-size: 96px;
+    vertical-align: middle;
+    font-weight: bold;
+    text-align: center;
+    color: #d22856;
+    border: 14px solid #d22856;
+    border-radius: 50%;
+  }
+
+  .icon-timer {
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    fill: #dedede;
   }
 
   .features-app__list {
@@ -86,15 +113,16 @@
   }
 
   .features-app__effect {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     width: 100%;
     box-sizing: border-box;
     padding: 60px 20px 0 20px;
-    background: #fff;
   }
 
   .features-app__effect-container {
+    padding-top: 42px;
     max-width: 310px;
   }
 
@@ -121,11 +149,22 @@
 @media (min-width: @desktop-min-with) {
   .features-app {
     padding-top: 0;
+    background: @bg-content;
   }
 
   .features-app__container {
     max-width: 960px;
     margin: 0 auto;
+  }
+
+  .features-app__logo {
+    top: 51px;
+    left: 19px;
+  }
+
+  .icon-timer {
+    left: 0;
+    top: -5px;
   }
 
   .features-app__list {
@@ -174,12 +213,13 @@
 
   .features-app__effect {
     max-width: 940px;
-    padding: 50px 48px 67px 130px;
+    padding: 50px 48px 0 130px;
     background: @bg-content;
   }
 
   .features-app__effect-container {
-    min-width: 525px;
+      min-width: 525px;
+      padding-top: 0;
   }
 
   .features-app__effect-title {
