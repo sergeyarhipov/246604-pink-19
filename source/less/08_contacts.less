@@ -9,7 +9,7 @@
   align-items: center;
   min-width: 320px;
   box-sizing: border-box;
-  padding: 43px 20px 43px 20px;
+  padding: 43px 20px 41px 20px;
   margin: 0 auto;
 }
 
@@ -19,7 +19,8 @@
   margin-bottom: 30px;
   font-family: OpenSans, Arial, sans-serif;
   font-size: 24px;
-  line-height: 30px;
+  font-weight: 300;
+  line-height: 31px;
   text-align: center;
   color: @text-color;
 }
@@ -37,7 +38,7 @@
 }
 
 .contacts__contacts-list-item {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
     &:last-child {
       margin: 0;
     }
@@ -48,6 +49,18 @@
   line-height: 24px;
   font-weight: bold;
   color: @bg-info-content;
+}
+
+.contacts__contacts-list-item:nth-child(2) {
+  margin-bottom: 24px;
+}
+
+.contacts__contacts-list-item:nth-child(2) .contacts__item-header {
+  margin-bottom: 4px;
+}
+
+.contacts__contacts-list-item:nth-child(3) .contacts__item-header {
+  margin-bottom: 4px;
 }
 
 .contacts__phone, .contacts__email {
