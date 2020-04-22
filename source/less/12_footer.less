@@ -35,17 +35,17 @@
   border-radius: 50%;
 }
 
-.footer__social-link--fb svg{
+.fb{
   fill: #d22856;
   margin: 30% 43%;
 }
 
-.footer__social-link--twit svg{
+.twit{
   fill: #d22856;
   margin: 37% 35%;
 }
 
-.footer__social-link--youtube svg{
+.youtube{
   fill: #d22856;
   margin: 37% 39%;
 }
@@ -60,7 +60,7 @@
   background-position: 103px;
 }
 
-.footer__academy-link svg {
+.academy{
   fill: #d22856;
 }
 
@@ -99,7 +99,20 @@
 }
 
 @media (min-width: @desktop-min-with) {
+  .footer {
+    padding: 66px 20px;
+  }
+
   .footer__container {
     max-width: 940px;
+  }
+
+  .footer__social-btns {
+    margin: 0;
+  }
+
+  .footer__academy-link {
+    width: 155px;
+    font-size: 18px;
   }
 }
