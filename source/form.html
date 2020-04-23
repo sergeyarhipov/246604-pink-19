@@ -60,15 +60,15 @@
         <div class="form__user-name-container">
           <div class="form__user-item">
             <label class="form__name-field" for="last-name">Фамилия:</label>
-            <input id="last-name" type="text" name="last-name" value="Укажите фамилию *">
+            <input class="form__user-input" id="last-name" type="text" name="last-name" value="Укажите фамилию *">
           </div>
           <div class="form__user-item">
           <label class="form__name-field" for="first-name">Имя:</label>
-          <input id="first-name" type="text" name="first-name" value="Введите ваше имя *">
+          <input class="form__user-input" id="first-name" type="text" name="first-name" value="Введите ваше имя *">
           </div>
           <div class="form__user-item">
           <label class="form__name-field" for="middle-name">Отчество:</label>
-          <input id="middle-name" type="text" name="middle-name" value="Ну и отчество тоже">
+          <input class="form__user-input" id="middle-name" type="text" name="middle-name" value="Ну и отчество тоже">
           </div>
         </div>
 
@@ -133,11 +133,11 @@
           </legend>
           <div class="form__contact-item">
             <label class="form__name-field" for="phone">Номер телефона</label>
-            <input id="phone" type="text" name="phone" value="Номер, пожалуйста">
+            <input class="form__contact-input" id="phone" type="text" name="phone" value="Номер, пожалуйста">
           </div>
           <div class="form__contact-item">
             <label class="form__name-field" for="email">Адрес почты</label>
-            <input id="email" type="text" name="email" value="Введите почту *">
+            <input class="form__contact-input" id="email" type="text" name="email" value="Введите почту *">
           </div>
         </fieldset>
 
@@ -180,7 +180,7 @@
             <legend class="form__title form-title--emotions">
               Опишите свои эмоции
             </legend>
-            <textarea name="emotions-text" id="emotions-text" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="form__textarea" name="emotions-text" id="emotions-text" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
         </div>
 
@@ -192,7 +192,7 @@
     </main>
 
     <!-- Блок футера -->
-    <footer class="footer footer--index">
+    <footer class="footer footer--form">
       <div class="footer__container">
         <a href="index.html" class="footer__index-link">
           <picture>
