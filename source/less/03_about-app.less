@@ -24,6 +24,16 @@
   width: 280px;
 }
 
+.about-app__download-link:hover {
+  color: @nav-hover-color;
+  background: #fff;
+}
+
+.about-app__download-link:active {
+  color: #f2ced5;
+  background: #fff;
+}
+
 .about-app__version-info {
   .null-indent;
   font-family: OpenSans, Arial, sans-serif;
@@ -65,10 +75,8 @@
 @media (min-width: @desktop-min-with) {
   .about-app {
     z-index: 3;
-    width: 300px;
-    box-sizing: initial;
-    padding-left: 130px;
-    top: 451px;
+    top: -402px;
+    left: 110px;
   }
 
   .about-app__download-link {

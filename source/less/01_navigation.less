@@ -52,6 +52,15 @@
   background: @bg-info-content;
 }
 
+.navigation__menu-link:hover {
+  color: @nav-hover-color;
+}
+
+.navigation__menu-link:active {
+  color: #fff;
+  opacity: 30%;
+}
+
 @media (min-width: @tablet-min-width) {
   .navigation {
     padding-bottom: 20px;
@@ -69,6 +78,14 @@
 @media (min-width: @desktop-min-with) {
   .navigation {
     padding: 0 130px 0 130px;
+  }
+
+  .navigation__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 940px;
+    margin: 0 auto;
   }
 
   .navigation__toggle {
