@@ -219,13 +219,18 @@
   border-radius: 5px;
 }
 
-.form__label {
+.form__label,
+.form__label--desktop {
   width: 280px;
   .null-indent;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.form__label--desktop {
+  display: none;
 }
 
 .form-label-mark {
@@ -329,7 +334,7 @@
     padding: 20px 17px;
   }
 
-  .form__contact-item .form__name-field {
+  .form__name-field {
     padding: 9px 0 28px 20px;
   }
 
@@ -427,7 +432,8 @@
   }
 
   .form__app-items {
-    padding-bottom: 77px;
+    padding-top: 45px;
+    padding-bottom: 53px;
   }
 
   .form__user-contacts-container {
@@ -435,8 +441,13 @@
     align-items: flex-start;
     width: 100%;
     margin: 0;
-    margin-bottom: 60px;
-    padding-bottom: 23px;
+    margin-bottom: 57px;
+    padding-top: 34px;
+    padding-bottom: 12px;
+  }
+
+  .form__name-field {
+    padding-bottom: 0;
   }
 
   .form__contact-item {
@@ -448,6 +459,10 @@
   .form__contact-item:last-child {
     padding-right: 0;
     padding-left: 36px;
+  }
+
+  .form__radio-item {
+    margin-left: 73px;
   }
 
   .form__progress-form {
@@ -463,6 +478,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-right: 10px;
+    padding-bottom: 8px;
   }
 
   .form__checkbox-item {
@@ -482,9 +499,19 @@
     order: 2;
   }
 
+  .form__checkbox-item:nth-child(3) .form__checkbox-label {
+    margin-left: 8px;
+  }
+
   .form__checkbox-item:nth-child(4) {
     order: 5;
   }
+
+  .form__checkbox-item:nth-child(4) .form__checkbox-label {
+    margin-left: 8px;
+    margin-bottom: 0;
+  }
+
 
   .form__checkbox-item:nth-child(5) {
     order: 3;
@@ -496,7 +523,7 @@
   }
 
   .form__checkbox-label {
-    font-size: 14px;
+    font-size: 18px;
     box-sizing: border-box;
   }
 
@@ -507,15 +534,25 @@
 
   .form__emotions-container {
     margin: 0;
+    padding-top: 33px;
+    padding-bottom: 40px;
   }
 
-  .form__emotions textarea {
-    max-width: 830px;
+  .form__textarea {
+    max-width: 822px;
     height: 130px;
   }
 
   .form__btn-container {
     width: 100%;
     padding: 0;
+  }
+
+  .form__label {
+    width: 320px;
+  }
+
+  .form__label--desktop {
+    display: initial;
   }
 }
