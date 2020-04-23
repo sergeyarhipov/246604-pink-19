@@ -122,7 +122,7 @@
     justify-content: space-between;
     align-items: flex-start;
     max-width: 620px;
-    padding: 58px 20px 55px 20px;
+    padding: 58px 20px 46px 20px;
   }
 
   .img-filter__photo-link {
@@ -144,6 +144,11 @@
     border-bottom: 1px solid #dddfe0;
   }
 
+  .img-filter__filter-tool:first-child {
+    height: 37px;
+    padding-bottom: 18px;
+  }
+
   .filter-tool__button--crop {
   width: 45px;
   height: 45px;
@@ -159,6 +164,27 @@
     height: 34px;
   }
 
+  .img-filter__toggle {
+    width: 10px;
+    height: 10px;
+    top: -6px
+  }
+
+  .img-filter__crop .img-filter__toggle {
+    top: -6px;
+    right: 49px;
+  }
+
+  .img-filter__filling .img-filter__toggle {
+    top: -6px;
+    right: 171px;
+  }
+
+  .img-filter__contrast .img-filter__toggle {
+    top: -6px;
+    right: 99px;
+  }
+
   .img-filter .img-filter__filter-toggle {
     display: none;
   }
@@ -170,12 +196,12 @@
   .img-filter__crop .img-filter__scale,
   .img-filter__filling .img-filter__scale,
   .img-filter__contrast .img-filter__scale {
-    width: 204px;
+    width: 201px;
   }
 
   .img-filter__btn {
     position: absolute;
-    bottom: 63px;
+    bottom: 56px;
     right: 34px;
     width: 260px;
     .null-indent;
@@ -194,6 +220,7 @@
   .filter-tool__button--filling {
     width: 24px;
     height: 24px;
+    margin-left: 8px;
   }
 
   .filter-tool__button--contrast {
@@ -214,6 +241,10 @@
   .filter-tool__button--contrast svg {
     width: 16px;
     height: 16px;
+  }
+
+  .img-filter__btn-item--post {
+    margin-bottom: 25px;
   }
 
    .img-filter__btn-item--cancel,
