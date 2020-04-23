@@ -26,30 +26,26 @@
   margin-right: 10px;
 }
 
-.filter-tool__button {
+.img-filter-tool__button {
   padding: 0;
   font-size: 0;
   border: none;
   background-color: none;
 }
 
-.filter-tool__button--crop {
+.img-filter-tool__button--crop {
   width: 45px;
   height: 45px;
 }
 
-.filter-tool__button--filling {
+.img-filter-tool__button--filling {
   width: 47px;
   height: 44px;
 }
 
-.filter-tool__button--contrast {
+.img-filter-tool__button--contrast {
   width: 34px;
   height: 34px;
-}
-
-.filter-tool__button svg {
-  fill: #d22856;
 }
 
 .img-filter__filter-toggle {
@@ -149,17 +145,17 @@
     padding-bottom: 18px;
   }
 
-  .filter-tool__button--crop {
+  .img-filter-tool__button--crop {
   width: 45px;
   height: 45px;
   }
 
-  .filter-tool__button--filling {
+  .img-filter-tool__button--filling {
     width: 47px;
     height: 44px;
   }
 
-  .filter-tool__button--contrast {
+  .img-filter-tool__button--contrast {
     width: 34px;
     height: 34px;
   }
@@ -207,40 +203,43 @@
     .null-indent;
   }
 
-  .filter-tool__button {
+  .img-filter-tool__button {
     margin-left: 10px;
     margin-right: 30px;
   }
 
-  .filter-tool__button--crop {
+  .img-filter-tool__button--crop {
     width: 24px;
     height: 24px;
   }
 
-  .filter-tool__button--filling {
+  .img-filter-tool__button--filling {
     width: 24px;
     height: 24px;
     margin-left: 8px;
   }
 
-  .filter-tool__button--contrast {
+  .img-filter-tool__button--contrast {
     width: 24px;
     height: 24px;
   }
 
-  .filter-tool__button--crop svg {
+  .btn-crop {
     width: 22px;
     height: 22px;
+    fill: #d22856;
   }
 
-  .filter-tool__button--filling svg {
+  .btn-filling {
     width: 24px;
     height: 24px;
+    fill: #d22856;
   }
 
-  .filter-tool__button--contrast svg {
+  .btn-contrast {
     width: 16px;
     height: 16px;
+    fill: #d22856;
   }
 
   .img-filter__btn-item--post {
@@ -256,12 +255,15 @@
 @media (min-width: @desktop-min-with) {
   .img-filter {
     max-width: 940px;
-    padding-right: 60px;
+    box-sizing: border-box;
     margin: 0 auto;
   }
 
   .img-filter__container {
     max-width: 940px;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 48px;
   }
 
   .img-filter__filter-tools {
@@ -273,36 +275,53 @@
   }
 
   .img-filter__btn {
-    right: 230px;
-    bottom: 63px;
+    right: 210px;
+    bottom: 57px;
   }
 
-  .filter-tool__button--crop {
+  .img-filter-tool__button--crop {
     width: 45px;
     height: 45px;
   }
 
-  .filter-tool__button--filling {
-    width: 47px;
-    height: 44px;
+  .img-filter__crop .img-filter__toggle {
+    top: -6px;
+    right: 205px;
   }
 
-  .filter-tool__button--contrast {
+  .img-filter-tool__button--filling {
+    width: 47px;
+    height: 44px;
+    margin-left: 10px;
+  }
+
+  .img-filter__filling .img-filter__toggle {
+    top: -6px;
+    right: 29px;
+  }
+
+  .img-filter-tool__button--contrast {
     width: 34px;
     height: 34px;
+    margin-left: 15px;
   }
 
-  .filter-tool__button--crop svg {
+  .img-filter__contrast .img-filter__toggle {
+    top: -6px;
+    right: 115px;
+  }
+
+  .btn-crop {
     width: 45px;
     height: 45px;
   }
 
-  .filter-tool__button--filling svg {
+  .btn-filling {
     width: 47px;
     height: 44px;
   }
 
-  .filter-tool__button--contrast svg {
+  .btn-contrast {
     width: 34px;
     height: 34px;
   }
@@ -323,7 +342,7 @@
   }
 
   .img-filter__btn-container {
-    width: 410px;
+    width: 412px;
     flex-direction: row;
     justify-content: space-between;
   }
