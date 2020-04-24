@@ -30,6 +30,16 @@
   border: 2px solid #e5e5e5;
 }
 
+.form__user-input:hover,
+.form__contact-input:hover {
+  border-color: @border-hover;
+}
+
+.form__user-input:focus,
+.form__contact-input:focus {
+  border-color: @border-active;
+}
+
 .form__user-name-container input:last-child {
   margin-bottom: 0;
 }
@@ -116,6 +126,16 @@
   margin-right: 30px;
   border: 2px solid #e5e5e5;
   background-color: #fff;
+}
+
+.form__checkbox-label:hover .form__checkbox-check,
+.form__radio-label:hover .form__radio-check {
+  border-color: @border-hover;
+}
+
+.form__checkbox-label:active .form__checkbox-check,
+.form__radio-label:active .form__radio-check {
+  border-color: @border-active;
 }
 
 .form__checkbox:checked + .form__checkbox-check {
@@ -217,6 +237,22 @@
   background-color: #2aab6d;
   color: #fff;
   border-radius: 5px;
+}
+
+.form__btn:hover {
+  background-color: #1c9b5e;
+}
+
+.form__btn:active {
+  color: #61b98f;
+}
+
+.form__btn:disabled {
+  background-color: #e5e5e5;
+}
+
+.form__btn:disabled:active {
+  color: #fff;
 }
 
 .form__label,
