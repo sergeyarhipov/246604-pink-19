@@ -1,6 +1,6 @@
 .about-app {
   .container;
-  padding: 28px 20px 37px 20px;
+  padding: 28px 20px 32px 20px;
   background-color: @bg-info-content;
 }
 
@@ -13,14 +13,25 @@
 .about-app__app-list {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   width: 204px;
   .null-indent;
   .list-style;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .about-app__download-link {
   width: 280px;
+}
+
+.about-app__download-link:hover {
+  color: @nav-hover-color;
+  background: #fff;
+}
+
+.about-app__download-link:active {
+  color: #f2ced5;
+  background: #fff;
 }
 
 .about-app__version-info {
@@ -37,10 +48,19 @@
   .about-app {
     max-width: 340px;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 0 20px;
     position: absolute;
-    top: 380px;
+    top: 377px;
     background: none;
+  }
+
+  .about-app__app-list {
+    margin-bottom: 30px;
+  }
+
+  .about-app__download-link {
+    width: 300px;
+    margin-bottom: 43px;
   }
 
   .about-app__app-list {
@@ -48,16 +68,25 @@
   }
 
   .about-app__version-info {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: @desktop-min-with) {
   .about-app {
     z-index: 3;
-    width: 300px;
-    box-sizing: initial;
-    padding-left: 130px;
-    top: 422px;
+    top: -402px;
+    left: 110px;
+  }
+
+  .about-app__download-link {
+    font-size: 21px;
+    line-height: 21px;
+    padding: 13px 20px 12px 20px;
+    margin-bottom: 68px;
+  }
+
+  .about-app__app-list {
+    margin-bottom: 47px;
   }
 }

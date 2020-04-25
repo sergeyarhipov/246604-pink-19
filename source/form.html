@@ -11,25 +11,27 @@
     <!-- Блок шапки -->
     <header class="page-header page-header--form">
       <div class="page-header__navigation navigation">
-        <!-- Логотип сайта -->
-        <a href="index.html" class="navigation__logo-link">
-          <picture>
-            <source media="(min-width: 959px)" srcset="img/logo-pink-white-desktop.svg">
-            <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 659px)">
-            <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
-          </picture>
-        </a>
+        <div class="navigation__container">
+          <!-- Логотип сайта -->
+          <a href="index.html" class="navigation__logo-link">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+              <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта" width="75" height="66">
+            </picture>
+          </a>
 
-        <!-- Блок навигации -->
-        <nav class="navigation__menu">
-          <button class="navigation__toggle" type="button">Открыть меню</button>
-          <div class="navigation__items">
-            <a href="index.html" class="navigation__menu-link navigation__menu-link--active">Главная</a>
-            <a href="photo.html" class="navigation__menu-link">Фотографии</a>
-            <a href="#" class="navigation__menu-link">Конкурс</a>
-            <a href="#" class="navigation__menu-link">HTML Academy</a>
-          </div>
-        </nav>
+          <!-- Блок навигации -->
+          <nav class="navigation__menu">
+            <button class="navigation__toggle" type="button">Открыть меню</button>
+            <div class="navigation__items">
+              <a href="index.html" class="navigation__menu-link">Главная</a>
+              <a href="photo.html" class="navigation__menu-link">Фотографии</a>
+              <a href="#" class="navigation__menu-link navigation__menu-link--active">Конкурс</a>
+              <a href="#" class="navigation__menu-link">HTML Academy</a>
+            </div>
+          </nav>
+        </div>
       </div>
 
       <div class="page-header__bn3r bn3r bn3r--form">
@@ -60,15 +62,15 @@
         <div class="form__user-name-container">
           <div class="form__user-item">
             <label class="form__name-field" for="last-name">Фамилия:</label>
-            <input id="last-name" type="text" name="last-name" value="Укажите фамилию *">
+            <input class="form__user-input" id="last-name" type="text" name="last-name" value="Укажите фамилию *">
           </div>
           <div class="form__user-item">
           <label class="form__name-field" for="first-name">Имя:</label>
-          <input id="first-name" type="text" name="first-name" value="Укажите имя *">
+          <input class="form__user-input" id="first-name" type="text" name="first-name" value="Введите ваше имя *">
           </div>
           <div class="form__user-item">
           <label class="form__name-field" for="middle-name">Отчество:</label>
-          <input id="middle-name" type="text" name="middle-name" value="Ну и отчество тоже">
+          <input class="form__user-input" id="middle-name" type="text" name="middle-name" value="Ну и отчество тоже">
           </div>
         </div>
 
@@ -81,28 +83,46 @@
             </legend>
             <ul class="form__checkbox-list">
               <li class="form__checkbox-item">
-                <input class="form__checkbox-checked" id="shark" type="checkbox" name="shark" checked>
-                <label for="shark">Сделал селфи с акулой</label>
+                <label class="form__checkbox-label">
+                  <input class="form__checkbox" id="shark" type="checkbox" name="shark" checked>
+                  <span class="form__checkbox-check"></span>
+                  Сделал селфи с акулой
+                </label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox-checked" id="beach" type="checkbox" name="beach" checked>
-                <label for="beach">Обгорел на пляже</label>
+                <label class="form__checkbox-label">
+                  <input class="form__checkbox" id="beach" type="checkbox" name="beach" checked>
+                  <span class="form__checkbox-check"></span>
+                  Обгорел на пляже
+                </label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox-unchecked" id="noris" type="checkbox" name="noris">
-                <label for="noris">Видел Чака Норриса</label>
+                <label class="form__checkbox-label">
+                  <input class="form__checkbox" id="norris" type="checkbox" name="norris">
+                  <span class="form__checkbox-check"></span>
+                  Видео Чака Норриса
+                </label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox-unchecked" id="souvenirs" type="checkbox" name="souvenirs">
-                <label for="souvenirs">Накупил сувениров</label>
+                <label class="form__checkbox-label">
+                  <input class="form__checkbox" id="souvenirs" type="checkbox" name="souvenirs">
+                  <span class="form__checkbox-check"></span>
+                  Накупил cувениров
+                </label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox-checked" id="tower" type="checkbox" name="tower" checked>
-                <label for="tower">Удержал башню</label>
+                <label class="form__checkbox-label">
+                  <input class="form__checkbox" id="tower" type="checkbox" name="tower" checked>
+                  <span class="form__checkbox-check"></span>
+                  Удержал башню
+                </label>
               </li>
               <li class="form__checkbox-item form__checkbox-item--last">
-                <input class="form__checkbox-unchecked" id="hotel" type="checkbox" name="hotel">
-                <label for="hotel">Разгромил отель</label>
+                <label class="form__checkbox-label">
+                  <input class="form__checkbox" id="hotel" type="checkbox" name="hotel">
+                  <span class="form__checkbox-check"></span>
+                  Разгромил отель
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -114,12 +134,12 @@
             Контактная информация
           </legend>
           <div class="form__contact-item">
-            <label class="form__name-field" for="phone">Номер телефона</label>
-            <input id="phone" type="text" name="phone" value="Номер, пожалуйста">
+            <label class="form__name-field form__name-field--contact" for="phone">Номер телефона</label>
+            <input class="form__contact-input" id="phone" type="text" name="phone" value="Номер, пожалуйста">
           </div>
           <div class="form__contact-item">
-            <label class="form__name-field" for="email">Адрес почты</label>
-            <input id="email" type="text" name="email" value="Введите почту *">
+            <label class="form__name-field form__name-field--contact" for="email">Адрес почты</label>
+            <input class="form__contact-input" id="email" type="text" name="email" value="Введите почту *">
           </div>
         </fieldset>
 
@@ -132,16 +152,25 @@
             </legend>
             <ul class="form__app-items">
               <li class="form__radio-item">
-                <input class="form__radio-checked" id="pink-ios" type="radio" name="app-radio" value="Pink-IOS">
-                <label for="pink-ios">Pink для IOS</label>
+                <label class="form__radio-label">
+                  <input class="form__radio" id="pink-ios" type="radio" name="app-radio" value="Pink-IOS" checked>
+                  <span class="form__radio-check"></span>
+                  Pink для IOS
+                </label>
               </li>
               <li class="form__radio-item">
-                <input class="form__radio-unchecked" id="pink-android" type="radio" name="app-radio" value="Pink-Android">
-                <label for="pink-android">Pink для Android</label>
+                <label class="form__radio-label">
+                  <input class="form__radio" id="pink-android" type="radio" name="app-radio" value="Pink-Android">
+                  <span class="form__radio-check"></span>
+                  Pink на Android
+                </label>
               </li>
               <li class="form__radio-item form__radio-item--last">
-                <input class="form__radio-unchecked" id="windows" type="radio" name="app-radio" value="Windows-phone">
-                <label for="windows">Windows Phone</label>
+                <label class="form__radio-label">
+                  <input class="form__radio" id="windows" type="radio" name="app-radio" value="Windows-phone">
+                  <span class="form__radio-check"></span>
+                  Windows Phone
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -153,24 +182,26 @@
             <legend class="form__title form-title--emotions">
               Опишите свои эмоции
             </legend>
-            <textarea name="emotions-text" id="emotions-text" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="form__textarea" name="emotions-text" id="emotions-text" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
         </div>
 
         <div class="form__btn-container">
           <button class="form__btn btn" type="submit">Отправить форму</button>
-          <p class="form__label">* — обязательные поля</p>
+          <p class="form__label">
+            <span class="form-label-mark">*</span> — обязательные <span class="form__label form__label--desktop">для заполнения</span> поля
+          </p>
         </div>
       </form>
     </main>
 
     <!-- Блок футера -->
-    <footer class="footer footer--index">
+    <footer class="footer footer--form">
       <div class="footer__container">
         <a href="index.html" class="footer__index-link">
           <picture>
-            <source media="(min-width: 661px)" srcset="img/logo-pink-blue-desktop.svg">
-            <source srcset="img/logo-pink-blue-tablet.svg" media="(min-width: 659px)">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source srcset="img/logo-pink-blue-tablet.svg" media="(min-width: 660px)">
             <img src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта" class="footer__footer-logo" width="150" height="55">
           </picture>
         </a>

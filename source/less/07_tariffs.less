@@ -1,14 +1,20 @@
 .tariffs {
-  overflow: hidden;
-  padding-top: 67px;
-  padding-bottom: 44px;
+  padding-top: 87px;
+  padding-bottom: 47px;
   background-color: @bg-content;
+}
+
+.tariffs__container {
+  width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .tariffs__table {
   width: 1120px;
   margin-left: -539px;
-  margin-bottom: 39px;
+  margin-bottom: 42px;
+  border-spacing: 0;
   background-color: #fff;
 }
 
@@ -18,7 +24,7 @@
 
 .tariffs__cell-title {
   box-sizing: border-box;
-  padding: 32px;
+  padding: 17px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -37,7 +43,7 @@
 .tarriffs__tariff-sale {
   font-size: 24px;
   line-height: 30px;
-  font-weight: lighter;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -49,7 +55,7 @@
   width: 280px;
   height: 59px;
   box-sizing: border-box;
-  padding: 20px 23px;
+  padding: 17px 21px;
   border: 1px solid #e5e5e5;
 }
 
@@ -57,16 +63,17 @@
   position: relative;
 }
 
-.tariff__option--on svg {
+.option-on {
   position: absolute;
-  right: 17px;
+  top: 18px;
+  right: 19px;
   fill: #3dc644;
 }
 
-.tariff__option--off svg {
+.option-off {
   position: absolute;
-  top: 15px;
-  right: 17px;
+  top: 17px;
+  right: 21px;
   fill: #f25b26;
 }
 
@@ -81,9 +88,11 @@
 @media (min-width: @tablet-min-width) {
   .tariffs {
     margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 65px;
+    padding: 86px 20px 69px 20px;
+  }
+
+  .tariffs__container {
+    width: 100%;
   }
 
   .tariffs__table {
@@ -92,23 +101,27 @@
   }
 
   .tariffs__cell-title {
-    padding: 20px;
+    padding: 8px;
     font-size: 16px;
     line-height: 30px;
+  }
+
+  .tarriffs__tariff-sale {
+    font-size: 18px;
   }
 
   .tariff__option {
     width: 152px;
     height: 45px;
     box-sizing: border-box;
-    padding: 10px 5px 10px 17px;
+    padding: 7px 5px 7px 17px;
     font-size: 14px;
     line-height: 30px;
   }
 
-  .tariff__option--on svg {
-    top: 13px;
-    left: 61px;
+  .option-on {
+    top: 10px;
+    left: 62px;
   }
 
   .tariff__option--off svg {
@@ -117,7 +130,7 @@
   }
 
   .tariffs__cell-title {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
   }
 
@@ -131,17 +144,33 @@
 }
 
 @media (min-width: @desktop-min-with) {
+.tariffs {
+  padding-top: 147px;
+  padding-bottom: 99px;
+}
+
+  .tariffs__container {
+      width: auto;
+  }
+
   .tariffs__table {
     max-width: 940px;
   }
 
   .tariffs__cell-title {
+    padding: 17px 8px;
     font-size: 18px;
     line-height: 30px;
   }
 
+  .tarriffs__tariff-sale {
+    font-size: 24px;
+  }
+
   .tariff__option {
     height: 59px;
+    padding-left: 23px;
+    font-size: 18px;
   }
 
   .tariff__option--on svg {

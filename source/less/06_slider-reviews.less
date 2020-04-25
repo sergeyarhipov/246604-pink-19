@@ -1,6 +1,6 @@
 .slider-reviews {
   .container;
-  padding: 48px 20px 67px 20px;
+  padding: 0 20px 45px 20px;
 }
 
 .slider-reviews__bg {
@@ -19,10 +19,14 @@
   .list-style();
 }
 
+.slider-reviews__item {
+  margin: 14px 0;
+}
+
 .slider-reviews__user-name {
   .null-indent;
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 12px;
   font-style: normal;
   font-weight: bold;
   line-height: 30px;
@@ -35,7 +39,7 @@
 
 .slider-reviews__feedback-text {
   .null-indent;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   line-height: 30px;
   text-align: center;
 }
@@ -45,18 +49,26 @@
   display: none;
 }
 
-.slider-reviews__arow {
+.slider-reviews__arrow {
   display: none;
+}
+
+.arrow {
+  opacity: 0.3;
+}
+
+.arrow:hover {
+  opacity: 0.6;
+}
+
+.arrow:active {
+  opacity: 0.1;
 }
 
 
 @media (min-width: @tablet-min-width) {
   .slider-reviews {
-    padding-top: 130px;
-  }
-
-  .slider-reviews__bg {
-    display: nones;
+    padding-bottom: 3px;
   }
 
   .slider-reviews__item {
@@ -68,7 +80,7 @@
     order: 2;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
   .slider-reviews__user-profession {
@@ -79,20 +91,22 @@
   }
 
   .slider-reviews__feedback-text {
-    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 34px;
   }
 }
 
 @media (min-width: @desktop-min-with) {
   .slider-reviews {
     position: relative;
-    padding: 185px 0 45px 0;
+    padding: 171px 0 28px 0;
   }
 
   .slider-reviews__bg{
     display: block;
     position: absolute;
-    top: 73px;
+    top: 72px;
     left: 47%;
     fill: #efefef;
   }
@@ -106,6 +120,7 @@
   }
 
   .slider-reviews__user-name {
+    margin-bottom: 4px;
     font-size: 24px;
     line-height: 30px;
   }
@@ -117,7 +132,7 @@
 
   .slider-reviews__feedback-text {
     width: 690px;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -126,9 +141,9 @@
     display: none;
   }
 
-  .slider-reviews__arow {
+  .slider-reviews__arrow {
     display: block;
-    top: 50%;
+    top: 41px;
     position: absolute;
     width: 42px;
     height: 45px;
@@ -138,12 +153,12 @@
     cursor: pointer;
   }
 
-  .slider-reviews__arow--left {
-    left: 130px;
+  .slider-reviews__arrow--left {
+    left: 120px;
   }
 
-  .slider-reviews__arow--right {
-    right: 130px;
+  .slider-reviews__arrow--right {
+    right: 120px;
   }
 }
 

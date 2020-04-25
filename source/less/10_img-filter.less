@@ -8,12 +8,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 20px 40px 20px;
+  padding: 20px 20px 34px 20px;
   border-bottom: 1px solid #dddfe0;
 }
 
 .img-filter__photo-link {
-  margin-bottom: 42px;
+  margin-bottom: 32px;
 }
 
 .img-filter__filter-tools {
@@ -22,33 +22,30 @@
   align-items: center;
   width: 200px;
   .list-style;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
+  margin-right: 10px;
 }
 
-.filter-tool__button {
+.img-filter-tool__button {
   padding: 0;
   font-size: 0;
   border: none;
   background-color: none;
 }
 
-.filter-tool__button--crop {
+.img-filter-tool__button--crop {
   width: 45px;
   height: 45px;
 }
 
-.filter-tool__button--filling {
+.img-filter-tool__button--filling {
   width: 47px;
   height: 44px;
 }
 
-.filter-tool__button--contrast {
+.img-filter-tool__button--contrast {
   width: 34px;
   height: 34px;
-}
-
-.filter-tool__button svg {
-  fill: #d22856;
 }
 
 .img-filter__filter-toggle {
@@ -70,6 +67,10 @@
   background-color: @bg-content;
   border: 2px solid #d22856;
   border-radius: 50%;
+}
+
+.img-filter__toggle:active {
+  background-color: #d22856;
 }
 
 .img-filter__btn {
@@ -103,10 +104,32 @@
   border: 3px solid #d22856;
 }
 
+.img-filter__btn-item--post:hover {
+  color: #fff;
+  background-color: #d22856;
+}
+
+.img-filter__btn-item--post:active {
+  color: #e06989;
+  background-color: #d22856;
+}
+
 .img-filter__btn-item--cancel {
   color: rgba(40, 54, 69, 0.1);
-  background-color: @bg-content;
+  background: transparent;
   border: 3px solid #dddfe0;
+}
+
+.img-filter__btn-item--cancel:hover {
+  color: rgba(40, 54, 69, 0.3);
+  background: transparent;
+  border-color: #b5b9be;
+}
+
+.img-filter__btn-item--cancel:active {
+  color: #cbced2;
+  background: #b5b9be;
+  border-color: #b5b9be;
 }
 
 @media (min-width: @tablet-min-width) {
@@ -121,7 +144,7 @@
     justify-content: space-between;
     align-items: flex-start;
     max-width: 620px;
-    padding: 58px 20px 55px 20px;
+    padding: 58px 20px 46px 20px;
   }
 
   .img-filter__photo-link {
@@ -143,19 +166,45 @@
     border-bottom: 1px solid #dddfe0;
   }
 
-  .filter-tool__button--crop {
+  .img-filter__filter-tool:first-child {
+    height: 37px;
+    padding-bottom: 18px;
+  }
+
+  .img-filter-tool__button--crop {
   width: 45px;
   height: 45px;
   }
 
-  .filter-tool__button--filling {
+  .img-filter-tool__button--filling {
     width: 47px;
     height: 44px;
   }
 
-  .filter-tool__button--contrast {
+  .img-filter-tool__button--contrast {
     width: 34px;
     height: 34px;
+  }
+
+  .img-filter__toggle {
+    width: 10px;
+    height: 10px;
+    top: -6px
+  }
+
+  .img-filter__crop .img-filter__toggle {
+    top: -6px;
+    right: 49px;
+  }
+
+  .img-filter__filling .img-filter__toggle {
+    top: -6px;
+    right: 171px;
+  }
+
+  .img-filter__contrast .img-filter__toggle {
+    top: -6px;
+    right: 99px;
   }
 
   .img-filter .img-filter__filter-toggle {
@@ -169,50 +218,58 @@
   .img-filter__crop .img-filter__scale,
   .img-filter__filling .img-filter__scale,
   .img-filter__contrast .img-filter__scale {
-    width: 204px;
+    width: 201px;
   }
 
   .img-filter__btn {
     position: absolute;
-    bottom: 63px;
+    bottom: 56px;
     right: 34px;
     width: 260px;
     .null-indent;
   }
 
-  .filter-tool__button {
+  .img-filter-tool__button {
     margin-left: 10px;
     margin-right: 30px;
   }
 
-  .filter-tool__button--crop {
+  .img-filter-tool__button--crop {
     width: 24px;
     height: 24px;
   }
 
-  .filter-tool__button--filling {
+  .img-filter-tool__button--filling {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+  }
+
+  .img-filter-tool__button--contrast {
     width: 24px;
     height: 24px;
   }
 
-  .filter-tool__button--contrast {
-    width: 24px;
-    height: 24px;
-  }
-
-  .filter-tool__button--crop svg {
+  .btn-crop {
     width: 22px;
     height: 22px;
+    fill: #d22856;
   }
 
-  .filter-tool__button--filling svg {
+  .btn-filling {
     width: 24px;
     height: 24px;
+    fill: #d22856;
   }
 
-  .filter-tool__button--contrast svg {
+  .btn-contrast {
     width: 16px;
     height: 16px;
+    fill: #d22856;
+  }
+
+  .img-filter__btn-item--post {
+    margin-bottom: 25px;
   }
 
    .img-filter__btn-item--cancel,
@@ -224,12 +281,15 @@
 @media (min-width: @desktop-min-with) {
   .img-filter {
     max-width: 940px;
-    padding-right: 60px;
+    box-sizing: border-box;
     margin: 0 auto;
   }
 
   .img-filter__container {
     max-width: 940px;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 48px;
   }
 
   .img-filter__filter-tools {
@@ -241,36 +301,53 @@
   }
 
   .img-filter__btn {
-    right: 230px;
-    bottom: 63px;
+    right: 210px;
+    bottom: 57px;
   }
 
-  .filter-tool__button--crop {
+  .img-filter-tool__button--crop {
     width: 45px;
     height: 45px;
   }
 
-  .filter-tool__button--filling {
-    width: 47px;
-    height: 44px;
+  .img-filter__crop .img-filter__toggle {
+    top: -6px;
+    right: 205px;
   }
 
-  .filter-tool__button--contrast {
+  .img-filter-tool__button--filling {
+    width: 47px;
+    height: 44px;
+    margin-left: 10px;
+  }
+
+  .img-filter__filling .img-filter__toggle {
+    top: -6px;
+    right: 29px;
+  }
+
+  .img-filter-tool__button--contrast {
     width: 34px;
     height: 34px;
+    margin-left: 15px;
   }
 
-  .filter-tool__button--crop svg {
+  .img-filter__contrast .img-filter__toggle {
+    top: -6px;
+    right: 115px;
+  }
+
+  .btn-crop {
     width: 45px;
     height: 45px;
   }
 
-  .filter-tool__button--filling svg {
+  .btn-filling {
     width: 47px;
     height: 44px;
   }
 
-  .filter-tool__button--contrast svg {
+  .btn-contrast {
     width: 34px;
     height: 34px;
   }
@@ -291,7 +368,7 @@
   }
 
   .img-filter__btn-container {
-    width: 410px;
+    width: 412px;
     flex-direction: row;
     justify-content: space-between;
   }

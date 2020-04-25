@@ -4,7 +4,8 @@
   align-items: center;
   overflow: hidden;
   .container;
-  padding-top: 50px;
+  padding-top: 79px;
+  margin-bottom: 27px;
   background-color: @bg-content;
 }
 
@@ -22,7 +23,7 @@
 }
 
 .features-app__item {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 .features-app__item {
@@ -40,16 +41,24 @@
 
 .features-app__title {
   .null-indent;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   text-align: center;
 }
 
 .features-app__preview-app {
-  margin-bottom: -50px;
+  margin-bottom: -51px;
 }
 
 .features-app__effect {
   display: none;
+}
+
+.features-app__effect-link:hover {
+  color: @link-hover;
+}
+
+.features-app__effect-link:active {
+  color: @link-active;
 }
 
 @media (min-width: @tablet-min-width) {
@@ -57,17 +66,45 @@
     margin: 0;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 0;
   }
 
   .features-app__container {
     margin: 0 20px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .features-app__logo {
+    position: absolute;
+    left: 38px;
+    top: 113px;
+    .null-indent;
+    width: 202px;
+    height: 202px;
+    box-sizing: border-box;
+    padding-top: 67px;
+    font-size: 96px;
+    vertical-align: middle;
+    font-weight: bold;
+    text-align: center;
+    color: #d22856;
+    border: 14px solid #d22856;
+    border-radius: 50%;
+  }
+
+  .icon-timer {
+    position: absolute;
+    left: 20px;
+    top: 57px;
+    fill: #dedede;
   }
 
   .features-app__list {
     order: 2;
-    margin-left: 45px;
+    margin-left: 39px;
+    margin-top: 72px;
   }
 
   .features-app__title {
@@ -78,6 +115,10 @@
     text-align: left;
   }
 
+  .features-app__item {
+    margin-bottom: 33px;
+  }
+
   .features-app__preview-app {
     display: block;
     width: 270px;
@@ -86,22 +127,25 @@
   }
 
   .features-app__effect {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     width: 100%;
     box-sizing: border-box;
-    padding: 60px 20px 0 20px;
+    padding: 63px 20px 0 20px;
     background: #fff;
+    padding-bottom: 111px;
   }
 
   .features-app__effect-container {
+    padding-top: 31px;
     max-width: 310px;
   }
 
   .features-app__effect-title {
     .null-indent;
     max-width: 170px;
-    padding-bottom: 15px;
+    padding-bottom: 9px;
     font-size: 30px;
     font-weight: bold;
     line-height: 36px;
@@ -110,7 +154,7 @@
 
   .features-app__effect-text {
     .null-indent;
-    padding-bottom: 15px;
+    padding-bottom: 11px;
   }
 
   .features-app__effect-link {
@@ -121,6 +165,7 @@
 @media (min-width: @desktop-min-with) {
   .features-app {
     padding-top: 0;
+    background: @bg-content;
   }
 
   .features-app__container {
@@ -128,10 +173,30 @@
     margin: 0 auto;
   }
 
+  .features-app__logo {
+    width: 253px;
+    height: 253px;
+    top: 91px;
+    left: 23px;
+    padding-top: 44px;
+    font-size: 120px;
+    line-height: 120px;
+  }
+
+  .icon-timer {
+    width: 299px;
+    height: 347px;
+    left: 0;
+    top: 21px;
+  }
+
   .features-app__list {
+    width: 876px;
     flex-direction: row;
+    justify-content: space-between;
     align-items: baseline;
     margin-left: 0;
+    margin-top: 0;
   }
 
   .features-app__preview-app {
@@ -139,27 +204,28 @@
   }
 
   .features-app__item {
-    padding-top: 350px;
+    width: 238px;
+    padding-top: 358px;
     box-sizing: border-box;
-    margin: 0 32px;
   }
 
   .features-app__item:first-child {
     background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat;
-    background-position: top 0 left -20px;
+    background-position: 50% 0;
   }
 
   .features-app__item:nth-child(2) {
     background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat;
-    background-position: top 0 left -20px;
+    background-position: 50% 0;
   }
 
   .features-app__item:nth-child(3) {
     background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat;
-    background-position: top 0 left -20px;
+    background-position: 50% 0;
   }
 
   .features-app__title {
+    margin-bottom: 24px;
     font-size: 30px;
     font-weight: bold;
     line-height: 30px;
@@ -174,20 +240,23 @@
 
   .features-app__effect {
     max-width: 940px;
-    padding: 50px 48px 67px 130px;
+    padding: 110px 48px 113px 130px;
     background: @bg-content;
   }
 
   .features-app__effect-container {
-    min-width: 525px;
+      min-width: 525px;
+      padding-top: 0;
   }
 
   .features-app__effect-title {
     max-width: 310px;
+    padding-bottom: 23px;
   }
 
   .features-app__effect-text {
-    width: 100%;
+    width: 99.4%;
+    padding-bottom: 31px;
     font-size: 18px;
     line-height: 30px;
   }
