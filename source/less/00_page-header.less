@@ -18,6 +18,23 @@
   display: block;
 }
 
+.logo-pink-white {
+  fill: #fff;
+}
+
+.logo-pink-white:hover {
+  fill: #d22856;
+}
+
+.logo-pink-white:active {
+  fill: #6c7681;
+}
+
+.logo-pink-white-desktop,
+.logo-pink-white-tablet {
+  display: none;
+}
+
 @media (min-width: @tablet-min-width) {
   .page-header {
     background: #2b3b4b url("../img/bg-back-tablet@1x.jpg") no-repeat;
@@ -30,12 +47,21 @@
   }
 
   .page-header__navigation {
-    min-height: 90px;
+    min-height: 110px;
   }
 
   .page-header__logo {
     width: 147px;
     height: 43px;
+  }
+
+  .logo-pink-white-tablet {
+    display: block;
+  }
+
+  .logo-pink-white-desktop,
+  .logo-pink-white-mobile {
+    display: none;
   }
 }
 
@@ -54,6 +80,16 @@
     width: 150px;
     height: 41px;
     margin-bottom: 17px;
+  }
+
+  .logo-pink-white-desktop {
+    display: block;
+    margin-top: -15px;
+  }
+
+  .logo-pink-white-tablet,
+  .logo-pink-white-mobile {
+    display: none;
   }
 
   .page-header__navigation {

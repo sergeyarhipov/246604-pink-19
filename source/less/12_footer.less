@@ -22,6 +22,23 @@
   margin-bottom: 32px;
 }
 
+.logo-pink-blue {
+  fill: #283645;
+}
+
+.logo-pink-blue:hover {
+  fill: @nav-hover-color;
+}
+
+.logo-pink-blue-desktop {
+  display: none;
+}
+
+.logo-pink-blue-mobile {
+  width: 150px;
+  height: 50px;
+}
+
 .footer__social-btns {
   display: flex;
   justify-content: space-between;
@@ -117,6 +134,11 @@
     margin-bottom: 20px;
   }
 
+  .logo-pink-blue-mobile {
+    width: 148px;
+    height: 40px;
+  }
+
   .footer__social-btns {
     margin-right: 20px;
     margin-bottom: 6px;
@@ -139,6 +161,17 @@
 
   .footer__container {
     max-width: 940px;
+  }
+
+  .logo-pink-blue-mobile {
+    display: none;
+  }
+
+  .logo-pink-blue-desktop {
+    display: block;
+    width: 148px;
+    height: 40px;
+    fill: #283645;
   }
 
   .footer__social-btns {
