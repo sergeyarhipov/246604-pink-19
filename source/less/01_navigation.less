@@ -28,19 +28,50 @@
 .navigation__toggle {
   width: 50px;
   height: 24px;
+  padding: 0;
   margin: auto;
   font-size: 0;
   background-color: rgba(0, 0, 0, 0.01);
   border: none;
-  background-image: url("../img/icon-menu-burger.svg");
   cursor: pointer;
 }
 
-.navigation__toggle--active {
-  background-image: url("../img/icon-no.svg");
-  background-size: 23px 23px;
-  background-repeat: no-repeat;
-  background-position: right;
+.toggle-open {
+  fill: #fff;
+}
+
+.toggle-open:hover {
+  fill: #d22856;
+}
+
+.toggle-open:active {
+  fill: #d22856;
+  opacity: 0.3;
+}
+
+.toggle-open--invisible {
+  display: none;
+}
+
+.toggle-close {
+  display: none;
+}
+
+.toggle-close--visible {
+  display: block;
+  fill: #fff;
+  width: 23px;
+  height: 23px;
+  margin-left: 50%;
+}
+
+.toggle-close--visible:hover {
+  fill: #d22856;
+}
+
+.toggle-close--visible:active {
+  fill: #d22856;
+  opacity: 0.3;
 }
 
 .navigation__items {
@@ -88,7 +119,7 @@
   }
 
   .navigation__items--visible {
-    top: 89px;
+    top: 109px;
   }
 
   .navigation__toggle {
