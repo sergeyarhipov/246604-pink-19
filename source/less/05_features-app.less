@@ -212,16 +212,31 @@
   .features-app__item:first-child {
     background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat;
     background-position: 50% 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: 292px auto;
+    }
   }
 
   .features-app__item:nth-child(2) {
     background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat;
     background-position: 50% 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-size: 292px auto;
+    }
   }
 
   .features-app__item:nth-child(3) {
     background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat;
     background-position: 50% 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size: 292px auto;
+    }
   }
 
   .features-app__title {
