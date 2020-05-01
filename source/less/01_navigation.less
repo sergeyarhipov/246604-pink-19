@@ -11,7 +11,7 @@
 
 .navigation__nav-active {
   background-color: #283645;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
 }
 
 .navigation__container {
@@ -37,7 +37,7 @@
 }
 
 .toggle-open {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .toggle-open:hover {
@@ -59,7 +59,7 @@
 
 .toggle-close--visible {
   display: block;
-  fill: #fff;
+  fill: #ffffff;
   width: 23px;
   height: 23px;
   margin-left: 50%;
@@ -92,16 +92,16 @@
   box-sizing: border-box;
   padding: 15px 20px;
   min-height: 67px;
-  font-family: OpenSans, Arial, sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 32px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   border-top: 1px solid #485461;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
   background: @bg-info-content;
 }
 
@@ -156,15 +156,6 @@
 
   .navigation__menu-link {
     min-height: auto;
-  }
-
-
-  .navigation__menu-link:active {
-    color: #fff;
-    opacity: 30%;
-  }
-
-  .navigation__menu-link {
     padding-left: 0;
     padding-right: 0;
     font-size: 18px;
@@ -175,9 +166,15 @@
     border: none;
   }
 
+
+  .navigation__menu-link:active {
+    color: #ffffff;
+    opacity: 30%;
+  }
+
   .navigation__menu-link--active {
     align-self: center;
     padding: 9px 0;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #ffffff;
   }
 }
