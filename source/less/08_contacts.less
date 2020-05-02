@@ -17,7 +17,7 @@
   width: 90%;
   .null-indent;
   margin-bottom: 30px;
-  font-family: OpenSans, Arial, sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 31px;
@@ -25,8 +25,10 @@
   color: @text-color;
 }
 
-.contacts__contacts-list, .contacts__item-header,
-.contacts__phone, .contacts__email,
+.contacts__contacts-list,
+.contacts__item-header,
+.contacts__phone,
+.contacts__email,
 .contacts__adress {
   .null-indent;
   font-weight: lighter;
@@ -39,9 +41,10 @@
 
 .contacts__contacts-list-item {
   margin-bottom: 21px;
-    &:last-child {
-      margin: 0;
-    }
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .contacts__item-header {
@@ -63,11 +66,13 @@
   margin-bottom: 4px;
 }
 
-.contacts__phone, .contacts__email {
+.contacts__phone,
+.contacts__email {
   text-decoration: none;
 }
 
-.contacts__phone, .contacts__email,
+.contacts__phone,
+.contacts__email,
 .contacts__adress {
   font-size: 24px;
   line-height: 28px;
@@ -122,8 +127,7 @@
     margin-bottom: 47px;
   }
 
-  .contacts__contacts-list-item:nth-child(2) .contacts__item-header
-  {
+  .contacts__contacts-list-item:nth-child(2) .contacts__item-header {
     margin-bottom: 4px;
   }
 
@@ -174,7 +178,6 @@
     width: 940px;
     margin: 0;
     padding: 0;
-
   }
 
   .contacts__contacts-list-item:first-child {
@@ -215,8 +218,3 @@
     margin: 0 auto;
   }
 }
-
-
-
-
-
