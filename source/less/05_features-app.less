@@ -6,7 +6,10 @@
   .container;
   padding-top: 79px;
   margin-bottom: 27px;
-  background-color: @bg-content;
+  background: @bg-content url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 0;
 }
 
 .features-app__container {
@@ -136,7 +139,7 @@
 
   .features-app__effect-container {
     padding-top: 31px;
-    max-width: 310px;
+    max-width: 50%;
   }
 
   .features-app__effect-title {
@@ -151,6 +154,7 @@
 
   .features-app__effect-text {
     .null-indent;
+    padding-right: 11px;
     padding-bottom: 11px;
   }
 
@@ -162,7 +166,10 @@
 @media (min-width: @desktop-min-with) {
   .features-app {
     padding-top: 0;
-    background: @bg-content;
+    background: @bg-content url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 0;
   }
 
   .features-app__container {
@@ -171,8 +178,8 @@
   }
 
   .features-app__logo {
-    width: 253px;
-    height: 253px;
+    width: 250px;
+    height: 250px;
     top: 91px;
     left: 23px;
     padding-top: 44px;
