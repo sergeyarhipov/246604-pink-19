@@ -19,4 +19,3 @@ navToggle.addEventListener("click", function(evt) {
   toggleOpen.classList.toggle("toggle-open--invisible");
   toggleClose.classList.toggle("toggle-close--visible");
 });
-
