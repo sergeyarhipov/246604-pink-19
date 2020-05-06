@@ -15,8 +15,18 @@
   color: #d22856;
 }
 
+.form__contact-items {
+  .null-indent;
+}
+
 .form__contact-item {
   margin-bottom: 17px;
+}
+
+.form__user-name-container .form__user-input::placeholder,
+.form__contact-item .form__contact-input::placeholder {
+  color: #283645;
+  opacity: 1;
 }
 
 .form__user-input,
@@ -156,11 +166,13 @@
 }
 
 .form__user-contacts-container {
-  display: flex;
-  flex-direction: column;
   box-sizing: border-box;
   padding: 29px 20px 26px 20px;
   border: none;
+}
+
+.form__contact-item {
+  .list-style;
 }
 
 .form__contact-input {
@@ -222,6 +234,7 @@
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
+  color: @bg-info-content;
 }
 
 .form__btn-container {
@@ -374,7 +387,10 @@
   }
 
   .form__contact-input {
+    height: 65px;
+    box-sizing: border-box;
     padding: 20px 80px 20px 17px;
+    margin-bottom: 0;
   }
 
   .form__img-input {
@@ -387,7 +403,7 @@
   .form__img-input--phone {
     display: block;
     width: 60px;
-    height: 60px;
+    height: 61px;
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -491,12 +507,12 @@
     max-width: 507px;
     padding: 0;
     padding-right: 70px;
-    padding-bottom: 56px;
+    padding-bottom: 48px;
     margin: 0;
   }
 
   .form__user-item {
-    margin-bottom: 53px;
+    margin-bottom: 47px;
   }
 
   .form__app-form {
@@ -511,8 +527,6 @@
   }
 
   .form__user-contacts-container {
-    flex-direction: row;
-    align-items: flex-start;
     width: 100%;
     margin: 0;
     margin-bottom: 57px;
@@ -522,6 +536,10 @@
 
   .form__name-field {
     padding-bottom: 0;
+  }
+
+  .form__contact-items {
+    display: flex;
   }
 
   .form__contact-item {

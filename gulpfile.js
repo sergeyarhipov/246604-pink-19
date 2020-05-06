@@ -85,9 +85,10 @@ gulp.task("del", function() {
 gulp.task("jsmin", function() {
   return pipeline(
     gulp.src('source/js/*.js'),
-    js(),
-    gulp.dest('build/js')
-);
+    js()
+  )
+  .pipe(rename("script.min.js"))
+  .pipe(gulp.dest('build/js'))
 });
 
 gulp.task("server", function () {

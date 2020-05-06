@@ -80,15 +80,15 @@
         <div class="form__user-name-container">
           <div class="form__user-item">
             <label class="form__name-field" for="last-name">Фамилия:</label>
-            <input class="form__user-input" id="last-name" type="text" name="last-name" value="Укажите фамилию *">
+            <input class="form__user-input" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *">
           </div>
           <div class="form__user-item">
           <label class="form__name-field" for="first-name">Имя:</label>
-          <input class="form__user-input" id="first-name" type="text" name="first-name" value="Введите ваше имя *">
+          <input class="form__user-input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *">
           </div>
           <div class="form__user-item">
           <label class="form__name-field" for="middle-name">Отчество:</label>
-          <input class="form__user-input" id="middle-name" type="text" name="middle-name" value="Ну и отчество тоже">
+          <input class="form__user-input" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
           </div>
         </div>
 
@@ -151,16 +151,18 @@
           <legend class="form__title form__title--contacts h3">
             Контактная информация
           </legend>
-          <div class="form__contact-item">
-            <label class="form__name-field form__name-field--contact" for="phone">Номер телефона</label>
-            <input class="form__contact-input" id="phone" type="text" name="phone" value="Номер, пожалуйста">
-            <span class="form__img-input form__img-input--phone"></span>
-          </div>
-          <div class="form__contact-item">
-            <label class="form__name-field form__name-field--contact" for="email">Адрес почты</label>
-            <input class="form__contact-input" id="email" type="text" name="email" value="Введите почту *">
-            <span class="form__img-input form__img-input--email"></span>
-          </div>
+          <ul class="form__contact-items">
+            <li class="form__contact-item">
+              <label class="form__name-field form__name-field--contact" for="phone">Номер телефона</label>
+              <input class="form__contact-input" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              <span class="form__img-input form__img-input--phone"></span>
+            </li>
+            <li class="form__contact-item">
+              <label class="form__name-field form__name-field--contact" for="email">Адрес почты</label>
+              <input class="form__contact-input" id="email" type="email" name="email" placeholder="Введите почту *">
+              <span class="form__img-input form__img-input--email"></span>
+            </li>
+          </ul>
         </fieldset>
 
         <!-- Блок радио-кнопок -->
