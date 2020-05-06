@@ -80,6 +80,10 @@
   display: none;
 }
 
+.navigation__items--invisible {
+  display: none;
+}
+
 .navigation__items--visible {
   display: flex;
   flex-direction: column;
@@ -141,6 +145,11 @@
     padding: 0 130px 0 130px;
   }
 
+  .navigation__nav-active {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid transparent;
+  }
+
   .navigation__container {
     display: flex;
     justify-content: space-between;
@@ -157,6 +166,8 @@
 
   .navigation__items {
     display: flex;
+    position: inherit;
+    flex-direction: row;
     justify-content: space-between;
     width: 623px;
   }

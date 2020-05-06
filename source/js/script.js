@@ -1,9 +1,15 @@
 var navToggle = document.querySelector(".navigation__toggle");
 var nav = document.querySelector(".navigation");
 var navItems = document.querySelector(".navigation__items");
+var navItemsVisible = document.querySelector(".navigation__items--visible");
+var navigation = document.querySelector(".navigation");
+var navActive = document.querySelector(".navigation__nav-active");
 var toggleOpen = document.querySelector(".toggle-open");
 var toggleClose = document.querySelector(".toggle-close");
 
+navItemsVisible.classList.add("navigation__items--invisible");
+navItemsVisible.classList.remove("navigation__items--visible");
+navActive.classList.remove("navigation__nav-active");
 
 navToggle.addEventListener("click", function(evt) {
   evt.preventDefault();
