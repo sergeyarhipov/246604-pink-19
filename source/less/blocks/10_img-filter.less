@@ -1,5 +1,5 @@
 .img-filter {
-  max-width: 320px;
+  max-width: 100%;
   margin: 0 auto;
   background-color: @bg-content;
 }
@@ -30,7 +30,7 @@
   padding: 0;
   font-size: 0;
   border: none;
-  background-color: none;
+  background-color: transparent;
 }
 
 .img-filter__tool-button--crop {
@@ -100,13 +100,13 @@
   .container;
   padding: 38px 20px 42px 20px;
   background-color: @bg-content;
+  margin: 0 auto;
 }
 
 .img-filter__btn-container {
   display: flex;
   flex-direction: column;
   width: 280px;
-  margin: 0 auto;
 }
 
 .img-filter__btn-item {
@@ -155,8 +155,7 @@
 
 @media (min-width: @tablet-min-width) {
   .img-filter {
-    position: relative;
-    max-width: 660px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -166,6 +165,7 @@
     align-items: flex-start;
     max-width: 620px;
     padding: 58px 20px 46px 20px;
+    margin: 0 auto;
   }
 
   .img-filter__photo-preview {
@@ -249,11 +249,18 @@
   }
 
   .img-filter__btn {
-    position: absolute;
+    position: relative;
     bottom: 56px;
     right: 34px;
-    width: 260px;
+    width: 620px;
     .null-indent;
+    margin: 0 auto;
+  }
+
+  .img-filter__btn-container {
+    position: absolute;
+    top: -135px;
+    right: -190px;
   }
 
   .img-filter__tool-button {
@@ -309,9 +316,9 @@
     width: 410px;
   }
 
-  .img-filter__btn {
-    right: 210px;
-    bottom: 57px;
+  .img-filter__btn-container {
+    left: 194px;
+    top: -57px;
   }
 
   .img-filter__tool-button--crop {
