@@ -82,20 +82,29 @@
 }
 
 .contacts__map {
+  position: relative;
   width: 100%;
   height: 200px;
   overflow: hidden;
   margin: 0 auto;
+}
+
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30px;
   background: url("../img/bg-triangle-white-footer.svg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-repeat:  no-repeat;
+  background-size: 100% 100%;
   background-position: 48% 0;
+  z-index: 1;
 }
 
 .contacts__map-frame {
+  position: absolute;
   width: 100%;
   height: 645px;
-  position: relative;
   top: -74px;
   border: none;
 }
@@ -167,6 +176,10 @@
     height: 373px;
   }
 
+  .contacts__map::before {
+    height: 75px;
+  }
+
   .contacts__map-frame {
     height: 843px;
     top: -66px;
@@ -229,9 +242,13 @@
     height: 500px;
   }
 
-  .contacts__map-img {
+  .contacts__map::before {
+    height: 105px;
+  }
+
+  .contacts__map-frame {
     margin: 0 auto;
-    top: 0;
+    top: 8px;
   }
 
   .contacts__map-img {
