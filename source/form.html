@@ -80,11 +80,11 @@
         <div class="form__user-name-container">
           <div class="form__user-item">
             <label class="form__name-field" for="last-name">Фамилия:</label>
-            <input class="form__user-input" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *">
+            <input class="form__user-input" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
           </div>
           <div class="form__user-item">
           <label class="form__name-field" for="first-name">Имя:</label>
-          <input class="form__user-input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *">
+          <input class="form__user-input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
           </div>
           <div class="form__user-item">
           <label class="form__name-field" for="middle-name">Отчество:</label>
@@ -102,42 +102,42 @@
             <ul class="form__checkbox-list">
               <li class="form__checkbox-item">
                 <label class="form__checkbox-label">
-                  <input class="form__checkbox" id="shark" type="checkbox" name="shark" checked>
+                  <input class="form__checkbox visually-hidden" id="shark" type="checkbox" name="shark" checked>
                   <span class="form__checkbox-check"></span>
                   Сделал селфи с акулой
                 </label>
               </li>
               <li class="form__checkbox-item">
                 <label class="form__checkbox-label">
-                  <input class="form__checkbox" id="beach" type="checkbox" name="beach" checked>
+                  <input class="form__checkbox visually-hidden" id="beach" type="checkbox" name="beach" checked>
                   <span class="form__checkbox-check"></span>
                   Обгорел на пляже
                 </label>
               </li>
               <li class="form__checkbox-item">
                 <label class="form__checkbox-label">
-                  <input class="form__checkbox" id="norris" type="checkbox" name="norris">
+                  <input class="form__checkbox visually-hidden" id="norris" type="checkbox" name="norris">
                   <span class="form__checkbox-check"></span>
                   Видео Чака Норриса
                 </label>
               </li>
               <li class="form__checkbox-item">
                 <label class="form__checkbox-label">
-                  <input class="form__checkbox" id="souvenirs" type="checkbox" name="souvenirs">
+                  <input class="form__checkbox visually-hidden" id="souvenirs" type="checkbox" name="souvenirs">
                   <span class="form__checkbox-check"></span>
                   Накупил cувениров
                 </label>
               </li>
               <li class="form__checkbox-item">
                 <label class="form__checkbox-label">
-                  <input class="form__checkbox" id="tower" type="checkbox" name="tower" checked>
+                  <input class="form__checkbox visually-hidden" id="tower" type="checkbox" name="tower" checked>
                   <span class="form__checkbox-check"></span>
                   Удержал башню
                 </label>
               </li>
               <li class="form__checkbox-item form__checkbox-item--last">
                 <label class="form__checkbox-label">
-                  <input class="form__checkbox" id="hotel" type="checkbox" name="hotel">
+                  <input class="form__checkbox visually-hidden" id="hotel" type="checkbox" name="hotel">
                   <span class="form__checkbox-check"></span>
                   Разгромил отель
                 </label>
@@ -175,21 +175,21 @@
             <ul class="form__app-items">
               <li class="form__radio-item">
                 <label class="form__radio-label">
-                  <input class="form__radio" id="pink-ios" type="radio" name="app-radio" value="Pink-IOS" checked>
+                  <input class="form__radio visually-hidden" id="pink-ios" type="radio" name="app-radio" value="Pink-IOS" checked>
                   <span class="form__radio-check"></span>
                   Pink для IOS
                 </label>
               </li>
               <li class="form__radio-item">
                 <label class="form__radio-label">
-                  <input class="form__radio" id="pink-android" type="radio" name="app-radio" value="Pink-Android">
+                  <input class="form__radio visually-hidden" id="pink-android" type="radio" name="app-radio" value="Pink-Android">
                   <span class="form__radio-check"></span>
                   Pink на Android
                 </label>
               </li>
               <li class="form__radio-item form__radio-item--last">
                 <label class="form__radio-label">
-                  <input class="form__radio" id="windows" type="radio" name="app-radio" value="Windows-phone">
+                  <input class="form__radio visually-hidden" id="windows" type="radio" name="app-radio" value="Windows-phone">
                   <span class="form__radio-check"></span>
                   Windows Phone
                 </label>
@@ -260,6 +260,35 @@
         </a>
       </div>
     </footer>
+
+    <section class="popup popup--error popup--invisible">
+      <div class="popup__container">
+        <h2 class="popup__title">Что-то пошло не так!</h2>
+        <p class="popup__text">
+          Проверьте поля, выделенные
+          красным, скорее всего вы забыли их
+          заполнить
+        </p>
+      </div>
+      <div class="popup__btn-container">
+        <button class="popup__btn btn" type="button">OK</button>
+      </div>
+    </section>
+
+    <section class="popup popup--send popup--invisible">
+      <div class="popup__container">
+        <h2 class="popup__title">Ваша заявка отправлена</h2>
+        <p class="popup__text">
+          Спасибо за ваше участие, ваша заявка
+          уже поступила к нам. В ближайшее
+          время мы рассмотрим ее и&nbsp;
+          оповестим вас.
+        </p>
+      </div>
+      <div class="popup__btn-container">
+        <button class="popup__btn btn" type="button">Закрыть окно</button>
+      </div>
+    </section>
 
     <script src="js/picturefill.min.js"></script>
     <script src="js/script.min.js"></script>
