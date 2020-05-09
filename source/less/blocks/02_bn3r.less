@@ -1,9 +1,17 @@
 .bn3r {
+  min-height: 394px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   .container;
   padding: 0;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  background-position: bottom left;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-position: bottom left;
+  }
 }
 
 .bn3r__slogan {
@@ -11,10 +19,6 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
-}
-
-.bn3r__slogan-img {
-  display: block;
 }
 
 .bn3r__slogan--index {
@@ -38,8 +42,17 @@
 
 @media (min-width: @tablet-min-width) {
   .bn3r {
-    width: 300px;
+    height: 618px;
     margin: 0;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
+    background-position: bottom;
+    background-size: 700px 545px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-position: bottom;
+      background-size: 700px 545px;
+    }
   }
 
   .bn3r--photo,
@@ -51,11 +64,10 @@
   .bn3r__slogan--index {
     width: 195px;
     padding-top: 90px;
-    padding-left: 58px;
-    margin: 0 auto;
+    padding-left: 71px;
+    margin: 0;
     font-size: 40px;
     line-height: 48px;
-    z-index: 2;
   }
 
   .bn3r__slogan--photo {
@@ -73,27 +85,28 @@
     font-size: 50px;
     line-height: 60px;
   }
-
-  .bn3r__slogan-img {
-    position: absolute;
-    left: -20px;
-    bottom: 0;
-    width: 700px;
-    height: 545px;
-  }
 }
 
 @media (min-width: @desktop-min-with) {
   .bn3r {
-    width: 940px;
+    height: 745px;
     padding-left: 60px;
-    margin: 0 auto;
+    margin: 0;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
+    background-position: bottom 0 left 145px;
+    background-size: 1050px 645px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-position: bottom;
+      background-size: 1050px 645px;
+    }
   }
 
   .bn3r__slogan--index {
     width: 230px;
-    padding-left: 3px;
-    padding-top: 108px;
+    padding-left: 102px;
+    padding-top: 107px;
     margin: 0;
     font-size: 50px;
     line-height: 60px;
@@ -119,12 +132,5 @@
 
   .bn3r--form {
     padding: 0;
-  }
-
-  .bn3r__slogan-img {
-    width: 1050px;
-    height: 645px;
-    right: -165px;
-    margin: 0 auto;
   }
 }
