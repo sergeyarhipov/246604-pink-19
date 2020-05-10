@@ -295,15 +295,23 @@
             </picture>
           </a>
 
-          <form class="img-filter__filter-tools" method="post">
+          <form class="img-filter__filter-tools" action="https://echo.htmlacademy.ru/" method="post">
             <div class="img-filter__filter-tools-container">
-              <div class="img-filter__filter-tool img-filter__filter-tool--crop">
-                <label class="img-filter__tool-button img-filter__tool-button--crop">
+              <div class="img-filter__filter-tool img-filter__filter-tool--mobile img-filter__filter-tool--crop">
+                <label class="img-filter__tool-button img-filter__tool-button--mobile img-filter__tool-button--crop">
                   <svg class="btn-crop" width="45px" height="45px">
                     <use xlink:href="#icon-editor-crop"></use>
                   </svg>
+
+                  <svg class="btn-filling" width="45px" height="45px">
+                    <use xlink:href="#icon-editor-fill"></use>
+                  </svg>
+
+                  <svg class="btn-contrast" width="45px" height="45px">
+                    <use xlink:href="#icon-editor-contrast"></use>
+                  </svg>
                 </label>
-                <input class="img-filter__toggle" type="range" min="0" max="100" step="1" value="50">
+                <input class="img-filter__toggle" type="range" name="range-crop" min="0" max="100" step="1" value="50">
               </div>
 
               <div class="img-filter__filter-tool img-filter__filter-tool--filling">
@@ -312,7 +320,7 @@
                     <use xlink:href="#icon-editor-fill"></use>
                   </svg>
                 </label>
-                <input class="img-filter__toggle" type="range" min="0" max="100" step="1" value="50">
+                <input class="img-filter__toggle" type="range" name="range-filling" min="0" max="100" step="1" value="50">
               </div>
 
               <div class="img-filter__filter-tool img-filter__filter-tool--contrast">
@@ -321,69 +329,17 @@
                     <use xlink:href="#icon-editor-contrast"></use>
                   </svg>
                 </label>
-                <input class="img-filter__toggle" type="range" min="0" max="100" step="1" value="50">
+                <input class="img-filter__toggle" type="range" name="range-contrast" min="0" max="100" step="1" value="50">
               </div>
             </div>
 
             <div class="img-filter__btn">
               <div class="img-filter__btn-container">
                 <button class="img-filter__btn-item img-filter__btn-item--post btn" type="submit">Запостить</button>
-                <button class="img-filter__btn-item img-filter__btn-item--cancel btn" type="submit">Отмена</button>
+                <button class="img-filter__btn-item img-filter__btn-item--cancel btn" type="reset">Отмена</button>
               </div>
             </div>
-
           </form>
-
-
-          <!---
-          <ul class="img-filter__filter-tools">
-            <li class="img-filter__filter-tool">
-              <label class="img-filter__tool-button img-filter__tool-button--crop">
-                <svg class="btn-crop" width="45px" height="45px">
-                  <use xlink:href="#icon-editor-crop"></use>
-                </svg>
-              </label>
-              <div class="img-filter__filter-toggle img-filter__crop">
-                <div class="img-filter__scale"></div>
-                <div class="img-filter__toggle"></div>
-              </div>
-            </li>
-            <li class="img-filter__filter-tool">
-              <label class="img-filter__tool-button img-filter__tool-button--filling">
-                <svg class="btn-filter btn-filling" width="48px" height="48px">
-                  <use xlink:href="#icon-editor-fill"></use>
-                </svg>
-              </label>
-              <div class="img-filter__filter-toggle img-filter__filling">
-                <div class="img-filter__scale"></div>
-                <div class="img-filter__toggle"></div>
-              </div>
-            </li>
-            <li class="img-filter__filter-tool">
-              <label class="img-filter__tool-button img-filter__tool-button--contrast">
-                <svg class="btn-contrast" width="34px" height="34px">
-                  <use xlink:href="#icon-editor-contrast"></use>
-                </svg>
-              </label>
-              <div class="img-filter__filter-toggle img-filter__contrast">
-                <div class="img-filter__scale"></div>
-                <div class="img-filter__toggle"></div>
-              </div>
-            </li>
-          </ul>
-          <div class="img-filter__filter-toggle">
-            <div class="img-filter__scale"></div>
-            <div class="img-filter__toggle"></div>
-          </div>
-        </div>
-
-        <div class="img-filter__btn">
-          <div class="img-filter__btn-container">
-            <button class="img-filter__btn-item img-filter__btn-item--post btn" type="submit">Запостить</button>
-            <button class="img-filter__btn-item img-filter__btn-item--cancel btn" type="submit">Отмена</button>
-          </div>
-        </div>
-      -->
       </section>
     </main>
 
