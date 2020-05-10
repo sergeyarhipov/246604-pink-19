@@ -21,7 +21,6 @@
   justify-content: space-between;
   align-items: center;
   width: 200px;
-  .list-style;
   margin-bottom: 31px;
   margin-right: 10px;
 }
@@ -67,38 +66,13 @@
   fill: #d22856;
 }
 
-.img-filter__filter-toggle {
-  width: 240px;
-  position: relative;
-}
-
-.img-filter__scale {
-  width: 240px;
-  border: 1px solid @bg-info-content;
-}
-
-.img-filter__toggle {
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  top: -8px;
-  right: 33px;
-  background-color: @bg-content;
-  border: 2px solid #d22856;
-  border-radius: 50%;
-}
-
-.img-filter__toggle:active {
-  background-color: #d22856;
-}
-
 .img-filter__btn {
-  max-width: 320px;
+  max-width: 420px;
   box-sizing: border-box;
   .container;
+  margin: 0 auto;
   padding: 38px 20px 42px 20px;
   background-color: @bg-content;
-  margin: 0 auto;
 }
 
 .img-filter__btn-container {
@@ -110,10 +84,6 @@
 .img-filter__btn-item {
   box-sizing: border-box;
   padding: 15px;
-}
-
-.img-filter__filter-tools .img-filter__filter-toggle {
-  display: none;
 }
 
 .img-filter__btn-item--post {
@@ -211,12 +181,6 @@
     height: 24px;
   }
 
-  .img-filter__toggle {
-    width: 10px;
-    height: 10px;
-    top: -6px;
-  }
-
   .img-filter__crop .img-filter__toggle {
     top: -6px;
     right: 49px;
@@ -247,18 +211,8 @@
   }
 
   .img-filter__btn {
-    position: relative;
-    bottom: 56px;
-    right: 34px;
-    width: 620px;
+    width: 250px;
     .null-indent;
-    margin: 0 auto;
-  }
-
-  .img-filter__btn-container {
-    position: absolute;
-    top: -135px;
-    right: -190px;
   }
 
   .img-filter__tool-button {
@@ -317,41 +271,7 @@
   .img-filter__btn-container {
     flex-direction: row;
     justify-content: space-between;
-    width: 412px;
-    left: 194px;
-    top: -57px;
-  }
-
-  .img-filter__tool-button--crop {
-    width: 45px;
-    height: 45px;
-  }
-
-  .img-filter__crop .img-filter__toggle {
-    top: -6px;
-    right: 205px;
-  }
-
-  .img-filter__tool-button--filling {
-    width: 47px;
-    height: 44px;
-    margin-left: 10px;
-  }
-
-  .img-filter__filling .img-filter__toggle {
-    top: -6px;
-    right: 29px;
-  }
-
-  .img-filter__tool-button--contrast {
-    width: 34px;
-    height: 34px;
-    margin-left: 15px;
-  }
-
-  .img-filter__contrast .img-filter__toggle {
-    top: -6px;
-    right: 115px;
+    width: 410px;
   }
 
   .btn-crop {
@@ -367,17 +287,6 @@
   .btn-contrast {
     width: 34px;
     height: 34px;
-  }
-
-  .img-filter__crop .img-filter__scale,
-  .img-filter__filling .img-filter__scale,
-  .img-filter__contrast .img-filter__scale {
-    width: 288px;
-  }
-
-  .img-filter__filter-toggle {
-    width: 288px;
-    margin-right: 18px;
   }
 
   .img-filter__btn-item--post {

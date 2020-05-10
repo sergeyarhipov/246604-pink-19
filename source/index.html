@@ -13,7 +13,7 @@
     </div>
 
     <!-- Блок шапки -->
-    <header class="page-header page-header--index">
+    <header class="page-header page-header--not-js">
       <div class="page-header__navigation navigation navigation--active ">
         <div class="navigation__container navigation__container--not-js">
           <!-- Логотип сайта -->
@@ -34,13 +34,17 @@
           <!-- Блок навигации -->
           <nav class="navigation__menu">
             <button class="navigation__toggle" type="button">Открыть/закрыть меню
-              <svg class="navigation__img-toggle navigation__img-toggle--open navigation__img-toggle--hide" width="49.945px" height="24.007px">
-                <use xlink:href="#icon-menu-burger"></use>
-              </svg>
+              <div class="navigation__toggle-open navigation__toggle-hide">
+                <svg class="navigation__img-toggle navigation__img-toggle--open" width="49.945px" height="24.007px">
+                  <use xlink:href="#icon-menu-burger"></use>
+                </svg>
+              </div>
 
-              <svg class="navigation__img-toggle navigation__img-toggle--close" width="26.752px" height="26.752px">
-                <use xlink:href="#icon-no"></use>
-              </svg>
+              <div class="navigation__toggle-close">
+                <svg class="navigation__img-toggle navigation__img-toggle--close" width="27px" height="27px">
+                  <use xlink:href="#icon-no"></use>
+                </svg>
+              </div>
             </button>
             <div class="navigation__items navigation__items--visible">
               <a href="#" class="navigation__menu-link navigation__menu-link--active">Главная</a>

@@ -34,13 +34,17 @@
           <!-- Блок навигации -->
           <nav class="navigation__menu">
             <button class="navigation__toggle" type="button">Открыть/закрыть меню
-              <svg class="navigation__img-toggle navigation__img-toggle--open navigation__img-toggle--hide" width="49.945px" height="24.007px">
-                <use xlink:href="#icon-menu-burger"></use>
-              </svg>
+              <div class="navigation__toggle-open navigation__toggle-hide">
+                <svg class="navigation__img-toggle navigation__img-toggle--open" width="49.945px" height="24.007px">
+                  <use xlink:href="#icon-menu-burger"></use>
+                </svg>
+              </div>
 
-              <svg class="navigation__img-toggle navigation__img-toggle--close" width="26.752px" height="26.752px">
-                <use xlink:href="#icon-no"></use>
-              </svg>
+              <div class="navigation__toggle-close">
+                <svg class="navigation__img-toggle navigation__img-toggle--close" width="27px" height="27px">
+                  <use xlink:href="#icon-no"></use>
+                </svg>
+              </div>
             </button>
             <div class="navigation__items navigation__items--visible">
               <a href="index.html" class="navigation__menu-link">Главная</a>
@@ -290,6 +294,48 @@
               <img class="img-filter__photo-preview" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото для обработки" width="280" height="375">
             </picture>
           </a>
+
+          <form class="img-filter__filter-tools" method="post">
+            <div class="img-filter__filter-tools-container">
+              <div class="img-filter__filter-tool img-filter__filter-tool--crop">
+                <label class="img-filter__tool-button img-filter__tool-button--crop">
+                  <svg class="btn-crop" width="45px" height="45px">
+                    <use xlink:href="#icon-editor-crop"></use>
+                  </svg>
+                </label>
+                <input class="img-filter__toggle" type="range" min="0" max="100" step="1" value="50">
+              </div>
+
+              <div class="img-filter__filter-tool img-filter__filter-tool--filling">
+                <label class="img-filter__tool-button img-filter__tool-button--filling">
+                  <svg class="btn-filling" width="45px" height="45px">
+                    <use xlink:href="#icon-editor-fill"></use>
+                  </svg>
+                </label>
+                <input class="img-filter__toggle" type="range" min="0" max="100" step="1" value="50">
+              </div>
+
+              <div class="img-filter__filter-tool img-filter__filter-tool--contrast">
+                <label class="img-filter__tool-button img-filter__tool-button--contrast">
+                  <svg class="btn-contrast" width="45px" height="45px">
+                    <use xlink:href="#icon-editor-contrast"></use>
+                  </svg>
+                </label>
+                <input class="img-filter__toggle" type="range" min="0" max="100" step="1" value="50">
+              </div>
+            </div>
+
+            <div class="img-filter__btn">
+              <div class="img-filter__btn-container">
+                <button class="img-filter__btn-item img-filter__btn-item--post btn" type="submit">Запостить</button>
+                <button class="img-filter__btn-item img-filter__btn-item--cancel btn" type="submit">Отмена</button>
+              </div>
+            </div>
+
+          </form>
+
+
+          <!---
           <ul class="img-filter__filter-tools">
             <li class="img-filter__filter-tool">
               <label class="img-filter__tool-button img-filter__tool-button--crop">
@@ -337,6 +383,7 @@
             <button class="img-filter__btn-item img-filter__btn-item--cancel btn" type="submit">Отмена</button>
           </div>
         </div>
+      -->
       </section>
     </main>
 
