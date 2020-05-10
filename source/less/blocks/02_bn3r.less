@@ -1,10 +1,13 @@
 .bn3r {
-  min-height: 397px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   .container;
   padding: 0;
+}
+
+.bn3r--index {
+  min-height: 397px;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
   background-size: 257px 284px;
   background-position: bottom left;
@@ -44,8 +47,11 @@
 
 @media (min-width: @tablet-min-width) {
   .bn3r {
-    height: 620px;
     margin: 0;
+  }
+
+  .bn3r--index {
+    height: 620px;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
     background-position: bottom;
     background-size: 700px 545px;
@@ -91,9 +97,12 @@
 
 @media (min-width: @desktop-min-with) {
   .bn3r {
-    height: 745px;
     padding-left: 60px;
     margin: 0;
+  }
+
+  .bn3r--index {
+    height: 745px;
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
     background-position: bottom 0 left 145px;
     background-size: 1050px 645px;
@@ -115,9 +124,8 @@
   }
 
   .bn3r__slogan--photo {
-    padding-top: 64px;
-    padding-bottom: 100px;
-    padding-left: 0;
+    padding: 64px 0 100px 0;
+    margin: 0 auto;
   }
 
   .bn3r__slogan--form {
@@ -127,7 +135,7 @@
   }
 
   .bn3r--photo {
-    width: 400px;
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
   }

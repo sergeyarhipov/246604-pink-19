@@ -14,32 +14,31 @@
 
     <!-- Блок шапки -->
     <header class="page-header">
-
-      <div class="page-header__navigation navigation navigation__nav-active">
-        <div class="navigation__container">
+      <div class="page-header__navigation navigation navigation--active ">
+        <div class="navigation__container navigation__container--not-js">
           <!-- Логотип сайта -->
           <a href="index.html" class="page-header__logo-link">
-            <svg class="logo-pink-white logo-pink-white-mobile" width="75" height="55">
+            <svg class="page-header__logo-pink-white page-header__logo-pink-white--mobile" width="75" height="55">
               <use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
 
-            <svg class="logo-pink-white logo-pink-white-tablet" width="146" height="41">
+            <svg class="page-header__logo-pink-white page-header__logo-pink-white--tablet" width="146" height="41">
               <use xlink:href="#logo-pink-white-tablet"></use>
             </svg>
 
-            <svg class="logo-pink-white logo-pink-white-desktop" width="150" height="41">
+            <svg class="page-header__logo-pink-white page-header__logo-pink-white--desktop" width="150" height="41">
               <use xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
 
           <!-- Блок навигации -->
           <nav class="navigation__menu">
-            <button class="navigation__toggle" type="button">Открыть меню
-              <svg class="toggle-open" width="49.945px" height="24.007px">
+            <button class="navigation__toggle" type="button">Открыть/закрыть меню
+              <svg class="navigation__img-toggle navigation__img-toggle--open navigation__img-toggle--hide" width="49.945px" height="24.007px">
                 <use xlink:href="#icon-menu-burger"></use>
               </svg>
 
-              <svg class="toggle-close" width="26.752px" height="26.752px">
+              <svg class="navigation__img-toggle navigation__img-toggle--close" width="26.752px" height="26.752px">
                 <use xlink:href="#icon-no"></use>
               </svg>
             </button>
