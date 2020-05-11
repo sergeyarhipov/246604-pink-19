@@ -1,3 +1,4 @@
+/* Отключен JS */
 var nav = document.querySelector(".navigation");
 var navToggle = document.querySelector(".navigation__toggle");
 var navItems = document.querySelector(".navigation__items");
@@ -7,11 +8,16 @@ var toggleClose = document.querySelector(".navigation__toggle-close");
 var navigation = document.querySelector(".navigation__container--not-js");
 var form = document.querySelector(".form");
 var header = document.querySelector(".page-header");
+
+/* Форма */
 var popupSend = document.querySelector(".popup--send");
 var popupError = document.querySelector(".popup--error");
 var popupBtnSend = document.querySelector(".popup__btn--send");
 var popupBtnError = document.querySelector(".popup__btn--error");
+var formBtn = document.querySelector(".form__btn");
+var inputElems = document.querySelectorAll(".form__input-required");
 
+/* JS включен */
 header.classList.remove("page-header--not-js");
 navItemsVisible.classList.add("navigation__items--invisible");
 navItemsVisible.classList.remove("navigation__items--visible");
@@ -21,6 +27,7 @@ navigation.classList.remove("navigation__container--not-js");
 toggleOpen.classList.remove("navigation__toggle-hide");
 toggleClose.classList.add("navigation__toggle-hide");
 
+/* Навигация (mobile, tablet) */
 navToggle.addEventListener("click", function() {
   nav.classList.toggle("navigation--active");
   navItems.classList.toggle("navigation__items--visible");
@@ -28,12 +35,19 @@ navToggle.addEventListener("click", function() {
   toggleClose.classList.toggle("navigation__toggle-hide");
 });
 
-form.addEventListener('invalid', function() {
-  popupError.classList.remove("popup--invisible");
-}, true)
+/* Работа с формой */
+var isAllInputsRequired = inputElems.every(function(input){
+  return input.require;
+});
 
-form.addEventListener("submit", function(){
-  popupSend.classList.remove("popup--invisible");
+if (isAllInputsRequired) {
+popupSend.classList.toggle("popup--invisible");
+} else {
+popupError.classList.toggle("popup--invisible");
+}
+
+form.addEventListener("submit", function(evt){
+  evt.preventDefault();
 });
 
 popupBtnSend.addEventListener("click", function() {

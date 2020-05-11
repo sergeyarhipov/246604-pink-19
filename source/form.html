@@ -78,17 +78,17 @@
       </div>
 
       <!-- Форма -->
-      <form class="form" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
 
         <!-- Блок с данными пользователя -->
         <div class="form__user-name-container">
           <div class="form__user-item">
             <label class="form__name-field" for="last-name">Фамилия:</label>
-            <input class="form__user-input" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
+            <input class="form__user-input form__input-required" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
           </div>
           <div class="form__user-item">
           <label class="form__name-field" for="first-name">Имя:</label>
-          <input class="form__user-input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
+          <input class="form__user-input form__input-required" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
           </div>
           <div class="form__user-item">
           <label class="form__name-field" for="middle-name">Отчество:</label>
@@ -158,12 +158,12 @@
           <ul class="form__contact-items">
             <li class="form__contact-item">
               <label class="form__name-field form__name-field--contact" for="phone">Номер телефона</label>
-              <input class="form__contact-input" id="phone" type="tel" pattern="[0-9]{10,10}" title="номер телефона должен состоять из десяти цифр" name="phone" placeholder="Номер, пожалуйста" required>
+              <input class="form__contact-input form__input-required" id="phone" type="tel" pattern="[0-9]{10,10}" title="номер телефона должен состоять из десяти цифр" name="phone" placeholder="Номер, пожалуйста" required>
               <span class="form__img-input form__img-input--phone"></span>
             </li>
             <li class="form__contact-item">
               <label class="form__name-field form__name-field--contact" for="email">Адрес почты</label>
-              <input class="form__contact-input" id="email" type="email" name="email" placeholder="Введите почту *" required>
+              <input class="form__contact-input form__input-required" id="email" type="email" name="email" placeholder="Введите почту *" required>
               <span class="form__img-input form__img-input--email"></span>
             </li>
           </ul>
