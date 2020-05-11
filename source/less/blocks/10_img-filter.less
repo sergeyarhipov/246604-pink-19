@@ -150,6 +150,11 @@
   border: 2px solid #d22856;
   border-radius: 50%;
   background: #f2f2f2;
+  margin-left: 60px;
+}
+
+.img-filter__toggle::-moz-range-thumb:active {
+  background: #d22856
 }
 
 .img-filter__toggle::-webkit-slider-runnable-track {
@@ -169,6 +174,10 @@
   background: #f2f2f2;
 }
 
+.img-filter__toggle::-webkit-slider-thumb:active {
+  background: #d22856;
+}
+
 .img-filter__toggle::-ms-track {
   width: 241px;
   border: 1px solid #283645;
@@ -184,6 +193,10 @@
   border: 2px solid #d22856;
   border-radius: 50%;
   background: #f2f2f2;
+}
+
+.img-filter__toggle::-ms-thumb:active {
+  background: #d22856;
 }
 
 .img-filter__filter-tool--mobile {
@@ -282,12 +295,6 @@
 
   .img-filter__filter-tool .img-filter__filter-toggle {
     display: block;
-  }
-
-  .img-filter__crop .img-filter__scale,
-  .img-filter__filling .img-filter__scale,
-  .img-filter__contrast .img-filter__scale {
-    width: 201px;
   }
 
   .img-filter__btn {
@@ -407,31 +414,55 @@
     max-width: 940px;
     padding-left: 80px;
     padding-right: 60px;
-    padding-bottom: 48px;
+    padding-bottom: 52px;
   }
 
   .img-filter__filter-tools {
-    flex-direction: row;
+    flex-direction: column;
     width: 410px;
     margin-right: 0;
     margin-bottom: 0;
   }
 
   .img-filter__filter-tools-container {
-    margin-bottom: 124px;
+    margin-bottom: 146px;
   }
 
   .img-filter__filter-tool {
     width: 410px;
-    height: 74px;
+    height: 71px;
     box-sizing: border-box;
     padding-right: 30px;
+  }
+
+  .img-filter__filter-tool--crop {
+    height: 58px;
+  }
+
+  .img-filter__btn {
+    max-width: 410px;
   }
 
   .img-filter__btn-container {
     flex-direction: row;
     justify-content: space-between;
     width: 410px;
+    padding-top: 0;
+  }
+
+  .img-filter__tool-button--crop {
+    width: 45px;
+    height: 45px;
+  }
+
+  .img-filter__tool-button--filling {
+    width: 48px;
+    height: 44px;
+  }
+
+  .img-filter__tool-button--contrast {
+    width: 33px;
+    height: 33px;
   }
 
   .btn-crop {
@@ -461,6 +492,7 @@
   .img-filter__toggle {
     width: 289px;
     padding: 0;
+    margin-right: 0;
     background: transparent;
     cursor: pointer;
     -webkit-appearance: none;
