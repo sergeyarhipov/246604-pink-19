@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   </head>
   <body>
 
@@ -311,7 +314,7 @@
                     <use xlink:href="#icon-editor-contrast"></use>
                   </svg>
                 </label>
-                <input class="img-filter__toggle" type="range" name="range-crop" min="0" max="100" step="1" value="50">
+                <input class="img-filter__toggle" type="range" name="range-crop" min="0" max="100" step="1" value="25">
               </div>
 
               <div class="img-filter__filter-tool img-filter__filter-tool--filling">
@@ -320,7 +323,7 @@
                     <use xlink:href="#icon-editor-fill"></use>
                   </svg>
                 </label>
-                <input class="img-filter__toggle" type="range" name="range-filling" min="0" max="100" step="1" value="50">
+                <input class="img-filter__toggle" type="range" name="range-filling" min="0" max="100" step="1" value="90">
               </div>
 
               <div class="img-filter__filter-tool img-filter__filter-tool--contrast">
@@ -329,7 +332,7 @@
                     <use xlink:href="#icon-editor-contrast"></use>
                   </svg>
                 </label>
-                <input class="img-filter__toggle" type="range" name="range-contrast" min="0" max="100" step="1" value="50">
+                <input class="img-filter__toggle" type="range" name="range-contrast" min="0" max="100" step="1" value="60">
               </div>
             </div>
 
@@ -344,7 +347,7 @@
     </main>
 
     <!-- Блок футера -->
-    <footer class="footer footer--index">
+    <footer class="footer footer--photo">
       <div class="footer__container">
         <a href="index.html" class="footer__index-link" aria-label="Логотип сайта">
           <svg class="footer__logo-pink-blue footer__logo-pink-blue-mobile" width="146px" height="40px">
