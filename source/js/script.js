@@ -19,7 +19,7 @@ var formBtn = document.querySelector(".form__btn");
 var inputElems = document.querySelectorAll(".form__input-required");
 var inputArray = Array.prototype.slice.call(inputElems);
 
-/* JS включен */
+/* JS отключен */
 header.classList.remove("page-header--not-js");
 navItemsVisible.classList.add("navigation__items--invisible");
 navItemsVisible.classList.remove("navigation__items--visible");
