@@ -14,10 +14,10 @@
 
     <!-- Блок шапки -->
     <header class="page-header page-header--not-js">
-      <div class="page-header__navigation navigation navigation--active ">
+      <div class="page-header__navigation navigation navigation--active">
         <div class="navigation__container navigation__container--not-js">
           <!-- Логотип сайта -->
-          <a href="index.html" class="page-header__logo-link">
+          <a href="index.html" class="page-header__logo-link" aria-label="Логотип сайта">
             <svg class="page-header__logo-pink-white page-header__logo-pink-white--mobile" width="75" height="55">
               <use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
@@ -215,9 +215,9 @@
           </div>
 
           <p class="slider-reviews__toggles slider-toggles">
-            <button class="slider-toggles__toggle slider-toggles__toggle--active" type="button">1 слайд</button>
-            <button class="slider-toggles__toggle" type="button">2 слайд</button>
-            <button class="slider-toggles__toggle" type="button">3 слайд</button>
+            <button class="slider-toggles__toggle slider-toggle slider-toggle--active" type="button">1 слайд</button>
+            <button class="slider-toggles__toggle slider-toggle" type="button">2 слайд</button>
+            <button class="slider-toggles__toggle slider-toggle" type="button">3 слайд</button>
           </p>
         </div>
       </section>
@@ -300,9 +300,9 @@
         </div>
 
         <p class="tariffs__toggles slider-toggles">
-          <button class="slider-toggles__toggle" type="button">1</button>
-          <button class="slider-toggles__toggle slider-toggles__toggle--active" type="button">2</button>
-          <button class="slider-toggles__toggle" type="button">3</button>
+          <button class="slider-toggles__toggle slider-toggle" type="button">1</button>
+          <button class="slider-toggles__toggle slider-toggle slider-toggle--active" type="button">2</button>
+          <button class="slider-toggles__toggle slider-toggle" type="button">3</button>
         </p>
       </section>
 
@@ -337,16 +337,6 @@
         <section class="contacts__map">
           <h2 class="visually-hidden">Карта</h2>
           <iframe class="contacts__map-frame" src="https://yandex.ru/map-widget/v1/-/C0Si7B32" width="100%" height="645" allowfullscreen=""></iframe>
-
-          <picture>
-            <source media="(min-width: 960px)" type="image/webp" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-            <source media="(min-width: 660px)" type="image/webp" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-
-            <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-            <img class="contacts__map-img" src="img/bg-map-mobile.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Изображение карты" width="320" height="645">
-          </picture>
         </section>
       </section>
     </main>
@@ -354,7 +344,7 @@
     <!-- Блок футера -->
     <footer class="footer footer--index">
       <div class="footer__container">
-        <a href="index.html" class="footer__index-link">
+        <a href="index.html" class="footer__index-link" aria-label="Логотип сайта">
           <svg class="footer__logo-pink-blue footer__logo-pink-blue-mobile" width="146px" height="40px">
             <use xlink:href="#logo-pink-blue-mobile"></use>
           </svg>
@@ -387,7 +377,7 @@
           </li>
         </ul>
 
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__academy-link">Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__academy-link" aria-label="Логотип htmlacademy">Разработано
           <svg class="footer__logo-htmlacademy" width="27px" height="34px">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>
