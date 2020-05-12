@@ -8,6 +8,7 @@ var toggleClose = document.querySelector(".navigation__toggle-close");
 var navigation = document.querySelector(".navigation__container--not-js");
 var form = document.querySelector(".form");
 var header = document.querySelector(".page-header");
+var map = document.querySelector(".contacts__map-frame--no-js");
 
 /* Форма */
 var popupSend = document.querySelector(".popup--send");
@@ -27,6 +28,7 @@ navToggle.classList.add("navigation__toggle--js");
 navigation.classList.remove("navigation__container--not-js");
 toggleOpen.classList.remove("navigation__toggle-hide");
 toggleClose.classList.add("navigation__toggle-hide");
+map.classList.remove("contacts__map-frame--no-js");
 
 /* Навигация (mobile, tablet) */
 navToggle.addEventListener("click", function() {
