@@ -8,7 +8,6 @@ var toggleClose = document.querySelector(".navigation__toggle-close");
 var navigation = document.querySelector(".navigation__container--not-js");
 var form = document.querySelector(".form");
 var header = document.querySelector(".page-header");
-var map = document.querySelector(".contacts__map-frame--no-js");
 
 /* Форма */
 var popupSend = document.querySelector(".popup--send");
@@ -17,7 +16,6 @@ var popupBtnSend = document.querySelector(".popup__btn--send");
 var popupBtnError = document.querySelector(".popup__btn--error");
 var formBtn = document.querySelector(".form__btn");
 var inputElems = document.querySelectorAll(".form__input-required");
-var inputArray = Array.prototype.slice.call(inputElems);
 
 /* JS отключен */
 header.classList.remove("page-header--not-js");
@@ -28,7 +26,6 @@ navToggle.classList.add("navigation__toggle--js");
 navigation.classList.remove("navigation__container--not-js");
 toggleOpen.classList.remove("navigation__toggle-hide");
 toggleClose.classList.add("navigation__toggle-hide");
-map.classList.remove("contacts__map-frame--no-js");
 
 /* Навигация (mobile, tablet) */
 navToggle.addEventListener("click", function() {
@@ -39,16 +36,28 @@ navToggle.addEventListener("click", function() {
 });
 
 /* Работа с формой */
-formBtn.addEventListener("click", function() {
-  var isAllInputsRequired = inputElems.every(function(input) {
-    return input.require;
-  });
-  if (isAllInputsRequired) {
-    popupSend.classList.toggle("popup--invisible");
-  } else {
+if (formBtn) {
+  formBtn.addEventListener("click", function() {
+
+    function checkInputs(inputs) {
+      for (var i = 0; i < inputs.length; i++) {
+        var input = inputs[i];
+        if (input.value === '') {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    var isAllInputsRequired = checkInputs(inputElems);
+
+    if (isAllInputsRequired) {
+      popupSend.classList.toggle("popup--invisible");
+    } else {
     popupError.classList.toggle("popup--invisible");
-  }
-});
+    }
+  });
+};
 
 form.addEventListener("submit", function(evt){
   evt.preventDefault();
