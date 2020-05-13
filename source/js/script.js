@@ -59,14 +59,16 @@ if (formBtn) {
   });
 };
 
-form.addEventListener("submit", function(evt){
-  evt.preventDefault();
-});
+if (form) {
+  form.addEventListener("submit", function(evt){
+    evt.preventDefault();
+  });
 
-popupBtnSend.addEventListener("click", function() {
-  popupSend.classList.add("popup--invisible");
-});
+  popupBtnSend.addEventListener("click", function() {
+    popupSend.classList.add("popup--invisible");
+  });
 
-popupBtnError.addEventListener("click", function() {
-  popupError.classList.add("popup--invisible");
-});
+  popupBtnError.addEventListener("click", function() {
+    popupError.classList.add("popup--invisible");
+  });
+};

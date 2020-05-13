@@ -16,7 +16,7 @@
     </div>
 
     <!-- Блок шапки -->
-    <header class="page-header page-header--not-js">
+    <header class="page-header page-header--index page-header--not-js">
       <div class="page-header__navigation navigation navigation--active">
         <div class="navigation__container navigation__container--not-js">
           <!-- Логотип сайта -->
@@ -59,42 +59,44 @@
         </div>
       </div>
 
-      <div class="page-header__banner banner banner--index">
-        <!-- Блок слогана программы -->
-        <h1 class="banner__slogan banner__slogan--index h1">
-          Взгляните на жизнь иначе!
-        </h1>
-      </div>
-
-      <!-- Блок описания программы -->
-      <section class="page-header__about-app about-app">
-        <h2 class="visually-hidden">О программе</h2>
-        <div class="about-app__container">
-          <a href="https://apps.apple.com/ru/genre/ios/id36" class="about-app__download-link btn">Скачать приложение</a>
-
-          <!-- Блок версий программы -->
-          <ul class="about-app__app-list">
-            <li class="about-app__app-item">
-              <a href="https://apps.apple.com/ru/genre/ios/id36" class="about-app__app-link">
-                <img class="about-app__version-img about-app__version-img--ios" src="img/logo-apple.svg" alt="Иконка маркета Apple" width="46" height="57">
-              </a>
-            </li>
-            <li class="about-app__app-item">
-              <a href="https://play.google.com/store?hl=ru" class="about-app__app-link">
-                <img class="about-app__version-img about-app__version-img--android" src="img/logo-android.svg" alt="Иконка маркета Android" width="43" height="48">
-              </a>
-            </li>
-            <li class="about-app__app-item">
-              <a href="https://www.microsoft.com/ru-ru/store/top-free/apps/pc" class="about-app__app-link">
-                <img class="about-app__version-img about-app__version-img--windows" src="img/logo-microsoft.svg" alt="Иконка маркета Windows" width="44" height="41">
-              </a>
-            </li>
-          </ul>
-          <p class="about-app__version-info">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+      <div class="page-header__container">
+        <div class="page-header__banner banner banner--index">
+          <!-- Блок слогана программы -->
+          <h1 class="banner__slogan banner__slogan--index h1">
+            Взгляните на жизнь иначе!
+          </h1>
         </div>
-      </section>
+
+        <!-- Блок описания программы -->
+        <section class="page-header__about-app about-app">
+          <h2 class="visually-hidden">О программе</h2>
+          <div class="about-app__container">
+            <a href="https://apps.apple.com/ru/genre/ios/id36" class="about-app__download-link btn">Скачать приложение</a>
+
+            <!-- Блок версий программы -->
+            <ul class="about-app__app-list">
+              <li class="about-app__app-item">
+                <a href="https://apps.apple.com/ru/genre/ios/id36" class="about-app__app-link">
+                  <img class="about-app__version-img about-app__version-img--ios" src="img/logo-apple.svg" alt="Иконка маркета Apple" width="46" height="57">
+                </a>
+              </li>
+              <li class="about-app__app-item">
+                <a href="https://play.google.com/store?hl=ru" class="about-app__app-link">
+                  <img class="about-app__version-img about-app__version-img--android" src="img/logo-android.svg" alt="Иконка маркета Android" width="43" height="48">
+                </a>
+              </li>
+              <li class="about-app__app-item">
+                <a href="https://www.microsoft.com/ru-ru/store/top-free/apps/pc" class="about-app__app-link">
+                  <img class="about-app__version-img about-app__version-img--windows" src="img/logo-microsoft.svg" alt="Иконка маркета Windows" width="44" height="41">
+                </a>
+              </li>
+            </ul>
+            <p class="about-app__version-info">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+         </div>
+        </section>
+      </div>
     </header>
 
     <!-- Блок основного содержимого сайта -->
@@ -233,7 +235,9 @@
             <tr class="tariffs__tariff-name-line">
               <td class="tariffs__cell-title tariffs__cell-title--empty"></td>
               <td class="tariffs__cell-title">База<br><span class="tariffs__tariff-sale">1,99 USD</span></td>
-              <td class="tariffs__cell-title">Стандарт<br><span class="tariffs__tariff-sale">3,99 USD</span></td>
+              <td class="tariffs__cell-title tariffs__cell-title--hit">Стандарт<br><span class="tariffs__tariff-sale tariffs__tariff-sale">3,99 USD</span>
+                <p class="tariffs__tariff-hit"><span class="tariffs__text-hit">Хит</p>
+              </td>
               <td class="tariffs__cell-title">Анлим<br><span class="tariffs__tariff-sale">9,99 USD</span></td>
             </tr>
             <tr class="tariffs__tariff-info-line">
@@ -339,7 +343,7 @@
         <!-- Блок карты -->
         <section class="contacts__map">
           <h2 class="visually-hidden">Карта</h2>
-          <iframe class="contacts__map-frame contacts__map-frame--no-js" src="https://yandex.ru/map-widget/v1/-/C0Si7B32" width="100%" height="645" allowfullscreen=""></iframe>
+          <iframe class="contacts__map-frame" src="https://yandex.ru/map-widget/v1/-/C0Si7B32" width="100%" height="645" allowfullscreen=""></iframe>
         </section>
       </section>
     </main>

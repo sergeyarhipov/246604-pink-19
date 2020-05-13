@@ -4,19 +4,12 @@
   flex-wrap: wrap;
   .container;
   padding: 0;
+  margin: 0 auto;
 }
 
 .banner--index {
+  width: 320px;
   min-height: 397px;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-  background-size: 257px 284px;
-  background-position: bottom left;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/iphone-hand-mobile@2x.png");
-    background-size: 257px 284px;
-    background-position: bottom left;
-  }
 }
 
 .banner__slogan {
@@ -35,7 +28,7 @@
 .banner__slogan--photo {
   width: 180px;
   font-weight: 300;
-  padding: 27px 20px 80px 20px;
+  padding: 30px 20px 80px 20px;
   margin: 0 auto;
 }
 
@@ -51,16 +44,7 @@
   }
 
   .banner--index {
-    height: 620px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
-    background-position: bottom;
-    background-size: 700px 545px;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/iphone-hand-tablet@2x.png");
-      background-position: bottom;
-      background-size: 700px 545px;
-    }
+    min-height: auto;
   }
 
   .banner--photo,
@@ -71,8 +55,7 @@
 
   .banner__slogan--index {
     width: 195px;
-    padding-top: 90px;
-    padding-left: 71px;
+    padding: 90px 0 32px 52px;
     margin: 0;
     font-size: 40px;
     line-height: 48px;
@@ -97,27 +80,13 @@
 
 @media (min-width: @desktop-min-with) {
   .banner {
-    padding-left: 60px;
+    padding-left: 33px;
     margin: 0;
-  }
-
-  .banner--index {
-    height: 745px;
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
-    background-position: bottom 0 left 145px;
-    background-size: 1050px 645px;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/iphone-hand-desktop@2x.png");
-      background-position: bottom;
-      background-size: 1050px 645px;
-    }
   }
 
   .banner__slogan--index {
     width: 230px;
-    padding-left: 102px;
-    padding-top: 107px;
+    padding: 106px 0 52px 0;
     margin: 0;
     font-size: 50px;
     line-height: 60px;
@@ -131,7 +100,7 @@
   .banner__slogan--form {
     width: 800px;
     padding-top: 63px;
-    padding-bottom: 40px;
+    padding-bottom: px;
   }
 
   .banner--photo {

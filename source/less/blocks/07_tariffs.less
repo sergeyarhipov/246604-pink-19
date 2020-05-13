@@ -38,13 +38,38 @@
   border: 1px solid #e5e5e5;
 }
 
+.tariffs__cell-title--hit {
+  position: relative;
+}
+
+.tariffs__tariff-hit {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 73px;
+  height: 73px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+  background: url("../img/bg-hit.svg") no-repeat;
+  background-size: 100%;
+}
+
+.tariffs__text-hit {
+  display: inline-block;
+  width: 93px;
+  height: 93px;
+  text-align: center;
+  transform: rotate(-45deg);
+}
+
 .tariffs__tariff-sale {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   text-transform: uppercase;
 }
-
 
 .tarrifs__tariff-info-line {
   padding: 0;
@@ -107,6 +132,21 @@
     font-size: 16px;
     line-height: 30px;
     background-color: transparent;
+  }
+
+  .tariffs__tariff-hit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background: url("../img/bg-hit-tablet.svg") no-repeat;
+    background-size: 100%;
+  }
+
+  .tariffs__text-hit {
+    width: 51px;
+    height: 55px;
   }
 
   .tariffs__tariff-name-line .tariffs__cell-title:first-child,
@@ -175,6 +215,21 @@
     padding: 17px 8px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .tariffs__tariff-hit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 73px;
+    height: 73px;
+    background: url("../img/bg-hit.svg") no-repeat;
+    background-size: 100%;
+  }
+
+  .tariffs__text-hit {
+    width: 93px;
+    height: 93px;
   }
 
   .tariffs__tariff-sale {
