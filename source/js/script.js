@@ -21,6 +21,7 @@ var inputElems = document.querySelectorAll(".form__input-required");
 header.classList.remove("page-header--not-js");
 navItemsVisible.classList.add("navigation__items--invisible");
 navItemsVisible.classList.remove("navigation__items--visible");
+navItems.classList.remove("navigation__items--visible-not-js");
 nav.classList.remove("navigation--active");
 navToggle.classList.add("navigation__toggle--js");
 navigation.classList.remove("navigation__container--not-js");

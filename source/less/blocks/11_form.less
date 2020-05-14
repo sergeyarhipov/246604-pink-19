@@ -139,13 +139,23 @@
   background-color: #ffffff;
 }
 
-.form__checkbox-label:hover .form__checkbox-check,
-.form__radio-label:hover .form__radio-check {
+.form__checkbox:hover + .form__checkbox-check,
+.form__radio:hover + .form__radio-check {
   border-color: @border-hover;
 }
 
-.form__checkbox-label:active .form__checkbox-check,
-.form__radio-label:active .form__radio-check {
+.form__checkbox:focus + .form__checkbox-check,
+.form__radio:focus + .form__radio-check {
+  border-color: @border-active;
+}
+
+.form__checkbox:focus + .form__checkbox-check,
+.form__radio:focus + .form__radio-check {
+  border-color: @border-active;
+}
+
+.form__checkbox:active + .form__checkbox-check,
+.form__radio:active + .form__radio-check {
   border-color: @border-active;
 }
 
