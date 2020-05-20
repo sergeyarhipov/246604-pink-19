@@ -35,7 +35,7 @@
   width: 200px;
   height: 45px;
   margin-left: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .img-filter__tool-button--filling {
@@ -138,6 +138,7 @@
   cursor: pointer;
   appearance: none;
   height: 14px;
+  outline: none;
 }
 
 .img-filter__toggle::-moz-range-track {
@@ -203,7 +204,9 @@
 }
 
 .img-filter__filter-tool--mobile {
-  margin-bottom: 21px;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 28px;
 }
 
 .img-filter__filter-tool--filling {
@@ -245,7 +248,7 @@
 
   .img-filter__filter-tool {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     width: 273px;
